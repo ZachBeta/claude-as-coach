@@ -34,9 +34,9 @@
 ---
 
 #### F31: Git History Squash & Personal Data Audit
-**Status:** Active - READY TO EXECUTE (all blockers cleared)
-**Effort:** Path B (45-60 min remaining - audit done, just squash + verify)
-**Priority:** High - BLOCKING for sharing repo with acquaintances
+**Status:** ✅ COMPLETE (2025-12-03)
+**Effort:** Path B (45-60 min - completed)
+**Priority:** High - Was BLOCKING for sharing repo with acquaintances
 **Detail:** [docs/features/FEATURE-git-history-squash.md](features/FEATURE-git-history-squash.md)
 
 **Goal:** Clean git history and audit all files to remove personal data, enabling safe sharing before Dec 12th presentation
@@ -46,16 +46,14 @@
 2. ✅ Plan git history strategy - single squash decided
 3. ✅ Fix identified issues - Connecticut reference removed
 4. ✅ Add MIT license - already present
-5. ⏳ Execute git squash with backup (15-20 min)
-6. ⏳ Verification & fresh clone testing (20-30 min)
+5. ✅ Execute git squash with backup - DONE (2025-12-03)
+6. ✅ Verification & fresh clone testing - DONE (2025-12-03)
 
-**Blocking:** Cannot share repo with acquaintances for pre-presentation testing until complete
+**Result:** 78 commits → 1 commit (`04b269a Initial public release: Claude-as-Coach framework`)
 
-**No longer blocked by:** F33 ✅ (CLAUDE.md loading confirmed working 2025-12-03)
+**Backup available:** Local branch `backup-before-squash` preserves full history if needed
 
-**Strategy:** Single orphan commit squash (safest, eliminates all history risk)
-
-**Ready to execute when confident**
+**No longer blocking:** Repo is now safe to share publicly
 
 ---
 

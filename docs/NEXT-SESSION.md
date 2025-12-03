@@ -102,18 +102,18 @@ This file is a FILTERED VIEW of FEATURES.md.
 - ✅ F33 Phase 1 - CLAUDE.md auto-loads from parent workspace (GO decision confirmed)
 - ✅ Personal data audit - Repository clean (1 minor issue already fixed)
 - ✅ MIT LICENSE - Already present
+- ✅ **F31 (Git History Squash) - COMPLETE!** 78 commits → 1 commit (`04b269a`)
 
 **New:**
 - F35 (Demo Script & Date Regeneration) - Added to address date brittleness in demo
 
 **Ready for execution:**
-- F31 (Git history squash) - All blockers cleared, ready when confident
 - F35 (Demo date fix) - Can run in parallel with other work
-
-**Status unchanged:**
 - F28/F29 (Demo content) ready to start anytime
 
-**Next priority:** F31 (git squash) or F35 (demo dates) → F28/F29 (demo content)
+**Repo is now safe to share publicly!**
+
+**Next priority:** F35 (demo dates) → F28/F29 (demo content)
 
 ---
 
