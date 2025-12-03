@@ -1,0 +1,138 @@
+# Summary-2025-11-25-Monday-W8-D1
+
+**Date:** Monday, November 25, 2025
+**Context:** Week 8, Day 1 of couch-to-5K program (final week!)
+
+## TL;DR
+
+First run of the final week - 2.8 miles completed at comfortable pace. Body feels adapted to regular running now. Some pre-run nervousness about "final week," but reminded myself to trust the process. Work day went well, energy levels noticeably higher than early program weeks.
+
+## Key Numbers
+
+- **Run distance:** 2.8 miles (target 3.0)
+- **Run duration:** ~33 minutes
+- **Average pace:** ~11:45 min/mi
+- **Heart rate average:** 152 bpm (felt aerobic, not straining)
+- **Morning weight:** 192 lbs (down from 203 at program start)
+- **Sleep:** 7.5 hours
+- **Pre-run energy:** 7/10
+- **Post-run energy:** 8/10
+
+## Timeline
+
+**6:30 AM** - Morning routine, light breakfast (banana, water)
+- Set alarm earlier this week to avoid rushing
+- Felt more rested than usual
+
+**7:15 AM** - Warmup routine
+- 5-minute walk around neighborhood
+- Dynamic stretches (leg swings, arm circles)
+- No soreness from Friday's run
+
+**7:20 AM** - Run begins
+- First mile: felt strong, resisted urge to go fast
+- Mile 2: settled into comfortable rhythm
+- Last 0.8 mi: slight fatigue but finished strong
+- Stopped at 2.8 mi to avoid overdoing it
+
+**8:00 AM** - Cooldown
+- 5-minute walk back home
+- Static stretching: calves, quads, hamstrings
+- Hydration: 16 oz water
+
+**9:00 AM** - Work day begins
+- Showered, fed, feeling accomplished
+- Energy noticeably better than pre-program baseline
+
+**12:30 PM** - Lunch break
+- Normal lunch, no unusual hunger
+- Quick 10-minute walk outside
+
+**6:00 PM** - Evening wind-down
+- Light soreness in calves (expected, manageable)
+- Foam rolling: 10 minutes
+
+**10:00 PM** - Prep for Tuesday (rest day)
+- Set reminder to hydrate tomorrow
+- Laid out gear for Wednesday's run
+
+## What Worked
+
+**Earlier start time:**
+- Less rushed, more mindful during run
+- Cooler morning temps (58°F vs usual 65°F+)
+- Quieter neighborhood streets
+
+**Pacing discipline:**
+- Resisted urge to go fast in first mile
+- Stayed comfortable throughout
+- Finished feeling like I could have done more (good sign)
+
+**Pre-run fueling:**
+- Banana + water 30 min before = no stomach issues
+- Consistent with what worked in Week 7
+
+**Recovery mindset:**
+- Stopped at 2.8 instead of pushing to 3.0
+- Prioritizing consistency over distance this week
+
+## What Didn't Work
+
+**Hydration last night:**
+- Forgot to drink water before bed
+- Slight headache mid-run (minutes 15-20)
+- Resolved after post-run hydration, but avoidable
+
+**Pace monitoring:**
+- Didn't bring watch, so pace is estimated
+- Would help to have real-time feedback
+
+**Post-run stretching:**
+- Rushed through it a bit (only ~5 minutes)
+- Should have taken 10 minutes
+
+## Insights
+
+**Week 8 confidence is real:**
+- Not nervous about the runs themselves anymore
+- Nervous about "finishing the program" (mental, not physical)
+- Body has adapted - this feels normal now
+
+**Progress is tangible:**
+- 11 lbs lost since program start
+- Used to get winded playing with kids - now running 2.8 miles
+- Morning energy consistently better
+
+**Trust the program:**
+- Tempting to push harder in final week
+- But program worked by progressive overload, not heroics
+- Need to finish injury-free and build sustainable habit
+
+**Sustainability over perfection:**
+- Missing exact distance targets (2.8 vs 3.0) isn't failure
+- Consistency matters more than single-run performance
+- This is about building a practice, not one-time achievement
+
+## Tomorrow's Focus
+
+**Rest day protocols:**
+- Active recovery: 20-minute walk after work
+- Foam rolling: 15 minutes (calves, IT band, quads)
+- Hydrate tonight: set phone reminder
+
+**Wednesday prep:**
+- Lay out running gear Tuesday night
+- Banana + water 30 min before (repeat what worked today)
+- Target 3.0 miles at comfortable pace
+
+**Mental game:**
+- This is the final week - stay consistent
+- Don't overthink it, trust the process
+- Focus on completing runs, not PRs
+
+## Notes
+
+- Week 8 = culmination of 8 weeks of consistency
+- 3 runs this week: Monday (done), Wednesday, Friday
+- After Friday: officially completed couch-to-5K!
+- Already thinking about "what's next" (maintain 3x/week? sign up for actual 5K race?)

@@ -1,0 +1,153 @@
+# Summary-2025-11-27-Wednesday-W8-D2
+
+**Date:** Wednesday, November 27, 2025
+**Context:** Week 8, Day 2 of couch-to-5K program
+
+## TL;DR
+
+Mid-week run completed - hit 3.1 miles (first time breaking 3 miles!). Pace felt comfortable, no major issues. Slight knee twinge in mile 2 (watched it closely, didn't worsen). Work day productive despite Thanksgiving prep on mind. Realized I'm actually going to finish this program.
+
+## Key Numbers
+
+- **Run distance:** 3.1 miles (exceeded target!)
+- **Run duration:** ~36 minutes
+- **Average pace:** ~11:35 min/mi (slightly faster than Monday)
+- **Heart rate average:** ~155 bpm (slightly elevated but manageable)
+- **Morning weight:** 191 lbs (continuing downward trend)
+- **Sleep:** 8 hours (great night)
+- **Pre-run energy:** 8/10
+- **Post-run energy:** 7/10 (more fatigued than Monday)
+
+## Timeline
+
+**6:30 AM** - Morning routine
+- Felt well-rested (8 hours sleep helped)
+- Banana + water 30 min before run
+
+**7:15 AM** - Warmup
+- 5-minute neighborhood walk
+- Dynamic stretches (extra attention to knees today)
+
+**7:20 AM** - Run begins
+- Mile 1: Strong start, good rhythm
+- Mile 2: Slight knee twinge at ~1.7 mi (left knee, medial side)
+  - Slowed pace slightly, monitored closely
+  - Didn't worsen, continued
+- Mile 3: Pushed through to 3.1 miles
+  - Realized I'd broken 3 miles for first time
+  - Small win!
+
+**8:05 AM** - Cooldown
+- Extended cooldown walk (10 minutes)
+- Focused on knee - felt fine walking
+- Ice pack on left knee for 15 minutes (precautionary)
+
+**9:15 AM** - Work begins (later start)
+- Showered, iced knee, delayed work start
+- Felt accomplished but slightly concerned about knee
+
+**12:30 PM** - Lunch
+- Knee feels normal (no pain during regular movement)
+- 10-minute walk felt fine
+
+**3:00 PM** - Afternoon slump
+- Energy dipped mid-afternoon (more than usual)
+- Possible: pushed harder during run than I realized
+
+**6:00 PM** - Evening
+- Knee still feels normal (relief!)
+- Light stretching, foam rolling
+
+**9:00 PM** - Thanksgiving prep
+- Prep for holiday tomorrow (rest day built in)
+- Grateful for how far I've come in 8 weeks
+
+## What Worked
+
+**Sleep quality:**
+- 8 hours made a noticeable difference
+- Felt energized pre-run
+
+**Breaking 3 miles:**
+- First time exceeding 3.0 mi
+- Psychological milestone ("I can run a 5K distance")
+
+**Monitoring knee closely:**
+- Felt twinge, slowed down, assessed
+- Didn't push through pain
+- Didn't turn into injury
+
+**Extended cooldown:**
+- 10-minute walk vs usual 5 minutes
+- Ice on knee = proactive recovery
+
+## What Didn't Work
+
+**Pace management:**
+- Went slightly faster than Monday (11:35 vs 11:45)
+- May have contributed to knee twinge
+- May have caused afternoon energy dip
+
+**Pushing to 3.1 miles:**
+- Excited to break 3.0, but didn't plan to go beyond
+- Slight ego win, but was it necessary?
+- Should prioritize consistency over milestones right now
+
+**Afternoon energy:**
+- More fatigued than Monday post-run
+- Didn't eat enough post-run? Or just pushed harder?
+
+## Insights
+
+**The finish line is in sight:**
+- Week 8, Day 2 = one run left in program (Friday)
+- Starting to feel emotional about completing this
+- 8 weeks ago, couldn't run 1 mile continuously
+
+**Injury prevention > performance:**
+- Knee twinge was a warning
+- Body is adapting, but still vulnerable
+- Final week is NOT the time to push for PRs
+- Goal: finish healthy, build sustainable habit
+
+**Progress isn't linear:**
+- Monday felt easier than today
+- Today was longer distance but more fatigue
+- That's normal - not every run will be a "best run"
+
+**Context matters:**
+- Thanksgiving tomorrow = disrupted routine ahead
+- Family obligations, food, travel
+- Need to stay flexible, not rigid
+
+**I'm actually going to finish this:**
+- Started this program feeling skeptical
+- "Can I really go from couch to running?"
+- 8 weeks later: yes, apparently I can
+
+## Tomorrow's Focus (Thanksgiving)
+
+**Rest day + holiday:**
+- No run scheduled (built-in rest)
+- Active recovery: walk with family after Thanksgiving meal
+- Stay hydrated despite holiday chaos
+- Don't stress about food/routine disruption
+
+**Friday prep:**
+- Final run of program on Friday
+- Keep it simple: 3.0 miles at comfortable pace
+- Don't push for speed or distance PR
+- Goal: finish healthy and celebrate completion
+
+**Knee monitoring:**
+- Pay attention to left knee next 2 days
+- If any pain/swelling: skip Friday run or modify
+- Completing program matters, but not at expense of injury
+
+## Notes
+
+- Broke 3 miles for first time (3.1 mi)
+- Slight knee concern (monitored, resolved)
+- One run left in program (Friday, Week 8 Day 3)
+- Emotional milestone: realizing I'm going to finish this
+- Thanksgiving tomorrow = disrupted schedule, but that's okay
