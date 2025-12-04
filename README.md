@@ -6,6 +6,8 @@ Experiment in using Claude as a personal coach for behavior change, using Claude
 
 ---
 
+**🔥 Wanna try out a new project?** See [QUICKSTART.md](QUICKSTART.md) to quickly get a project and skills set up.
+
 **📖 New to this system?** See [PROJECT-SETUP.md](PROJECT-SETUP.md) for a comprehensive guide on using Claude-as-Coach for your own goals.
 
 **🔧 Contributing or developing?** You're in the right place - this README covers repository structure, development workflow, and contribution guidelines.
