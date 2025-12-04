@@ -151,17 +151,17 @@
 ---
 
 #### F36: Save-to-Project UX Instructions
-**Status:** Proposed
+**Status:** ✅ Complete (2025-12-04)
 **Effort:** Quick win (15-20 min)
 **Priority:** High (Dec 12th - user onboarding friction)
 
 **Problem:** Users confused by artifact save flow after project setup generates Project-Goals.md
 
-**Platform-specific instructions needed:**
+**Solution:** Added platform-specific save instructions to project-coach-setup-base skill:
 - **Web/Desktop:** Click artifact → dropdown menu → "Save to Project"
 - **Mobile:** Download artifact → upload to project sidebar
 
-**Action:** Update project-coach-setup-base skill Step 3 with clear platform-specific save instructions
+**PR:** https://github.com/ZachBeta/claude-as-coach/pull/1
 
 **Related:** Decision paralysis examples already added (commit 23371f7)
 
