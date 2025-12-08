@@ -349,6 +349,50 @@
 
 ---
 
+#### F46: Skill Improvement - Retro & Planning Learnings
+**Status:** Proposed - Learnings captured from November 2025 monthly session
+**Effort:** Path B (1-2 hours to implement all improvements)
+**Priority:** Medium (skill quality improvements)
+**Source:** Session notes from Dec 7, 2025 monthly retro + planning
+
+**Problem:** During November monthly retro and December monthly planning, several skill gaps and improvement patterns were identified.
+
+**Trigger Pattern Issues (Both Skills):**
+- "monthly retro" and "december planning" didn't auto-trigger skills
+- Need to add: `monthly retro/planning`, `[month name] retro/planning`, `retro then planning`
+
+**Retrospective-base Improvements:**
+| Pattern | Description |
+|---------|-------------|
+| Fractal time-scale review | Walk through smaller unit (week-by-week) before synthesis |
+| Plan vs Actual section | Standard for monthly, optional for weekly |
+| Per-section correction invitations | Pause after each major section for user correction |
+| n=1 science language discipline | Findings (observable) vs Hypotheses (under experiment) vs Conclusions (require more data) |
+| Meta-insights prompt | "What patterns emerged that weren't in the weekly retros?" |
+| Balance check | Explicitly check for "What Didn't Work" asymmetry |
+
+**Planning-base Improvements:**
+| Pattern | Description |
+|---------|-------------|
+| Retro → Planning flow | Suggest completing retro first if not done |
+| User-driven theme identification | Reflect back priorities, let user name the theme |
+| List → Reflect → Refine | User lists raw → Claude organizes → User confirms/adjusts |
+| Natural phase breaks | For monthly, find natural halves based on deadlines/focus shifts |
+| Check existing docs | Before generating, check if plan already exists for that period |
+| Plans are scaffolding | Plans are removed after use; retros hold durable knowledge |
+| Decision filter pattern | Every monthly plan produces 2-question filter to test activities |
+
+**Open Questions (Deferred):**
+- Should monthly-retrospective/planning be separate skills or modes of base skills?
+- Gratitude section: include or skip for monthly retros?
+- How detailed should weekly outline be in monthly plan?
+
+**Specific Text Additions:** See original iteration notes in git history (removed after documenting here)
+
+**Next:** When time permits, implement trigger pattern fixes first (quick win), then methodology improvements
+
+---
+
 ### Known Platform Limitations
 
 #### F40: Claude.ai Platform Limitations
