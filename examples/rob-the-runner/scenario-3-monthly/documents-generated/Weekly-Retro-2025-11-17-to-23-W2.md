@@ -1,0 +1,140 @@
+# Weekly-Retro-2025-11-17-to-23-W2
+
+**Week:** 2025-11-17 to 2025-11-23, 2025 (Week 2 of 8)
+**Program Phase:** Foundation - Walk/run intervals (W2R2)
+**Runs Completed:** 3/3
+
+## TL;DR
+
+Week 2 tested different muscles: not physical pain, but showing up when life gets in the way. Overslept Day 1, rainy morning Day 3. Finished both anyway. New shoes arrived and shin pain disappeared almost immediately. 2-minute run intervals felt hard but doable. Body is adapting; now the battle is consistency.
+
+## What Worked (Roses)
+
+### New Running Shoes
+- Got fitted at Fleet Feet on Saturday
+- Stability shoes for mild overpronation
+- Shin pain: went from 7/10 to 2/10 immediately
+- $135 well spent
+
+### Alarm Across Room
+- After oversleeping Day 1, moved alarm
+- Can't hit snooze from bed
+- Forces me to get up
+- Worked perfectly Day 3 and Day 5
+
+### Rainy Day Completion
+- Day 3: raining, 52°F
+- Tempted to skip ("I'll run tomorrow")
+- Put on jacket and went anyway
+- Felt proud after, not during
+
+### Extended Warmup
+- 7 minutes instead of 5
+- Extra calf/shin stretches
+- No shin flare-ups this week
+
+## What Didn't Work (Thorns)
+
+### Oversleeping (Day 1)
+- Stayed up late Sunday watching football
+- Alarm didn't wake me (or I turned it off in sleep)
+- Almost skipped the run entirely
+- Need better Sunday night routine
+
+### Hydration Still Inconsistent
+- Better than Week 1, but not systematic
+- Forgot water bottle one night
+- Headache on Day 3 (rain + dehydration?)
+
+### Evening Energy
+- After runs, afternoon slump hits hard
+- Probably need post-run nutrition
+- Currently just coffee and hope
+
+## Week-over-Week Comparison
+
+| Metric | Week 1 | Week 2 | Change |
+|--------|--------|--------|--------|
+| Runs completed | 3/3 | 3/3 | = Same |
+| Avg effort | 8.7/10 | 7.3/10 | ↓ Better |
+| Avg shin pain | 4.7/10 | 2.0/10 | ↓ Much better |
+| Sleep avg | 7.0 hrs | 7.2 hrs | ↑ Slight |
+| Near-quits | 1 | 0 | ↓ Better |
+
+**Progress:** Body adapting. New shoes fixed shin problem. Mental battles shifting from "can I do this" to "will I show up."
+
+## Experiments for Week 3
+
+### 1. Post-Run Snack
+- Banana + peanut butter after cooldown
+- See if it helps afternoon energy
+- Track energy levels 2pm-5pm
+
+### 2. Sunday Night Cutoff
+- No screens after 9:00 PM Sunday
+- Set Monday clothes out Sunday night
+- Test: do I oversleep less?
+
+### 3. Rain Gear Default
+- Keep rain jacket in running bag
+- Removes "weather" as excuse variable
+- Already have it, just need to use it
+
+## Metrics
+
+| Metric | Day 1 | Day 3 | Day 5 | Trend |
+|--------|-------|-------|-------|-------|
+| Effort (1-10) | 8 | 7 | 7 | Stable |
+| Shin pain (1-10) | 2 | 2 | 2 | ↓ Fixed! |
+| Energy post-run | 5 | 5 | 6 | Slight ↑ |
+| Sleep (hrs) | 6.5 | 7.5 | 7.5 | Better |
+| Mood after | 6 | 7 | 7 | ↑ Good |
+
+## Retro-Retro (Process Check)
+
+**Reflection quality:**
+- Weekly retro format is working
+- Comparison to Week 1 is useful
+- Experiments are actionable
+
+**What to adjust:**
+- Add "near-quit moments" as explicit metric?
+- Track weather conditions?
+- Keep format stable for now
+
+## Key Insight
+
+**The battle has shifted:**
+
+Week 1: "Can my body do this?" → Yes, it adapts.
+
+Week 2: "Will I show up when it's inconvenient?" → This is the real test.
+
+The physical capacity is there. The question is whether I'll use it when:
+- I oversleep
+- It's raining
+- Work is stressful
+- I'm tired
+
+**This week's answer:** Yes. Three times yes.
+
+## Gratitude
+
+### For New Shoes
+- Immediate shin pain relief
+- Running actually feels different
+- Should have done this sooner
+
+### For Rain
+- Tested my commitment
+- Showed me I'll do it anyway
+- Each obstacle overcome builds confidence
+
+### For Week 2 Being Easier
+- Proof the program works
+- Body adapts faster than expected
+- 2 weeks down, 6 to go
+
+---
+
+**Week 2 Summary: Consistency tested, consistency maintained. Body adapting. Mind strengthening.**

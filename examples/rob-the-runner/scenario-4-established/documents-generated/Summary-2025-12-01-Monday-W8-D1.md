@@ -1,6 +1,6 @@
-# Summary-2025-11-25-Monday-W8-D1
+# Summary-2025-12-01-Monday-W8-D1
 
-**Date:** Monday, November 25, 2025
+**Date:** Monday, December 1, 2025
 **Context:** Week 8, Day 1 of couch-to-5K program (final week!)
 
 ## TL;DR

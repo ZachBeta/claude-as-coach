@@ -1,6 +1,6 @@
 # Rob the Runner - Demo Persona (Base Skills Only)
 
-**This is synthetic demo data created for the December 12th, 2025 presentation.**
+**This is synthetic demo data created for demonstrating Claude-as-Coach.**
 
 ## About Rob
 
@@ -13,97 +13,121 @@
 
 **Goal:** Complete a 5K run using a structured 8-week couch-to-5K program
 
-**Timeline:** October 7 - November 29, 2025 (8 weeks)
+## Four Demo Scenarios
 
-## Demo Purpose: Base Skills Only
+Rob's journey is divided into four scenarios, each demonstrating different aspects of the coaching system:
 
-**Key demonstration value:** Rob uses the **base skills WITHOUT custom personal extensions**.
+| Scenario | Rob's State | Skills Demonstrated | Use Case |
+|----------|-------------|---------------------|----------|
+| **[1. Getting Started](scenario-1-startup/)** | Day 1, just had first run | daily-summary | Onboarding new users |
+| **[2. First Week Review](scenario-2-weekly/)** | End of Week 1 | morning-routine, retro, planning | Weekly rhythm |
+| **[3. Monthly Review](scenario-3-monthly/)** | End of Week 4 | monthly retrospective | Fractal compression |
+| **[4. Established User](scenario-4-established/)** | Week 9 (post-program) | Full workflow | Ongoing practice |
 
-This shows:
-- ✅ The system works out-of-box with zero customization
-- ✅ You don't need to create personal skills to get value
-- ✅ Lower barrier to entry for new users
-- ✅ Base skills provide solid structure and guidance
-
-**Contrast with Alice example:**
-- Alice (if referenced): Shows extensibility via custom personal skills
-- Rob: Shows simplicity via base skills alone
-
-## Fractal Compression Pattern
-
-Rob's documents demonstrate the **daily → weekly → monthly rollup pattern**:
-
-### Recent Data (Most Granular)
-**Week 8 - November 25-29, 2025**
-- `Summary-2025-11-25-Monday-W8-D1.md`
-- `Summary-2025-11-27-Wednesday-W8-D2.md`
-- `Summary-2025-11-29-Friday-W8-D3.md`
-
-Shows: Day-to-day details, individual run metrics, immediate insights
-
-### Mid-Range Data (Weekly Compression)
-**Weeks 5-7 - November 4-24, 2025**
-- `Weekly-Retro-2025-11-04-to-10-W5.md` (Week 5)
-- `Weekly-Retro-2025-11-11-to-17-W6.md` (Week 6)
-- `Weekly-Retro-2025-11-18-to-24-W7.md` (Week 7)
-
-Shows: 21 days compressed into 3 weekly summaries
-
-### Historical Data (Monthly Compression)
-**Weeks 1-4 - October 7-31, 2025**
-- `Monthly-Rollup-2025-10-October.md`
-
-Shows: First 4 weeks compressed into single monthly summary
-
-## Make-Change Algorithm Visualization
-
-```
-Most compressed:   [October Rollup] = Weeks 1-4 (28 days → 1 doc)
-                         ↓
-Medium compression: [Weekly Retros] = Weeks 5-7 (21 days → 3 docs)
-                         ↓
-Most granular:     [Daily Summaries] = Week 8 (3 days → 3 docs)
-```
-
-**Design principle:** System maintains detail where it matters most (recent activity), compresses historical data to reduce cognitive load and Claude context usage.
-
-## Using This as a Template
-
-**To adapt for your goals:**
-
-1. **Use the same document structure** (base skills define this)
-2. **Replace Rob's running metrics** with your domain:
-   - Learning: Study hours, comprehension, topic mastery
-   - Business: Revenue, customer calls, deep work hours
-   - Creative: Word count, pieces completed, flow states
-3. **Keep the fractal pattern:** Recent (daily) → Mid-range (weekly) → Historical (monthly)
-4. **Start with base skills** - only create custom skills if you need them
-
-## Files in This Directory
-
-```
-personal.example-rob/
-├── README.md                                   # This file
-└── documents/
-    ├── Summary-2025-11-25-Monday-W8-D1.md      # Daily: Week 8, Day 1
-    ├── Summary-2025-11-27-Wednesday-W8-D2.md   # Daily: Week 8, Day 2
-    ├── Summary-2025-11-29-Friday-W8-D3.md      # Daily: Week 8, Day 3
-    ├── Weekly-Retro-2025-11-04-to-10-W5.md     # Weekly: Week 5
-    ├── Weekly-Retro-2025-11-11-to-17-W6.md     # Weekly: Week 6
-    ├── Weekly-Retro-2025-11-18-to-24-W7.md     # Weekly: Week 7
-    └── Monthly-Rollup-2025-10-October.md       # Monthly: October (Weeks 1-4)
-```
-
-**No skills/ directory** - Rob uses base skills only!
-
-## Questions?
-
-See the main project documentation:
-- [PROJECT-SETUP.md](../PROJECT-SETUP.md) - Complete setup guide
-- [QUICKSTART.md](../QUICKSTART.md) - Fast installation
-- [WORKFLOW-GUIDE.md](../docs/WORKFLOW-GUIDE.md) - Daily workflows
-- [README.md](../README.md) - Repository overview
+**Choose the scenario that matches what you want to demonstrate.**
 
 ---
 
-**Remember:** Rob is a fictional persona. This is synthetic demo data, not the author's personal information.
+## Scenario 1: Getting Started
+
+**Location:** `scenario-1-startup/`
+
+**Rob's state:** Just started couch-to-5K, had his first run today. No existing documents.
+
+**What it shows:**
+- How someone begins using the system from scratch
+- First daily summary generation
+- Capturing structured data from natural conversation
+
+**Documents:** None (generates Summary-W1-D1.md during demo)
+
+---
+
+## Scenario 2: First Week Review
+
+**Location:** `scenario-2-weekly/`
+
+**Rob's state:** Finished Week 1 (3 runs: Mon/Wed/Fri), ready for weekly retro.
+
+**What it shows:**
+- Morning routine loading yesterday's summary
+- Weekly retrospective after first week
+- Weekly planning for upcoming week
+- The core weekly rhythm
+
+**Documents:**
+- Summary-W1-D1.md (Monday - first run, everything hurts)
+- Summary-W1-D3.md (Wednesday - shin pain, almost quit)
+- Summary-W1-D5.md (Friday - made it through)
+
+---
+
+## Scenario 3: Monthly Review
+
+**Location:** `scenario-3-monthly/`
+
+**Rob's state:** Finished Week 4 / first month, ready for monthly retrospective.
+
+**What it shows:**
+- Fractal compression (4 weekly retros → 1 monthly summary)
+- How patterns emerge at monthly timescale
+- Historical context building
+
+**Documents:**
+- Weekly-Retro-W1.md through W4.md (4 weekly retros)
+- Summary-W4-D5.md (most recent daily)
+
+---
+
+## Scenario 4: Established User
+
+**Location:** `scenario-4-established/`
+
+**Rob's state:** Week 9, first week post-program, exploring "what's next" (yoga with wife, 10K goal?).
+
+**What it shows:**
+- Full established workflow
+- Rich context from compressed history
+- Ongoing practice beyond initial goal
+
+**Documents:**
+- Monthly-Rollup-October.md (Weeks 1-4 compressed)
+- Weekly-Retro-W5, W6, W7.md (Weeks 5-7)
+- Summary-W8-D1, D2, D3.md (Week 8)
+- Summary-W9-D1, D2.md (current week)
+- Weekly-Plan-W9.md (current plan)
+
+---
+
+## Running a Demo
+
+Each scenario has:
+- `README.md` - Scenario description
+- `DEMO-SCRIPT.md` - Step-by-step demo flow
+- `templates/` - Source templates with date placeholders
+- `documents-generated/` - Generated documents for demo day
+
+**Before demo:**
+```bash
+# Regenerate documents for your demo day
+python scripts/regenerate_demo_dates.py --scenario 2 --demo-day 2025-12-12
+
+# Or generate all scenarios
+python scripts/regenerate_demo_dates.py --scenario all --demo-day 2025-12-12
+```
+
+## Key Demonstration Value
+
+**Rob uses BASE SKILLS ONLY - no custom personal extensions.**
+
+This shows:
+- The system works out-of-box with zero customization
+- You don't need personal skills to get value
+- Lower barrier to entry for new users
+- Base skills provide solid structure
+
+**Contrast with Alice example:** Alice shows extensibility; Rob shows simplicity.
+
+---
+
+**Remember:** Rob is a fictional persona. This is synthetic demo data, not real personal information.

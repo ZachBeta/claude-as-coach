@@ -1,11 +1,11 @@
-# Weekly-Retro-2025-11-11-to-17-W6
+# Weekly-Retro-2025-11-17-to-23-W6
 
-**Week:** November 11-17, 2025 (Week 6 of 8)
+**Week:** November 17-23, 2025 (Week 6 of 8)
 **Program phase:** Advanced endurance building - 20-minute continuous runs
 
 ## Week Summary
 
-Week 6 complete - hit the 20-minute continuous run milestone. All three runs completed successfully. Experiments from last week (fueling timing, active recovery, hydration) mostly paid off. Weather got colder (45-50°F mornings), required gear adjustment. Work stress increased (busy season prep), but maintained training schedule. Felt a shift: running is part of my identity now, not something I'm "trying."
+Week 6 complete - hit the 20-minute continuous run milestone. All three runs completed successfully. Experiments from last week (fueling timing, active recovery, hydration) mostly paid off. Weather got colder (45-50 degrees F mornings), required gear adjustment. Work stress increased (busy season prep), but maintained training schedule. Felt a shift: running is part of my identity now, not something I'm "trying."
 
 **Key metrics:**
 - Runs completed: 3 of 3
@@ -40,7 +40,7 @@ Week 6 complete - hit the 20-minute continuous run milestone. All three runs com
 
 **Cold weather adaptation:**
 - Bought long-sleeve running shirt
-- Wore it Friday (48°F morning)
+- Wore it Friday (48 degrees F morning)
 - Stayed warm, didn't overheat
 
 **Pacing getting more intuitive:**
@@ -82,7 +82,7 @@ Week 6 complete - hit the 20-minute continuous run milestone. All three runs com
 **Body adaptation:**
 - Cardiovascular: major improvement (20 min feels sustainable)
 - Muscular: quads/calves noticeably stronger
-- Weight: 8 lbs down (203 → 195), steady progress
+- Weight: 8 lbs down (203 -> 195), steady progress
 - Resting heart rate: dropped (measured Thursday morning: 68 bpm vs 74 Week 1)
 
 **Mental game:**
@@ -110,8 +110,8 @@ Week 6 complete - hit the 20-minute continuous run milestone. All three runs com
 ## New Experiments for Week 7
 
 **Experiment 1: Morning routine optimization**
-- Current: Alarm → dress → banana → wait 30 min → run
-- Test: Alarm → banana → dress/stretch during 30 min wait
+- Current: Alarm -> dress -> banana -> wait 30 min -> run
+- Test: Alarm -> banana -> dress/stretch during 30 min wait
 - Hypothesis: More efficient use of morning time, especially as work gets busier
 
 **Experiment 2: Post-run recovery snack**
@@ -134,7 +134,7 @@ Week 6 complete - hit the 20-minute continuous run milestone. All three runs com
 - May need to run at 6 AM instead of 7 AM
 
 **Weather getting colder:**
-- 45-50°F this week
+- 45-50 degrees F this week
 - 30s-40s expected in coming weeks
 - Need: running gloves? Ear warmers?
 - Risk: cold becomes excuse to skip
@@ -215,7 +215,7 @@ Week 6 complete - hit the 20-minute continuous run milestone. All three runs com
 **Program plan:**
 - 3 runs: Monday/Wednesday/Friday
 - Target: 25-minute continuous runs
-- Another 25% jump (20 → 25 min)
+- Another 25% jump (20 -> 25 min)
 
 **Focus areas:**
 - Morning routine optimization (use 30-min wait efficiently)

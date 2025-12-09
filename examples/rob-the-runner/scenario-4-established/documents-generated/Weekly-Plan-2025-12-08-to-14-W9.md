@@ -1,6 +1,6 @@
-# Weekly-Plan-2025-12-01-to-07-W9
+# Weekly-Plan-2025-12-08-to-14-W9
 
-**Week:** December 1-7, 2025 (Week 9 - Post-Program)
+**Week:** December 8-14, 2025 (Week 9 - Post-Program)
 **Context:** First week after completing couch-to-5K program
 
 ## Week Overview
@@ -124,31 +124,31 @@ Instead, I'm going to:
 
 ## Weekly Schedule
 
-### Monday, December 1
+### Monday
 - **Morning:** Run 3 miles (maintenance, comfortable pace)
 - **Evening:** Talk to wife about yoga options (what programs? how long? schedule?)
 
-### Tuesday, December 2
+### Tuesday
 - **Rest day**
 - Browse calisthenics programs online (Reddit? YouTube?)
 
-### Wednesday, December 3
+### Wednesday
 - **Morning:** Run 3 miles
 - **Evening:** Try yoga with wife (first session - keep expectations low)
 
-### Thursday, December 4
+### Thursday
 - **Rest day**
 - Reflect: How did yoga feel? Interesting? Awkward? Want to try again?
 
-### Friday, December 5
+### Friday
 - **Morning:** Run 3 miles
 - **Afternoon:** Play with kids (tag, catch, etc.)
 
-### Saturday, December 6
+### Saturday
 - **Morning:** Optional second yoga session with wife (if first one went well)
 - **OR:** Try one calisthenics workout (bodyweight basics)
 
-### Sunday, December 7
+### Sunday
 - **Rest / family day**
 - Weekly retro: What did I learn this week? What direction feels right?
 

@@ -1,7 +1,7 @@
-# Monthly-Rollup-2025-10-October
+# Monthly-Rollup-2025-November
 
-**Month:** October 2025 (Weeks 1-4 of couch-to-5K program)
-**Dates:** October 7-31, 2025
+**Month:** November 2025 (Weeks 1-4 of couch-to-5K program)
+**Dates:** November 10-30, 2025
 **Program phase:** Foundation building - Walk/run intervals, early adaptation
 
 ## Month Overview
@@ -16,12 +16,12 @@ First month of the couch-to-5K program. Started from completely sedentary baseli
 - Average sleep: 6.8 hours
 - Missed workouts: 0
 
-## Weeks 1-2: The Hardest Part (Oct 7-20)
+## Weeks 1-2: The Hardest Part
 
 **Program structure:**
 - Alternating walk/run intervals
-- Week 1: Walk 2 min / Run 1 min × 8 reps
-- Week 2: Walk 2 min / Run 2 min × 6 reps
+- Week 1: Walk 2 min / Run 1 min x 8 reps
+- Week 2: Walk 2 min / Run 2 min x 6 reps
 
 **Physical challenges:**
 - Everything hurt: calves, shins, quads, lungs
@@ -52,24 +52,24 @@ First month of the couch-to-5K program. Started from completely sedentary baseli
 - Not because body can't adapt - because mind resists
 - Solution: Remove decision-making, just execute
 
-## Weeks 3-4: Adaptation Begins (Oct 21-31)
+## Weeks 3-4: Adaptation Begins
 
 **Program structure:**
 - Increasing run duration, decreasing walk breaks
-- Week 3: Walk 90 sec / Run 3 min × 5 reps
-- Week 4: Walk 90 sec / Run 5 min × 3 reps, then Run 10 min continuous
+- Week 3: Walk 90 sec / Run 3 min x 5 reps
+- Week 4: Walk 90 sec / Run 5 min x 3 reps, then Run 10 min continuous
 
 **Physical breakthroughs:**
 - Soreness decreased dramatically (body adapting)
 - Breathing got easier (cardiovascular improvement visible)
 - Week 4: First 10-minute continuous run (HUGE milestone)
-- Weight: 203 → 199 lbs (4 lbs down in one month)
+- Weight: 203 -> 199 lbs (4 lbs down in one month)
 
 **Mental shifts:**
 - Week 3: "Maybe I can actually do this?"
 - Week 4: "I AM doing this"
 - Running Monday/Wednesday/Friday became automatic
-- Alarm goes off → gear on → out the door (less internal debate)
+- Alarm goes off -> gear on -> out the door (less internal debate)
 
 **Habit formation:**
 - Sunday night: laid out gear for whole week
@@ -97,8 +97,8 @@ First month of the couch-to-5K program. Started from completely sedentary baseli
 **Physical transformation:**
 - Week 1: Couldn't run 1 minute without huffing
 - Week 4: Ran 10 minutes continuously
-- Weight: 203 → 199 lbs
-- Resting heart rate: 74 → 71 bpm
+- Weight: 203 -> 199 lbs
+- Resting heart rate: 74 -> 71 bpm
 - Morning energy: noticeably improved
 
 **Mental transformation:**
@@ -170,9 +170,9 @@ First month of the couch-to-5K program. Started from completely sedentary baseli
 - Family asking "did you run today?" helped
 
 **Problem-solving mindset:**
-- Shin pain → better shoes
-- Oversleeping → alarm across room
-- Rain → jacket
+- Shin pain -> better shoes
+- Oversleeping -> alarm across room
+- Rain -> jacket
 - Each obstacle met with solution, not excuse
 
 ## What Didn't Work (Month Summary)
@@ -197,7 +197,7 @@ First month of the couch-to-5K program. Started from completely sedentary baseli
 - Sunday evening felt stiff before Monday run
 - Need light activity (walks?) on rest days
 
-## October Learnings (Taking Forward)
+## November Learnings (Taking Forward)
 
 **1. Starting is the hardest part:**
 - If you can survive Weeks 1-2, you can finish the program
@@ -229,7 +229,7 @@ First month of the couch-to-5K program. Started from completely sedentary baseli
 - First week with no missed workouts
 - Each matters
 
-## November Preview (Weeks 5-8)
+## Next Month Preview (Weeks 5-8)
 
 **Program plan:**
 - Week 5: 15-minute continuous runs
@@ -281,6 +281,6 @@ First month of the couch-to-5K program. Started from completely sedentary baseli
 
 ---
 
-**October summary: Foundation built.**
-**November goal: Complete the program.**
+**November summary: Foundation built.**
+**Next month goal: Complete the program.**
 **One month down, one month to go.**

@@ -1,0 +1,169 @@
+# Summary-2025-12-10-Wednesday-W1-D3
+
+**Date:** Wednesday, December 10, 2025
+**Context:** Week 1, Day 3 (Run 2) - Second run, shin pain almost made me quit
+
+## TL;DR
+
+Second run of the program. Shin pain hit hard during interval 3 and I almost quit. Finished anyway but was seriously questioning whether this was a good idea. The physical pain was bad, but the mental battle was worse. "I'm 39 and I can't do this basic thing" played on loop. Wife talked me off the ledge tonight. Ordered new running shoes - apparently that helps with shin splints.
+
+## Key Numbers
+
+| Metric | Value | Notes |
+|--------|-------|-------|
+| **Workout** | W2R1 x 8 | Same as Monday |
+| **Total time** | ~25 min | Slightly slower (pain) |
+| **Distance** | ~1.4 mi | Shorter stride due to shins |
+| **Effort** | 10/10 | Hardest workout of my life |
+| **Shin pain** | 7/10 | Sharp pain, both legs |
+| **Sleep last night** | 7 hrs | Better than Monday |
+
+## Timeline
+
+**6:45 AM** - Alarm
+- Calves still sore from Monday
+- Shins feel... tight?
+- Out of bed anyway
+
+**7:00 AM** - Warmup walk
+- Shins protesting during walk
+- Should have stretched more
+- Ignored warning signs
+
+**7:05 AM** - Interval 1
+- Okay, not great but okay
+- Shins uncomfortable but manageable
+
+**7:08 AM** - Interval 2
+- Breathing hard (expected)
+- Shin pain increasing
+- Tried to adjust stride
+
+**7:11 AM** - Interval 3 (crisis point)
+- Sharp pain in both shins
+- Stopped mid-interval
+- Stood there thinking "I can't do this"
+- 30 seconds of wanting to quit
+- Started walking instead of running
+- Finished the interval walking
+
+**7:14 AM - 7:28 AM** - Intervals 4-8
+- Modified: ran when I could, walked when I couldn't
+- Some intervals were mostly walking
+- Finished all 8, but barely counts as "running"
+- Mental loop: "You can't even run 1 minute"
+
+**7:30 AM** - Cooldown
+- Limped home
+- Shins throbbing
+- Feeling like a failure
+
+**8:00 AM - 5:00 PM** - Work
+- Hard to focus
+- Kept thinking about the run
+- Googled "shin splints couch to 5K"
+- Apparently common in beginners
+- Apparently need better shoes
+
+**6:00 PM** - Dinner conversation
+- Told wife about the shin pain
+- She said: "Did you finish the workout?"
+- "Sort of. Mostly walked."
+- "But you didn't quit and come home?"
+- "No..."
+- "Then you're still in the program."
+
+**7:30 PM** - Ordered running shoes
+- Went to Fleet Feet website (local running store)
+- Scheduled fitting appointment for Saturday
+- $120-150 for proper shoes
+- Worth it if it fixes the shin pain
+
+**9:00 PM** - Evening reflection
+- Kids asked if I ran today
+- "Yeah, buddy. It was hard."
+- 6-year-old: "But you did it?"
+- "Yeah. I did it."
+
+## What Worked
+
+**Not quitting:**
+- I wanted to quit during interval 3
+- I didn't
+- Modified yes, quit no
+- That distinction matters
+
+**Asking for help:**
+- Googled the problem
+- Ordered proper shoes
+- Taking the shin pain seriously
+
+**Wife's reframe:**
+- "You didn't quit and come home"
+- She's right
+- Finishing (even modified) > not starting
+
+## What Didn't Work
+
+**Shoes:**
+- Running in old sneakers
+- Not designed for running
+- Contributing to shin pain
+
+**Ignoring warning signs:**
+- Shins felt tight during warmup
+- Should have done more stretching
+- Or at least gone slower
+
+**Mental game:**
+- "I can't do this" loop was loud
+- Almost won
+- Need better mental toolkit
+
+## Insights
+
+**Shin splints are normal:**
+- Every couch-to-5K forum mentions them
+- Usually: bad shoes + too much too soon
+- Usually: goes away with proper gear and gradual progression
+- Not a sign I'm "broken"
+
+**The real test:**
+- Day 1 was hard physically
+- Day 3 was hard mentally
+- Wanting to quit and not quitting are different
+- I wanted to quit. I didn't quit.
+
+**Modification isn't failure:**
+- Ran some, walked some
+- Still moved for 25 minutes
+- Still did the workout
+- Progress isn't linear
+
+**Support system matters:**
+- Wife's question cut through the noise
+- Kids' simple pride helped
+- Doing this alone would be harder
+
+## Tomorrow
+
+**Rest day (Thursday):**
+- Ice the shins (15 min on/off)
+- Gentle stretching
+- Walk only if shins feel okay
+- Early to bed
+
+**Friday run:**
+- Same workout (W2R1 x 8)
+- Go even slower if needed
+- Focus on finishing, not speed
+- New shoes won't arrive until next week, so be careful
+
+**Shoe fitting Saturday:**
+- Get properly fitted
+- Accept the cost
+- View as investment in not-quitting
+
+---
+
+**Day 3 of 56. Almost quit. Didn't.**

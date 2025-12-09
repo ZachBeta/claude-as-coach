@@ -1,0 +1,174 @@
+# Summary-2025-12-12-Friday-W1-D5
+
+**Date:** Friday, December 12, 2025
+**Context:** Week 1, Day 5 (Run 3) - End of first week, made it through!
+
+## TL;DR
+
+Third and final run of Week 1. Something shifted - it was still hard, but not as hard as Wednesday. Completed all 8 intervals without stopping or modifying. Shins were uncomfortable but not crisis-level. First workout that felt like "I might actually be able to do this." Week 1 complete: 3 runs done, 0 quits. Getting fitted for proper shoes tomorrow.
+
+## Key Numbers
+
+| Metric | Value | Notes |
+|--------|-------|-------|
+| **Workout** | W2R1 x 8 | All intervals completed as prescribed! |
+| **Total time** | ~24 min | Back to normal pace |
+| **Distance** | ~1.6 mi | Slightly further than Mon |
+| **Effort** | 7/10 | Hard but manageable |
+| **Shin pain** | 4/10 | Present but not alarming |
+| **Sleep last night** | 7.5 hrs | Best of the week |
+| **Week 1 runs** | 3/3 | 100% completion |
+
+## Timeline
+
+**6:45 AM** - Alarm
+- Less dread than Monday/Wednesday
+- Shins feel... okay?
+- Cautiously optimistic
+
+**7:00 AM** - Warmup walk + stretches
+- Extra time on calf stretches
+- Shin stretches (found YouTube tutorial)
+- 7 minutes instead of usual 5
+
+**7:07 AM** - Interval 1
+- Started slow (learned from Wednesday)
+- Felt okay
+- Breathing hard but controlled
+
+**7:10 AM** - Interval 2
+- Slight shin discomfort
+- Not pain, just awareness
+- Kept going
+
+**7:13 AM - 7:27 AM** - Intervals 3-8
+- The intervals got easier???
+- Or at least, I got used to them
+- Interval 6: first time I felt "in a rhythm"
+- Interval 8: finished strong (relatively)
+
+**7:30 AM** - Cooldown
+- Walked home without limping
+- Tired but not destroyed
+- Thought: "I did it. All three this week."
+
+**8:00 AM** - Work
+- Energy noticeably better than Wednesday
+- Less mental fog
+- Productive morning
+
+**12:00 PM** - Lunch walk
+- Decided to walk outside
+- 10 minutes around the block
+- Felt good, not forced
+
+**6:00 PM** - Dinner
+- Wife: "How was the run?"
+- "Better. Actually better."
+- Kids high-fived me
+
+**8:00 PM** - Week 1 reflection
+- 3 runs completed
+- 1 near-quit (Wednesday), but didn't
+- First week: survived
+- Tomorrow: shoe fitting
+
+## What Worked
+
+**Proper warmup:**
+- Extra stretching time paid off
+- Shins didn't flare up like Wednesday
+- Will make this standard
+
+**Slower start:**
+- Interval 1 was deliberately slow
+- Gave body time to adjust
+- Less shock to the system
+
+**Sleep:**
+- 7.5 hours made a difference
+- Less fatigue during the run
+- Will prioritize sleep
+
+**"Just finish" mindset:**
+- Not trying to be fast
+- Not trying to impress anyone
+- Just complete the intervals
+- Took pressure off
+
+## What Didn't Work
+
+**Still no proper shoes:**
+- Running in old sneakers
+- Shin pain is manageable but present
+- Saturday fitting can't come soon enough
+
+**Hydration still inconsistent:**
+- Forgot to drink water before bed Thursday
+- Slightly dehydrated this morning
+- Need a system (not just intention)
+
+## Insights
+
+**Day 5 was easier than Day 1:**
+- Same workout (W2R1 x 8)
+- But body is already adapting
+- 4 days of change is visible
+- This is encouraging
+
+**The Wednesday crisis matters:**
+- Almost quit on Day 3
+- Didn't quit
+- Day 5 was the reward for not quitting
+- Pattern: show up → adapt → improve
+
+**Small wins compound:**
+- Day 1: survived
+- Day 3: didn't quit
+- Day 5: completed without modification
+- Each day built on the last
+
+**Week 1 lesson:**
+- Starting is the hardest part
+- Not because the body can't do it
+- Because the mind doesn't believe yet
+- Body adapted in 5 days
+- Mind is catching up
+
+## Tomorrow (Saturday)
+
+**Shoe fitting at Fleet Feet:**
+- 10:00 AM appointment
+- Get gait analysis
+- Buy proper running shoes
+- Accept the $120-150 cost
+
+**Rest day activities:**
+- Light walk if weather's nice
+- Foam rolling (need to buy one?)
+- Stretch session in evening
+
+## Week 2 Preview
+
+**Program progression:**
+- Week 2: W2R2 x 6 (Walk 2 min / Run 2 min, 6 reps)
+- Double the run intervals!
+- Slightly fewer reps
+- Total run time increases
+
+**Focus:**
+- New shoes should help shin pain
+- Maintain warmup routine
+- Don't increase pace, just complete intervals
+- Trust the program
+
+**Schedule:**
+- Monday: W2 Run 1
+- Wednesday: W2 Run 2
+- Friday: W2 Run 3
+
+---
+
+**Week 1 complete: 3/3 runs. The hardest part is over.**
+
+**"If you can survive Weeks 1-2, you can finish the program."**

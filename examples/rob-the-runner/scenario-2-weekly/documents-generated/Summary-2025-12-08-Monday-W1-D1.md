@@ -1,0 +1,140 @@
+# Summary-2025-12-08-Monday-W1-D1
+
+**Date:** Monday, December 8, 2025
+**Context:** Week 1, Day 1 - First ever run in couch-to-5K program
+
+## TL;DR
+
+First run of the couch-to-5K program. "Run" is generous - more like shuffling with walking breaks. Completed all 8 intervals (Walk 2 min / Run 1 min x 8) but barely. Everything hurts. Calves, shins, quads, lungs - all protesting. Reality check: I'm 39 and can't run 1 minute without gasping. But I finished. That's something.
+
+## Key Numbers
+
+| Metric | Value | Notes |
+|--------|-------|-------|
+| **Workout** | W2R1 x 8 | Walk 2 min / Run 1 min, 8 reps |
+| **Total time** | ~24 min | Including warmup walk |
+| **Distance** | ~1.5 mi | Estimated (app tracks time only) |
+| **Effort** | 9/10 | Way harder than expected |
+| **Energy post** | 3/10 | Exhausted |
+| **Sleep last night** | 6.5 hrs | Need more |
+
+## Timeline
+
+**6:45 AM** - Alarm went off
+- Immediately regretted signing up for this
+- Internal debate: "Do I really have to?"
+- Got up anyway (wife would ask)
+
+**7:00 AM** - Out the door
+- Light warmup walk (5 min)
+- Dynamic stretches (feeling stiff)
+
+**7:05 AM** - First run interval begins
+- 1 minute of "running"
+- By 45 seconds: already breathing hard
+- Thought: "This is going to be a long 8 weeks"
+
+**7:08 AM - 7:25 AM** - Remaining 7 intervals
+- Each 1-minute run felt longer than the last
+- Walk breaks weren't enough recovery
+- By interval 5: questioning all life choices
+- Finished all 8 (barely)
+
+**7:30 AM** - Cooldown
+- 5-minute walk back home
+- Calves screaming
+- Shins aching (is this shin splints?)
+
+**8:00 AM** - Showered, at desk
+- Sitting hurts
+- Drinking water like crazy
+
+**12:30 PM** - Lunch break reflection
+- Remembered why I'm doing this: kids in the backyard
+- Last weekend, winded after 10 min of tag
+- That's the real goal: keep up with them
+
+**6:00 PM** - Evening
+- Wife asked how it went
+- "Rough. Really rough."
+- She said: "Just try it for two weeks"
+- She's right. One day doesn't define anything.
+
+**9:30 PM** - Before bed
+- Calves still sore
+- Set alarm for Wednesday (rest day tomorrow!)
+- Already dreading Day 2
+
+## What Worked
+
+**Showing up:**
+- Easiest thing to do was stay in bed
+- Got up anyway
+- That's the only win that matters today
+
+**Following the program:**
+- App told me what to do
+- I did it
+- Didn't try to modify or "push harder"
+- Just followed the intervals
+
+**Wife's support:**
+- "Try it for two weeks"
+- Simple advice, but grounding
+- External accountability helps
+
+## What Didn't Work
+
+**Physical readiness:**
+- More out of shape than I thought
+- 1-minute run intervals felt impossible
+- Need to accept: this is my starting point
+
+**Hydration:**
+- Didn't drink enough water yesterday
+- Slight headache during workout
+- Need system for pre-run hydration
+
+**Sleep:**
+- 6.5 hours isn't enough
+- Body needs recovery time
+- Need to get to bed earlier
+
+## Insights
+
+**Starting point reality check:**
+- I'm 39, sedentary, 25 lbs overweight
+- Of course 1-minute runs are hard
+- This isn't failure, this is baseline
+
+**The real goal emerged:**
+- Signed up for couch-to-5K
+- But the REAL goal: play with my kids without dying
+- The 5K is a milestone, not the destination
+
+**Mental vs physical:**
+- The physical challenge was hard
+- But the mental challenge was harder
+- Getting out of bed was the real battle
+
+## Tomorrow
+
+**Rest day protocols:**
+- Stay hydrated
+- Light walking if legs feel up to it
+- Get 7+ hours sleep
+- No guilt about not running
+
+**Wednesday prep:**
+- Same workout: W2R1 x 8
+- Lay out clothes Tuesday night
+- Banana 30 min before (less empty stomach)
+
+**Mindset:**
+- One day down
+- That's progress
+- Don't judge the program by Day 1
+
+---
+
+**Day 1 of 56. Survived.**

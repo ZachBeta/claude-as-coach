@@ -1,0 +1,272 @@
+# Weekly-Retro-2025-11-24-to-30-W7
+
+**Week:** November 24-30, 2025 (Week 7 of 8)
+**Program phase:** Peak week - 25-minute continuous runs, final preparation
+
+## Week Summary
+
+Week 7 complete - the penultimate week before program completion. Hit 25-minute continuous runs on all three days. This is peak training week: highest duration before Week 8 taper/completion. Work stress high (busy season fully underway), but habit strong enough to withstand it. Weather cold (35-45°F), required full cold-weather gear. One week left. Feeling mix of excitement and "what happens after?"
+
+**Key metrics:**
+- Runs completed: 3 of 3
+- Total distance: ~10 miles
+- Average pace: ~11:40 min/mi (continuing improvement)
+- Weight: 193 lbs (10 lbs down from start)
+- Sleep average: 7.2 hours (dipped slightly due to work stress)
+- Missed workouts: 0
+
+## What Worked This Week
+
+**25-minute milestone crushed:**
+- All three runs: 25 minutes continuous, no walking
+- Week 1: couldn't run 5 minutes
+- Week 7: 25 minutes feels achievable
+- That's 500% improvement in 7 weeks
+
+**Morning routine optimization (SUCCESS):**
+- New routine: Alarm → banana → dress/stretch during wait → run
+- More efficient, less standing around
+- Helped when mornings got tighter due to work
+
+**Post-run protein experiment (MIXED):**
+- Monday: Greek yogurt post-run (felt good)
+- Wednesday: Forgot (no noticeable difference)
+- Friday: Protein shake (felt better than nothing, but not as good as yogurt)
+- Conclusion: Yogurt wins, but not critical
+
+**Cold weather gear dialed in:**
+- Long-sleeve shirt + running gloves + ear warmer
+- 35°F Friday morning: stayed warm entire run
+- No more excuses about weather
+
+**Habit withstanding work stress:**
+- Busiest work week since program started
+- Still ran 3x, still got it done
+- Proof: habit is resilient
+
+**Pace improvement without trying:**
+- Average 11:40 min/mi (was 12:00 in Week 5)
+- Not pushing for speed - just happens
+- Cardiovascular adaptation visible
+
+## What Didn't Work This Week
+
+**Sleep quality down:**
+- Average 7.2 hours (down from 7.5 last week)
+- Work stress → later bedtimes
+- Wednesday run felt harder (only 6.5 hours sleep Tuesday night)
+- Need to protect sleep even when work crazy
+
+**Weekend active recovery skipped:**
+- Saturday: too tired, skipped walk
+- Sunday: Thanksgiving prep, no walk
+- Monday morning: felt slightly stiff (proof that active recovery helps)
+
+**Mental game wavering:**
+- Monday: excited for Week 7
+- Wednesday: felt dread ("25 minutes is long")
+- Friday: back to confident
+- Emotional ups and downs this week
+
+**Post-run stretching rushed:**
+- Time pressure from work = cut stretching short (5 min vs 10-15 min)
+- Friday: calves felt tight Saturday
+- Shortcuts have consequences
+
+## Progress Toward Goal
+
+**Program checkpoint:**
+- Week 7 of 8 complete (87.5% done)
+- Currently: 25-minute continuous runs
+- Next week: 30 minutes (5K distance) = GOAL
+- One week away from completion
+
+**Body adaptation:**
+- Cardiovascular: can sustain 25 minutes comfortably (huge!)
+- Muscular: strong, minimal soreness
+- Weight: 10 lbs down (203 → 193)
+- Resting heart rate: 65 bpm (down from 74 Week 1)
+- Energy levels: noticeably higher than pre-program
+
+**Mental game:**
+- Confidence wavering slightly (work stress bleeding into runs)
+- But: still showing up, still completing runs
+- That matters more than feeling 100% confident
+
+**Habit formation:**
+- 7 weeks, 21 runs, 0 missed workouts
+- Even in busiest work week, habit held
+- That's the point: sustainability through adversity
+
+## Experiments Results Summary
+
+**From Week 6 experiments:**
+
+| Experiment | Result | Keep? |
+|------------|--------|-------|
+| Morning routine optimization | More efficient, less wasted time | YES - keep |
+| Post-run protein (yogurt) | Slightly helpful, not critical | MAYBE - yogurt if convenient |
+| Long run positioning | Didn't test (kept Friday) | N/A - defer |
+
+## New Experiments for Week 8 (Final Week)
+
+**No new experiments.**
+
+Week 8 is about execution, not experimentation. Use what worked:
+- Fueling: Banana 30 min before
+- Hydration: Water before bed
+- Routine: Efficient morning flow
+- Gear: Cold weather setup
+- Recovery: Active walks on weekend (don't skip!)
+
+Focus: Finish strong, celebrate completion, plan for Week 9+.
+
+## Challenges & Obstacles
+
+**Work stress at peak:**
+- Busy season in full swing
+- 50-hour work weeks
+- Mental energy depleted
+- Running is refuge, but also one more thing on schedule
+
+**Sleep sacrificed for work:**
+- Later bedtimes to finish projects
+- Morning runs non-negotiable → less sleep overall
+- Catch-22: need sleep for recovery, need work hours for deadlines
+
+**Thanksgiving week ahead:**
+- Week 8 includes Thanksgiving (Thursday Nov 28)
+- Disrupted routine, travel, family, food
+- Risk: using holiday as excuse to skip Friday run
+- Plan: Run Monday, Wednesday, Friday (Thanksgiving is built-in rest day)
+
+**The finish line anxiety:**
+- One week left in program
+- Excited to finish, but also: "then what?"
+- Fear of losing momentum post-program
+- Need concrete plan for Week 9+
+
+**Accumulated fatigue:**
+- Seven weeks of consistent training = body tired
+- Not injured, but little aches and awareness
+- Need to finish strong without pushing into injury
+
+## Insights
+
+**Peak week is mentally harder than expected:**
+- Physically, 25 minutes was fine
+- Mentally, work stress + program stress = compound effect
+- The habit held, but it wasn't easy
+
+**Habit is resilient but not invincible:**
+- Withstood busiest work week so far
+- But sleep suffered, recovery shortcuts taken
+- Sustainable ≠ effortless
+
+**The program works because it ends:**
+- Eight weeks is long enough to build habit
+- But short enough to see finish line
+- Infinite programs lose motivation - this has structure
+
+**Rest days are non-negotiable:**
+- Skipped weekend walks = Monday stiffness
+- Recovery isn't optional - it's part of training
+- Shortcuts have consequences
+
+**Completion brings new questions:**
+- Week 1-7: focus on "can I do this?"
+- Week 8: focus shifts to "how do I keep this?"
+- Success creates new challenge: maintenance
+
+**External stress doesn't pause for fitness goals:**
+- Work doesn't care about my running program
+- Life doesn't pause for eight weeks
+- That's why building sustainable habits matters
+
+## Gratitude
+
+**For showing up:**
+- Busiest work week of the program
+- Still ran 3x
+- That's worth celebrating
+
+**For 25-minute milestone:**
+- Seven weeks ago: unimaginable
+- This week: done three times
+- Progress is real
+
+**For one week left:**
+- Finish line visible
+- Most people don't finish what they start
+- I'm going to be one who does
+
+**For the struggle:**
+- This week was hard (work + running + life)
+- But I did it anyway
+- That builds character and confidence
+
+**For cold weather gear:**
+- Could have quit when it got cold
+- Instead: adapted, kept going
+- Removes excuses
+
+## Next Week Preview (Week 8 - FINAL WEEK)
+
+**Program plan:**
+- 3 runs: Monday/Wednesday/Friday
+- Target: 30-minute continuous runs (or 5K distance)
+- THIS IS IT - program completion week
+
+**Schedule notes:**
+- Monday Nov 25: Run (normal)
+- Tuesday Nov 26: Rest
+- Wednesday Nov 27: Run (normal)
+- Thursday Nov 28: Thanksgiving (rest day, built in)
+- Friday Nov 29: Run (FINAL RUN OF PROGRAM)
+
+**Focus areas:**
+- Execute what works (no new experiments)
+- Protect morning run time despite holiday chaos
+- Finish strong, injury-free
+- Celebrate completion
+
+**Watch out for:**
+- Thanksgiving disruption (travel, food, family)
+- Temptation to skip Friday ("holiday week, who cares?")
+- Pushing too hard on final run (ego vs smart training)
+- Post-program momentum loss
+
+**Post-program planning:**
+- Need concrete plan for Week 9+
+- Options: Maintain 3x/week? Sign up for 5K race? New goal?
+- Decision by Friday: what comes next?
+
+**Commitment:**
+- Complete all 3 runs this week
+- Finish the program injury-free
+- Celebrate completion (plan something, even small)
+- Define Week 9+ plan by Friday
+
+## Reflection: Seven Weeks In
+
+**What I've learned:**
+- Consistency compounds (1% better each day = transformation)
+- Habits beat motivation (motivation fades, habits persist)
+- Progress is gradual, then obvious
+- External stress tests habits - that's when they matter most
+- Identity shift: "I'm trying to run" → "I'm a runner"
+
+**What I've proven:**
+- Age 39 isn't too late to start
+- Sedentary → runner in 8 weeks is possible
+- Couch-to-5K program works (exactly as designed)
+- I can commit to something and follow through
+
+**What I'm taking forward:**
+- The system (daily summaries, weekly retros) helps
+- Small increments work better than heroic efforts
+- Recovery is part of training, not absence of training
+- Running isn't the goal - it's the practice
+- The real goal: be capable, energized, present for life
+
+**One week left. Let's finish this.**

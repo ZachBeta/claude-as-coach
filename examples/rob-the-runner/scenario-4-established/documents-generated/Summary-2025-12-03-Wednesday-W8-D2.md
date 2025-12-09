@@ -1,6 +1,6 @@
-# Summary-2025-11-27-Wednesday-W8-D2
+# Summary-2025-12-03-Wednesday-W8-D2
 
-**Date:** Wednesday, November 27, 2025
+**Date:** Wednesday, December 3, 2025
 **Context:** Week 8, Day 2 of couch-to-5K program
 
 ## TL;DR
