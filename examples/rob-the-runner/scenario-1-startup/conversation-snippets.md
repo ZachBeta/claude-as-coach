@@ -2,41 +2,74 @@
 
 **Use these snippets during the demo to simulate Rob's first day using Claude-as-Coach.**
 
-Paste these one at a time into the conversation, reacting naturally between each one.
+Paste these one at a time into the conversation, letting Claude respond between each one.
 
 ---
 
-## Snippet 1: Morning (After First Run)
+## Project Setup Response
+
+**Use this when Claude asks about your focus area:**
 
 ```
-Just finished my first run. "Run" is generous - it was more like shuffling with occasional walking.
+Health & Fitness - I want to do a couch-to-5K running program.
 
-The couch-to-5K app said: Walk 2 min / Run 1 min x 8 reps. I made it through all 8 reps but barely.
+I'm 39, work as an accountant, and realized I'm way more out of shape than I thought. Last weekend I was playing tag with my kids (6 and 8) and had to sit down after 10 minutes while they wanted to keep going.
 
-After just the first 1-minute run interval I was already breathing hard. By the third interval I wasn't sure I'd make it. My calves are on fire. My shins hurt. Even my lungs feel weird.
+That was a wake-up call. I want to be able to keep up with my kids. The 5K is just a milestone - the real goal is not being the winded dad on the sidelines.
 
-Total time: about 24 minutes (including warmup walk)
-Distance: maybe 1.5 miles? The app doesn't track distance, just time.
-How I feel: 3/10. Everything hurts.
+I've heard couch-to-5K programs are about 8 weeks, but I don't really know where to start. Can you help me figure out a plan?
 ```
 
 ---
 
-## Snippet 2: Midday Reflection
+## Snippet 1: Ask for Plan Details
+
+**After Claude provides initial guidance, ask for specifics:**
+
+```
+This sounds doable. Can you give me the week-by-week breakdown? I want to know exactly what I'm signing up for.
+
+Also - when should I run? Morning before work? Evening? I'm not sure what works best for beginners.
+```
+
+---
+
+## Snippet 2: After First Run (Morning)
+
+**After Claude gives the plan, paste this as Rob reporting back:**
+
+```
+Just finished Day 1. "Finished" is generous - I survived it.
+
+Did the plan you gave me: 5 min warmup walk, then 8 rounds of run 1 min / walk 2 min.
+
+Honest report:
+- First 1-minute run: okay, I can do this
+- Third interval: breathing hard, questioning life choices
+- Fifth interval: had to stop 10 seconds early
+- Eighth interval: somehow finished but my legs felt like jelly
+
+Total time: about 29 minutes
+How I feel: 3/10. My calves are on fire. My shins hurt. Even my lungs feel weird.
+
+But I did it. Day 1 is done.
+```
+
+---
+
+## Snippet 3: Midday Reflection
 
 ```
 Sitting at my desk thinking about this morning. I'm 39 years old and I couldn't run for ONE MINUTE without gasping.
 
-The realization that got me here: Playing tag with my kids (6 and 8) last weekend, I was winded after 10 minutes. They wanted to keep going. I needed to sit down.
-
 When did I get this out of shape? I used to play pickup basketball in my 20s. Now I'm the dad who can't keep up with elementary schoolers.
 
-I want to be able to play with my kids without needing to rest. That's the goal. The 5K is just the milestone.
+The fact that I have 7 more weeks of this is terrifying. But also... I finished today. That's something.
 ```
 
 ---
 
-## Snippet 3: Evening
+## Snippet 4: Evening Check-in
 
 ```
 Wife asked how my first run went. I told her it was rough.
@@ -45,26 +78,27 @@ She said: "That's normal. Just try it for two weeks before you decide anything."
 
 She's right. I signed up for 8 weeks. It's been one day. One terrible day, but one day.
 
-Tomorrow is a rest day (the program is Mon/Wed/Fri). I'm already dreading Wednesday.
+Next run is Friday according to the plan. I'm already dreading it.
 
-Sleep plan: Try to get 7+ hours. Apparently recovery matters for this running thing.
+Sleep plan: Going to try for 7+ hours tonight. I read somewhere that recovery matters.
 
 Did I mention my calves still hurt? Because they do.
 ```
 
 ---
 
-## After Pasting All Snippets
+## After All Snippets
 
 Say: **"daily summary"**
 
 Claude should:
 1. Verify the current date
 2. Ask which date we're summarizing (today)
-3. Generate structured Summary-W1-D1.md with:
+3. Ask for context tag (suggest "W1-D1")
+4. Generate structured summary with:
    - TL;DR
-   - Key Numbers (distance, time, effort level)
-   - Timeline
+   - Key Numbers (time, intervals completed, effort level)
+   - Timeline (plan created → first run → reflection → evening)
    - Insights
    - Tomorrow's Focus
 
@@ -73,10 +107,12 @@ Claude should:
 ## Expected Key Insights in Summary
 
 The AI should identify:
-- **Physical baseline:** 1-minute run intervals are hard, everything hurts
+- **Coaching value:** Claude provided the plan Rob is following
+- **Physical baseline:** 1-minute run intervals are hard, had to stop early on one
+- **Completion:** Finished all 8 intervals despite struggling
 - **Motivation clarity:** Kids, not the 5K itself, are the real goal
 - **Support system:** Wife's encouragement ("try for two weeks")
-- **Mindset:** Day 1 is just day 1 - too early to judge
+- **Mindset:** Day 1 done - too early to judge the whole program
 
 ---
 
@@ -86,4 +122,5 @@ If Claude asks clarifying questions, you can answer:
 - **Weight:** "About 203 lbs, I think. Haven't weighed myself in a while."
 - **Heart rate:** "Don't know, I don't have a fitness watch."
 - **Previous exercise:** "Nothing regular. Used to play basketball years ago."
+- **Time of run:** "6:15am, before the kids woke up."
 - **Diet:** "Standard office worker diet. Not great, not terrible."

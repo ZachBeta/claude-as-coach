@@ -1,3 +1,6 @@
 # Python dependencies for skill workflow tooling
 # Vendor scripts (skill-creator) require PyYAML for skill validation
 pyyaml>=6.0
+
+# Demo teleprompter clipboard support
+pyperclip>=1.8
