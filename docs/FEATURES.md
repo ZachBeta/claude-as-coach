@@ -243,6 +243,54 @@
 
 ### 🟡 Medium Priority: Safety & User Experience
 
+#### F47: Onboarding UX Audit
+**Status:** Proposed
+**Effort:** Path A (1-2 hours)
+**Priority:** Medium (user-reported friction)
+**Detail:** [docs/features/FEATURE-onboarding-ux-audit.md](features/FEATURE-onboarding-ux-audit.md)
+**Source:** Discord user feedback (2025-12-11)
+
+**Problem:** User testing revealed UX friction:
+1. Agent setup instructions don't match current claude.ai UI
+2. Users don't know to start new conversation after saving summary
+3. "Quickstart" vs "Bootstrap" terminology question
+
+**Tasks:**
+- Audit setup instructions against current UI
+- Add explicit "save summary → new chat" step
+- Decide on terminology (recommend: keep Quickstart)
+
+**Deliverables:**
+- Updated project-coach-setup-base skill
+- Updated QUICKSTART.md and PROJECT-SETUP.md
+- "New conversation" guidance at multiple touchpoints
+
+---
+
+#### F48: Project Description Template Enhancement
+**Status:** Proposed
+**Effort:** Quick win (15-20 min)
+**Priority:** Medium (habit-building support)
+**Detail:** [docs/features/FEATURE-project-description-template.md](features/FEATURE-project-description-template.md)
+**Source:** Discord user feedback (2025-12-11)
+
+**Problem:** User reported: "I don't yet have the habit and keep forgetting what to do"
+
+**Solution:** Add Quick Reference section to Project-Goals.md template, prompt user to copy to project description.
+
+**Proposed Quick Reference:**
+```
+Daily: gm, daily summary
+Weekly: weekly retro, weekly planning
+Workflow: Morning → Summary → Save → New chat
+```
+
+**Deliverables:**
+- Updated Project-Goals.md template
+- Instruction to copy reference to project description
+
+---
+
 #### F45: Safety Disclaimers & Liability Boundaries
 **Status:** Proposed - Feedback from 1-on-1 demo (2025-12-04)
 **Effort:** Quick win (30-45 min)
