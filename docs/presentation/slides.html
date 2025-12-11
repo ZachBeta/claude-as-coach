@@ -410,6 +410,79 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href=
 </section>
 <section id="section-3" class="slide level1 center">
 <h1 class="center"></h1>
+<h2 id="synthetic-data">Synthetic Data</h2>
+<p>Why Rob isn’t real</p>
+</section>
+<section id="the-demo-data-problem" class="slide level1">
+<h1>The Demo Data Problem</h1>
+<p>Building demos for personal productivity tools is hard:</p>
+<p><strong>Option A: Use real data</strong> - Privacy concerns (mine AND
+others’) - Can’t share in public repo - Awkward to present personal
+health info</p>
+<p><strong>Option B: Make stuff up on the fly</strong> - Inconsistent
+across demos - No version control - “Let me just quickly fabricate a
+believable 8-week journey…”</p>
+</section>
+<section id="the-solution-synthetic-personas" class="slide level1">
+<h1>The Solution: Synthetic Personas</h1>
+<p>Three fictional personas, each demonstrating different use cases:</p>
+<table>
+<thead>
+<tr>
+<th>Persona</th>
+<th>Demonstrates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rob the Runner</strong></td>
+<td>Base skills only (simplicity)</td>
+</tr>
+<tr>
+<td><strong>Alice the Athlete</strong></td>
+<td>Custom personal skills (extensibility)</td>
+</tr>
+<tr>
+<td><strong>Gina the Grad Student</strong></td>
+<td>Non-fitness domain (versatility)</td>
+</tr>
+</tbody>
+</table>
+<p>All data is synthetic. All commits are tracked. All demos are
+reproducible.</p>
+</section>
+<section id="why-ai-engineers-should-care" class="slide level1">
+<h1>Why AI Engineers Should Care</h1>
+<p><strong>Reproducibility</strong> - Same demo, any day:
+<code>regenerate_demo_dates.py --demo-day 2025-12-12</code> - Git tracks
+the “ground truth” - can diff persona evolution</p>
+<p><strong>Testing without exposure</strong> - Iterate on skills without
+personal data leakage - Share examples in public repo safely</p>
+<p><strong>Template for adoption</strong> - Users can fork Rob’s
+structure - Customize for their domain without starting from scratch</p>
+</section>
+<section id="persona-design-robs-journey" class="slide level1">
+<h1>Persona Design: Rob’s Journey</h1>
+<pre><code>Week 1-4: Monthly rollup (compressed)
+     │
+     └──► Single document captures early program
+
+Week 5-7: Weekly retros (recent history)
+     │
+     └──► 3 documents show pattern extraction
+
+Week 8: Daily summaries (current detail)
+     │
+     └──► 3 documents show daily capture
+
+Week 9: Post-program (ongoing practice)
+     │
+     └──► Shows system continues past goal</code></pre>
+<p><strong>Demonstrates fractal compression with believable
+timeline.</strong></p>
+</section>
+<section id="section-4" class="slide level1 center">
+<h1 class="center"></h1>
 <h2 id="demo">Demo</h2>
 <p>Rob the Runner in action</p>
 </section>
@@ -465,22 +538,22 @@ artifact POINT OUT: Key Numbers table, TL;DR section</p>
 </section>
 <section id="daily-summary-the-output" class="slide level1">
 <h1>Daily Summary: The Output</h1>
-<div class="sourceCode" id="cb11"><pre
-class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Wednesday, Dec 11, 2025 - Daily Summary</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>**GROUND TRUTH:**</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Date: Wednesday, December 11, 2025</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>W8-D3 (Week 8, Day 3 of C25K)</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## TL;DR</span></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>Solid 2.5mi run, felt strong. First time</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>finishing without walk breaks.</span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Numbers</span></span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Metric <span class="pp">|</span> Value <span class="pp">|</span> Notes <span class="pp">|</span></span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|-------|-------|</span></span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Distance <span class="pp">|</span> 2.5 mi <span class="pp">|</span> No walk breaks! <span class="pp">|</span></span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pace <span class="pp">|</span> 11:30/mi <span class="pp">|</span> PR for continuous <span class="pp">|</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Wednesday, Dec 11, 2025 - Daily Summary</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>**GROUND TRUTH:**</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Date: Wednesday, December 11, 2025</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>W8-D3 (Week 8, Day 3 of C25K)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## TL;DR</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>Solid 2.5mi run, felt strong. First time</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>finishing without walk breaks.</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Numbers</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Metric <span class="pp">|</span> Value <span class="pp">|</span> Notes <span class="pp">|</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|-------|-------|</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Distance <span class="pp">|</span> 2.5 mi <span class="pp">|</span> No walk breaks! <span class="pp">|</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pace <span class="pp">|</span> 11:30/mi <span class="pp">|</span> PR for continuous <span class="pp">|</span></span></code></pre></div>
 </section>
 <section id="demo-3-weekly-retrospective" class="slide level1">
 <h1>Demo 3: Weekly Retrospective</h1>
@@ -540,7 +613,7 @@ L3 (Exceptional): Hit 5K distance milestone
                   &quot;Breakthrough week&quot;</code></pre>
 <p>This framework emerged over time. Works for me - YMMV.</p>
 </section>
-<section id="section-4" class="slide level1 center">
+<section id="section-5" class="slide level1 center">
 <h1 class="center"></h1>
 <h2 id="architecture">Architecture</h2>
 <p>How the pieces fit together</p>
@@ -576,7 +649,7 @@ L3 (Exceptional): Hit 5K distance milestone
 └────────────────────────────────────┘</code></pre>
 <p>Import both. Claude loads both at runtime.</p>
 </section>
-<section id="section-5" class="slide level1 center">
+<section id="section-6" class="slide level1 center">
 <h1 class="center"></h1>
 <h2 id="lessons">Lessons</h2>
 <p>What actually matters</p>
@@ -602,7 +675,7 @@ works</li>
 </ul>
 <p>Works despite these. Not because of them.</p>
 </section>
-<section id="section-6" class="slide level1 center">
+<section id="section-7" class="slide level1 center">
 <h1 class="center"></h1>
 <h2 id="whats-next">What’s Next</h2>
 <p>Open source and beyond</p>
@@ -641,8 +714,8 @@ approaches.</p>
 <section id="llms-are-bad-at-dates" class="slide level1">
 <h1>LLMs Are Bad at Dates</h1>
 <p>Every skill that deals with dates starts with this:</p>
-<div class="sourceCode" id="cb17"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="va">TZ</span><span class="op">=</span><span class="st">&#39;America/New_York&#39;</span> <span class="fu">date</span> <span class="st">&#39;+%A, %B %d, %Y&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="va">TZ</span><span class="op">=</span><span class="st">&#39;America/New_York&#39;</span> <span class="fu">date</span> <span class="st">&#39;+%A, %B %d, %Y&#39;</span></span></code></pre></div>
 <p>LLMs make up dates. Tool calls give ground truth.</p>
 <p>No assumptions. Verify first.</p>
 </section>

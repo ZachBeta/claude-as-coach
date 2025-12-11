@@ -2,14 +2,21 @@
 
 ## Setup
 
-### VS Code (Recommended)
+### Building Slides (Pandoc + reveal.js)
 
-1. Install the [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) extension
-2. Open `SLIDES-dec-12.md`
-3. Click the preview icon (or Cmd+Shift+V)
-4. Use "Marp: Export Slide Deck" to generate PDF/HTML/PPTX
+```bash
+cd docs/presentation
 
-### CLI
+# Generate HTML slides
+pandoc -t revealjs -s SLIDES-dec-12.md -o slides.html --slide-level=1
+
+# Open in browser
+open slides.html
+```
+
+**Requirements:** [Pandoc](https://pandoc.org/installing.html) installed.
+
+### Alternative: Marp (if preferred)
 
 ```bash
 # Install Marp CLI
@@ -18,14 +25,8 @@ npm install -g @marp-team/marp-cli
 # Preview in browser
 marp SLIDES-dec-12.md --preview
 
-# Export to PDF
-marp SLIDES-dec-12.md --pdf
-
-# Export to HTML (self-contained)
+# Export to HTML
 marp SLIDES-dec-12.md --html
-
-# Export to PPTX
-marp SLIDES-dec-12.md --pptx
 ```
 
 ## Demo Projects to Create
@@ -56,21 +57,24 @@ Slides marked with `<!-- SWITCH TO: ... -->` comments indicate where to:
 2. Show the actual Claude.ai UI or repo
 3. Walk through the live example
 
-## Timing (Target: 45-50 min + Q&A)
+## Timing (Target: 50-55 min + Q&A)
 
 | Section | Slides | Est. Time |
 |---------|--------|-----------|
 | Intro + Problem | 1-3 | 3 min |
-| Projects Explained | 4-5 | 5 min |
-| Skills Explained | 6-9 | 7 min |
-| Projects vs Code | 10 | 3 min |
-| The System Loop | 11-12 | 4 min |
-| Demo (4 scenarios) | 13-20 | 15 min |
-| Repo Structure | 21-22 | 5 min |
-| Evolution + Learnings | 23-25 | 5 min |
-| Future + Pitch | 26-29 | 5 min |
-| **Total** | 29 | ~50 min |
+| Evolution | 4-6 | 4 min |
+| Projects Explained | 7-12 | 6 min |
+| Skills Explained | 13-18 | 7 min |
+| **Synthetic Data** | 19-23 | 5 min |
+| Demo (4 scenarios) | 24-31 | 15 min |
+| Architecture | 32-34 | 4 min |
+| Lessons + Limitations | 35-36 | 3 min |
+| Future + Pitch | 37-40 | 5 min |
+| Summary + Appendix | 41-44 | 3 min |
+| **Total** | 44 | ~55 min |
 | Q&A | - | 10 min |
+
+**New section:** "Synthetic Data" explains why we use fictional personas (Rob, Alice, Gina) for demos - covers reproducibility, privacy, and adoption benefits for AI engineers.
 
 ## Screenshot Placeholders
 

@@ -337,6 +337,84 @@ PR pending to fix their tooling.
 
 # {.center}
 
+## Synthetic Data
+
+Why Rob isn't real
+
+---
+
+# The Demo Data Problem
+
+Building demos for personal productivity tools is hard:
+
+**Option A: Use real data**
+- Privacy concerns (mine AND others')
+- Can't share in public repo
+- Awkward to present personal health info
+
+**Option B: Make stuff up on the fly**
+- Inconsistent across demos
+- No version control
+- "Let me just quickly fabricate a believable 8-week journey..."
+
+---
+
+# The Solution: Synthetic Personas
+
+Three fictional personas, each demonstrating different use cases:
+
+| Persona | Demonstrates |
+|---------|--------------|
+| **Rob the Runner** | Base skills only (simplicity) |
+| **Alice the Athlete** | Custom personal skills (extensibility) |
+| **Gina the Grad Student** | Non-fitness domain (versatility) |
+
+All data is synthetic. All commits are tracked. All demos are reproducible.
+
+---
+
+# Why AI Engineers Should Care
+
+**Reproducibility**
+- Same demo, any day: `regenerate_demo_dates.py --demo-day 2025-12-12`
+- Git tracks the "ground truth" - can diff persona evolution
+
+**Testing without exposure**
+- Iterate on skills without personal data leakage
+- Share examples in public repo safely
+
+**Template for adoption**
+- Users can fork Rob's structure
+- Customize for their domain without starting from scratch
+
+---
+
+# Persona Design: Rob's Journey
+
+```
+Week 1-4: Monthly rollup (compressed)
+     │
+     └──► Single document captures early program
+
+Week 5-7: Weekly retros (recent history)
+     │
+     └──► 3 documents show pattern extraction
+
+Week 8: Daily summaries (current detail)
+     │
+     └──► 3 documents show daily capture
+
+Week 9: Post-program (ongoing practice)
+     │
+     └──► Shows system continues past goal
+```
+
+**Demonstrates fractal compression with believable timeline.**
+
+---
+
+# {.center}
+
 ## Demo
 
 Rob the Runner in action
