@@ -211,10 +211,13 @@ copy/paste into new chat</li>
 <p>SWITCH TO: Empty Claude.ai project, then one with documents SHOW:
 Project sidebar with documents</p>
 </aside>
+<div class="centered">
 <figure>
-<img data-src="screenshots/project-docs.png" alt="Project documents" />
+<img data-src="screenshots/demo2-project-docs.png"
+alt="Project documents" />
 <figcaption aria-hidden="true">Project documents</figcaption>
 </figure>
+</div>
 <p>Every conversation sees <strong>all</strong> project documents.</p>
 </section>
 <section id="project-primitives" class="slide level1">
@@ -344,6 +347,43 @@ class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb7-1"><a href="
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="at">1. Verify current date (bash command)</span></span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="at">2. Ask which date to summarize</span></span>
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="at">3. Generate structured markdown...</span></span></code></pre></div>
+</section>
+<section id="skill-triggers" class="slide level1">
+<h1>Skill Triggers</h1>
+<p>Triggers are function calls in human language.</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Triggers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Morning Routine</td>
+<td>“gm”, “good morning”</td>
+</tr>
+<tr>
+<td>Daily Summary</td>
+<td>“daily summary”, “end of day”</td>
+</tr>
+<tr>
+<td>Weekly Retro</td>
+<td>“weekly retro”</td>
+</tr>
+<tr>
+<td>Weekly Planning</td>
+<td>“weekly planning”</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How it works:</strong></p>
+<ul>
+<li>User says trigger phrase</li>
+<li>Claude pattern-matches against skill descriptions</li>
+<li>Skill instructions load into context</li>
+<li>Claude executes the process</li>
+</ul>
 </section>
 <section id="whats-a-skill-with-tools" class="slide level1">
 <h1>What’s a Skill? (With Tools)</h1>
@@ -591,6 +631,66 @@ skill flow</p>
 <li>“Add to project” creates persistent context</li>
 </ul>
 </section>
+<section id="demo-1-paste-quickstart" class="slide level1">
+<h1>Demo 1: Paste Quickstart</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo1-bootstrap-01-pasted.png" height="500"
+alt="Paste quickstart" />
+<figcaption aria-hidden="true">Paste quickstart</figcaption>
+</figure>
+</div>
+</section>
+<section id="demo-1-setup-running" class="slide level1">
+<h1>Demo 1: Setup Running</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo1-bootstrap-02-running.png" height="500"
+alt="Setup running" />
+<figcaption aria-hidden="true">Setup running</figcaption>
+</figure>
+</div>
+</section>
+<section id="demo-1-save-skills" class="slide level1">
+<h1>Demo 1: Save Skills</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo1-bootstrap-03-save-skills.png"
+height="500" alt="Save skills" />
+<figcaption aria-hidden="true">Save skills</figcaption>
+</figure>
+</div>
+</section>
+<section id="demo-1-goal-definition" class="slide level1">
+<h1>Demo 1: Goal Definition</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo1-bootstrap-04-goals.png" height="500"
+alt="Goal definition" />
+<figcaption aria-hidden="true">Goal definition</figcaption>
+</figure>
+</div>
+</section>
+<section id="demo-1-goals-result" class="slide level1">
+<h1>Demo 1: Goals Result</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo1-bootstrap-05-goals-results.png"
+height="500" alt="Goals result" />
+<figcaption aria-hidden="true">Goals result</figcaption>
+</figure>
+</div>
+</section>
+<section id="demo-1-add-to-project" class="slide level1">
+<h1>Demo 1: Add to Project</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo1-bootstrap-06-add-to-project.png"
+height="500" alt="Add to project" />
+<figcaption aria-hidden="true">Add to project</figcaption>
+</figure>
+</div>
+</section>
 <section id="demo-2-mature-project" class="slide level1">
 <h1>Demo 2: Mature Project</h1>
 <aside class="notes">
@@ -605,6 +705,16 @@ skill flow</p>
 <li>Monthly rollup (October)</li>
 </ul>
 </section>
+<section id="demo-2-project-documents" class="slide level1">
+<h1>Demo 2: Project Documents</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo2-project-docs.png" height="500"
+alt="Project documents" />
+<figcaption aria-hidden="true">Project documents</figcaption>
+</figure>
+</div>
+</section>
 <section id="demo-2a-day-seam-gm" class="slide level1">
 <h1>Demo 2a: Day Seam (“gm”)</h1>
 <aside class="notes">
@@ -617,22 +727,82 @@ skill flow</p>
 <li>Low cognitive load during wakeup</li>
 </ul>
 </section>
+<section id="demo-2a-gm-trigger" class="slide level1">
+<h1>Demo 2a: “gm” Trigger</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo2a-gm-01-trigger.png" height="500"
+alt="gm trigger" />
+<figcaption aria-hidden="true">gm trigger</figcaption>
+</figure>
+</div>
+</section>
+<section id="demo-2a-gap-handling" class="slide level1">
+<h1>Demo 2a: Gap Handling</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo2a-gm-02-gap-handling.png" height="450"
+alt="gap handling" />
+<figcaption aria-hidden="true">gap handling</figcaption>
+</figure>
+<p>Yesterday not found → uses most recent (2 days ago)</p>
+</div>
+</section>
+<section id="demo-2a-morning-brief" class="slide level1">
+<h1>Demo 2a: Morning Brief</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo2a-gm-03-morning-brief.png" height="500"
+alt="morning brief" />
+<figcaption aria-hidden="true">morning brief</figcaption>
+</figure>
+</div>
+</section>
 <section id="demo-2b-daily-summary" class="slide level1">
 <h1>Demo 2b: Daily Summary</h1>
-<aside class="notes">
-<p>SHOW: Completed summary artifact, then “Add to project”</p>
-</aside>
 <p><strong>Trigger:</strong> “daily summary”</p>
-<div class="sourceCode" id="cb14"><pre
-class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## TL;DR</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>Solid 2.5mi run, felt strong.</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Numbers</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Metric <span class="pp">|</span> Value <span class="pp">|</span> Notes <span class="pp">|</span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|-------|-------|</span></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Distance <span class="pp">|</span> 2.5 mi <span class="pp">|</span> No walk breaks! <span class="pp">|</span></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pace <span class="pp">|</span> 11:30/mi <span class="pp">|</span> PR for continuous <span class="pp">|</span></span></code></pre></div>
-<p>→ “Add to project” makes it persistent</p>
+<p>→ Conversation throughout the day, then structured capture</p>
+</section>
+<section id="demo-2b-conversation-trigger" class="slide level1">
+<h1>Demo 2b: Conversation + Trigger</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo2b-summary-01-conversation.png"
+height="500" alt="conversation" />
+<figcaption aria-hidden="true">conversation</figcaption>
+</figure>
+</div>
+</section>
+<section id="demo-2b-date-confirmation" class="slide level1">
+<h1>Demo 2b: Date Confirmation</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo2b-summary-02-confirmation.png"
+height="500" alt="confirmation" />
+<figcaption aria-hidden="true">confirmation</figcaption>
+</figure>
+</div>
+</section>
+<section id="demo-2b-summary-preview" class="slide level1">
+<h1>Demo 2b: Summary Preview</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo2b-summary-03-preview.png" height="500"
+alt="preview" />
+<figcaption aria-hidden="true">preview</figcaption>
+</figure>
+</div>
+</section>
+<section id="demo-2b-add-to-project" class="slide level1">
+<h1>Demo 2b: Add to Project</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo2b-summary-04-add-to-project.png"
+alt="add to project" />
+<figcaption aria-hidden="true">add to project</figcaption>
+</figure>
+</div>
+<p>→ Now persistent in ALL future conversations</p>
 </section>
 <section id="demo-2c-weekly-retro-compression" class="slide level1">
 <h1>Demo 2c: Weekly Retro (Compression)</h1>
@@ -651,6 +821,26 @@ What Worked:
 Experiments for Next Week:
 - Try 5-min post-run stretching</code></pre>
 </section>
+<section id="demo-2c-retro-start" class="slide level1">
+<h1>Demo 2c: Retro Start</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo2c-retro-01-start.png" height="500"
+alt="Retro start" />
+<figcaption aria-hidden="true">Retro start</figcaption>
+</figure>
+</div>
+</section>
+<section id="demo-2c-add-retro-to-project" class="slide level1">
+<h1>Demo 2c: Add Retro to Project</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo2c-retro-02-add-to-project.png"
+height="500" alt="Add retro to project" />
+<figcaption aria-hidden="true">Add retro to project</figcaption>
+</figure>
+</div>
+</section>
 <section id="demo-2d-manual-pruning" class="slide level1">
 <h1>Demo 2d: Manual Pruning</h1>
 <aside class="notes">
@@ -665,6 +855,16 @@ Experiments for Next Week:
 <p><strong>Platform limitation:</strong> No API for project file
 management.</p>
 <p>Manual but rare (weekly at most).</p>
+</section>
+<section id="demo-2d-select-and-delete" class="slide level1">
+<h1>Demo 2d: Select and Delete</h1>
+<div class="centered">
+<figure>
+<img data-src="screenshots/demo2d-pruning-01-select-and-delete.png"
+height="500" alt="Select and delete" />
+<figcaption aria-hidden="true">Select and delete</figcaption>
+</figure>
+</div>
 </section>
 <section id="lessons" class="slide level1">
 <h1>Lessons</h1>
@@ -684,10 +884,24 @@ works</li>
 <section id="llms-are-bad-at-dates" class="slide level1">
 <h1>LLMs Are Bad at Dates</h1>
 <p>Every skill that deals with dates starts with this:</p>
-<div class="sourceCode" id="cb16"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="va">TZ</span><span class="op">=</span><span class="st">&#39;America/New_York&#39;</span> <span class="fu">date</span> <span class="st">&#39;+%A, %B %d, %Y&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="va">TZ</span><span class="op">=</span><span class="st">&#39;America/New_York&#39;</span> <span class="fu">date</span> <span class="st">&#39;+%A, %B %d, %Y&#39;</span></span></code></pre></div>
 <p>LLMs make up dates. Tool calls give ground truth.</p>
 <p>No assumptions. Verify first.</p>
+</section>
+<section id="timestamps-help" class="slide level1">
+<h1>Timestamps Help</h1>
+<p>Adding timestamps inside chat helps Claude understand:</p>
+<ul>
+<li>Flow of the day</li>
+<li>Roughly what happened when</li>
+<li>How long things took</li>
+</ul>
+<pre><code>Captain&#39;s log, stardate 2025-12-12 16:00 ET
+
+Just finished the 3pm meeting. Went long.
+Starting focused work block now.</code></pre>
+<p>The more temporal context, the better the summary.</p>
 </section>
 <section id="skills-are-global-pain-point" class="slide level1">
 <h1>Skills Are Global (Pain Point)</h1>
@@ -840,6 +1054,64 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href=
 <li>Not locked to Claude (but also no token subsidies)</li>
 </ul>
 </section>
+<section id="iterating-on-skills" class="slide level1">
+<h1>Iterating on Skills</h1>
+<p><strong>The skills evolve with you:</strong></p>
+<ul>
+<li>Day over day: small tweaks to prompts</li>
+<li>Week over week: new sections, refined triggers</li>
+<li>Month over month: new skills, deprecated patterns</li>
+</ul>
+<p><strong>Two layers:</strong></p>
+<ul>
+<li><strong>Base skills</strong> - shareable frameworks (public
+repo)</li>
+<li><strong>Personal extensions</strong> - your metrics, thresholds,
+protocols (private repo)</li>
+</ul>
+<p>Edit → pack → upload → test → repeat.</p>
+</section>
+<section id="how-to-contribute" class="slide level1">
+<h1>How to Contribute</h1>
+<p><strong>Adapt the skills to your domain:</strong></p>
+<ol type="1">
+<li>Fork the repo</li>
+<li>Edit <code>skills/*/SKILL.md</code> for base frameworks</li>
+<li>Create personal extensions in a private sibling repo</li>
+<li>Pack with
+<code>python scripts/skill_workflow.py pack skills/my-skill/</code></li>
+<li>Test in Claude.ai → iterate</li>
+</ol>
+<p><strong>Key files:</strong></p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>skills/*/SKILL.md</code></td>
+<td>Skill source files (edit these)</td>
+</tr>
+<tr>
+<td><code>scripts/skill_workflow.py</code></td>
+<td>Pack/unpack utility</td>
+</tr>
+<tr>
+<td><code>QUICKSTART.md</code></td>
+<td>5-minute setup</td>
+</tr>
+<tr>
+<td><code>PROJECT-SETUP.md</code></td>
+<td>Comprehensive guide</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Share what works:</strong> PRs welcome for base skill
+improvements.</p>
+</section>
 <section id="under-engineering" class="slide level1">
 <h1>Under-engineering</h1>
 <p>We’re AI engineers. We could build this with:</p>
@@ -854,8 +1126,9 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href=
 </section>
 <section id="try-it-yourself" class="slide level1">
 <h1>Try It Yourself</h1>
-<p><strong>Easiest:</strong> Paste <code>QUICKSTART.md</code> into
-Claude</p>
+<p><strong>Easiest:</strong> Paste <a
+href="https://github.com/ZachBeta/claude-as-coach/blob/main/QUICKSTART.md"><code>QUICKSTART.md</code></a>
+into Claude</p>
 <p>(Auto-fetches skills + runs project setup)</p>
 <p><strong>Or manually:</strong> See <code>QUICKSTART-MANUAL.md</code>
 for download links</p>
@@ -900,67 +1173,10 @@ approaches.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Repo:</strong> github.com/ZachBeta/claude-as-coach</p>
+<p><strong>Repo:</strong> <a
+href="https://github.com/ZachBeta/claude-as-coach">github.com/ZachBeta/claude-as-coach</a></p>
 <p><strong>Triggers:</strong> “gm” · “daily summary” · “weekly retro” ·
 “weekly planning”</p>
-</section>
-<section id="appendix-skill-triggers" class="slide level1">
-<h1>Appendix: Skill Triggers</h1>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th>Triggers</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Morning Routine</td>
-<td>“gm”, “good morning”</td>
-</tr>
-<tr>
-<td>Daily Summary</td>
-<td>“daily summary”, “end of day”</td>
-</tr>
-<tr>
-<td>Weekly Retro</td>
-<td>“weekly retro”</td>
-</tr>
-<tr>
-<td>Weekly Planning</td>
-<td>“weekly planning”</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="appendix-key-files" class="slide level1">
-<h1>Appendix: Key Files</h1>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>QUICKSTART.md</code></td>
-<td>5-minute setup</td>
-</tr>
-<tr>
-<td><code>PROJECT-SETUP.md</code></td>
-<td>Comprehensive guide</td>
-</tr>
-<tr>
-<td><code>skills/*/SKILL.md</code></td>
-<td>Skill source files</td>
-</tr>
-<tr>
-<td><code>scripts/skill_workflow.py</code></td>
-<td>Pack/unpack utility</td>
-</tr>
-</tbody>
-</table>
 </section>
     </div>
   </div>

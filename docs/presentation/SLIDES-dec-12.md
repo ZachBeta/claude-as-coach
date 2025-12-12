@@ -126,7 +126,9 @@ SWITCH TO: Empty Claude.ai project, then one with documents
 SHOW: Project sidebar with documents
 :::
 
-![Project documents](screenshots/project-docs.png)
+::: centered
+![Project documents](screenshots/demo2-project-docs.png)
+:::
 
 Every conversation sees **all** project documents.
 
@@ -286,6 +288,26 @@ Output: Summary-2025-12-11-Wednesday.md
 The instructions *are* the program.
 The context *is* the state.
 The LLM *is* the runtime.
+
+---
+
+# Skill Triggers
+
+Triggers are function calls in human language.
+
+| Skill | Triggers |
+|-------|----------|
+| Morning Routine | "gm", "good morning" |
+| Daily Summary | "daily summary", "end of day" |
+| Weekly Retro | "weekly retro" |
+| Weekly Planning | "weekly planning" |
+
+**How it works:**
+
+- User says trigger phrase
+- Claude pattern-matches against skill descriptions
+- Skill instructions load into context
+- Claude executes the process
 
 ---
 
@@ -505,6 +527,54 @@ SHOW: project-coach-setup skill flow
 
 ---
 
+# Demo 1: Paste Quickstart
+
+::: centered
+![Paste quickstart](screenshots/demo1-bootstrap-01-pasted.png){height=500px}
+:::
+
+---
+
+# Demo 1: Setup Running
+
+::: centered
+![Setup running](screenshots/demo1-bootstrap-02-running.png){height=500px}
+:::
+
+---
+
+# Demo 1: Save Skills
+
+::: centered
+![Save skills](screenshots/demo1-bootstrap-03-save-skills.png){height=500px}
+:::
+
+---
+
+# Demo 1: Goal Definition
+
+::: centered
+![Goal definition](screenshots/demo1-bootstrap-04-goals.png){height=500px}
+:::
+
+---
+
+# Demo 1: Goals Result
+
+::: centered
+![Goals result](screenshots/demo1-bootstrap-05-goals-results.png){height=500px}
+:::
+
+---
+
+# Demo 1: Add to Project
+
+::: centered
+![Add to project](screenshots/demo1-bootstrap-06-add-to-project.png){height=500px}
+:::
+
+---
+
 # Demo 2: Mature Project
 
 ::: notes
@@ -522,6 +592,14 @@ SHOW: Morning → Summary → Retro → Manual cleanup
 
 ---
 
+# Demo 2: Project Documents
+
+::: centered
+![Project documents](screenshots/demo2-project-docs.png){height=500px}
+:::
+
+---
+
 # Demo 2a: Day Seam ("gm")
 
 ::: notes
@@ -536,26 +614,71 @@ SHOW: "gm" response finding yesterday's summary
 
 ---
 
-# Demo 2b: Daily Summary
+# Demo 2a: "gm" Trigger
 
-::: notes
-SHOW: Completed summary artifact, then "Add to project"
+::: centered
+![gm trigger](screenshots/demo2a-gm-01-trigger.png){height=500px}
 :::
+
+---
+
+# Demo 2a: Gap Handling
+
+::: centered
+![gap handling](screenshots/demo2a-gm-02-gap-handling.png){height=450px}
+
+Yesterday not found → uses most recent (2 days ago)
+:::
+
+---
+
+# Demo 2a: Morning Brief
+
+::: centered
+![morning brief](screenshots/demo2a-gm-03-morning-brief.png){height=500px}
+:::
+
+---
+
+# Demo 2b: Daily Summary
 
 **Trigger:** "daily summary"
 
-```markdown
-## TL;DR
-Solid 2.5mi run, felt strong.
+→ Conversation throughout the day, then structured capture
 
-## Key Numbers
-| Metric | Value | Notes |
-|--------|-------|-------|
-| Distance | 2.5 mi | No walk breaks! |
-| Pace | 11:30/mi | PR for continuous |
-```
+---
 
-→ "Add to project" makes it persistent
+# Demo 2b: Conversation + Trigger
+
+::: centered
+![conversation](screenshots/demo2b-summary-01-conversation.png){height=500px}
+:::
+
+---
+
+# Demo 2b: Date Confirmation
+
+::: centered
+![confirmation](screenshots/demo2b-summary-02-confirmation.png){height=500px}
+:::
+
+---
+
+# Demo 2b: Summary Preview
+
+::: centered
+![preview](screenshots/demo2b-summary-03-preview.png){height=500px}
+:::
+
+---
+
+# Demo 2b: Add to Project
+
+::: centered
+![add to project](screenshots/demo2b-summary-04-add-to-project.png)
+:::
+
+→ Now persistent in ALL future conversations
 
 ---
 
@@ -582,6 +705,22 @@ Experiments for Next Week:
 
 ---
 
+# Demo 2c: Retro Start
+
+::: centered
+![Retro start](screenshots/demo2c-retro-01-start.png){height=500px}
+:::
+
+---
+
+# Demo 2c: Add Retro to Project
+
+::: centered
+![Add retro to project](screenshots/demo2c-retro-02-add-to-project.png){height=500px}
+:::
+
+---
+
 # Demo 2d: Manual Pruning
 
 ::: notes
@@ -597,6 +736,14 @@ SHOW: Project files sidebar, removing old dailies
 **Platform limitation:** No API for project file management.
 
 Manual but rare (weekly at most).
+
+---
+
+# Demo 2d: Select and Delete
+
+::: centered
+![Select and delete](screenshots/demo2d-pruning-01-select-and-delete.png){height=500px}
+:::
 
 ---
 
@@ -626,6 +773,25 @@ TZ='America/New_York' date '+%A, %B %d, %Y'
 LLMs make up dates. Tool calls give ground truth.
 
 No assumptions. Verify first.
+
+---
+
+# Timestamps Help
+
+Adding timestamps inside chat helps Claude understand:
+
+- Flow of the day
+- Roughly what happened when
+- How long things took
+
+```
+Captain's log, stardate 2025-12-12 16:00 ET
+
+Just finished the 3pm meeting. Went long.
+Starting focused work block now.
+```
+
+The more temporal context, the better the summary.
 
 ---
 
@@ -790,6 +956,46 @@ Like memory that decays naturally over time.
 
 ---
 
+# Iterating on Skills
+
+**The skills evolve with you:**
+
+- Day over day: small tweaks to prompts
+- Week over week: new sections, refined triggers
+- Month over month: new skills, deprecated patterns
+
+**Two layers:**
+
+- **Base skills** - shareable frameworks (public repo)
+- **Personal extensions** - your metrics, thresholds, protocols (private repo)
+
+Edit → pack → upload → test → repeat.
+
+---
+
+# How to Contribute
+
+**Adapt the skills to your domain:**
+
+1. Fork the repo
+2. Edit `skills/*/SKILL.md` for base frameworks
+3. Create personal extensions in a private sibling repo
+4. Pack with `python scripts/skill_workflow.py pack skills/my-skill/`
+5. Test in Claude.ai → iterate
+
+**Key files:**
+
+| File | Purpose |
+|------|---------|
+| `skills/*/SKILL.md` | Skill source files (edit these) |
+| `scripts/skill_workflow.py` | Pack/unpack utility |
+| `QUICKSTART.md` | 5-minute setup |
+| `PROJECT-SETUP.md` | Comprehensive guide |
+
+**Share what works:** PRs welcome for base skill improvements.
+
+---
+
 # Under-engineering
 
 We're AI engineers. We could build this with:
@@ -807,7 +1013,7 @@ Or we could just... use Claude Projects with some markdown files.
 
 # Try It Yourself
 
-**Easiest:** Paste `QUICKSTART.md` into Claude
+**Easiest:** Paste [`QUICKSTART.md`](https://github.com/ZachBeta/claude-as-coach/blob/main/QUICKSTART.md) into Claude
 
 (Auto-fetches skills + runs project setup)
 
@@ -836,28 +1042,6 @@ See `docs/experiments/` for alternative onboarding approaches.
 | **Fractal Compression** | Daily → Weekly → Monthly |
 | **The Loop** | Morning → Summary → Retro → Plan |
 
-**Repo:** github.com/ZachBeta/claude-as-coach
+**Repo:** [github.com/ZachBeta/claude-as-coach](https://github.com/ZachBeta/claude-as-coach)
 
 **Triggers:** "gm" · "daily summary" · "weekly retro" · "weekly planning"
-
----
-
-# Appendix: Skill Triggers
-
-| Skill | Triggers |
-|-------|----------|
-| Morning Routine | "gm", "good morning" |
-| Daily Summary | "daily summary", "end of day" |
-| Weekly Retro | "weekly retro" |
-| Weekly Planning | "weekly planning" |
-
----
-
-# Appendix: Key Files
-
-| File | Purpose |
-|------|---------|
-| `QUICKSTART.md` | 5-minute setup |
-| `PROJECT-SETUP.md` | Comprehensive guide |
-| `skills/*/SKILL.md` | Skill source files |
-| `scripts/skill_workflow.py` | Pack/unpack utility |
