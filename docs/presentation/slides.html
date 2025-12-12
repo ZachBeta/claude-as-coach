@@ -128,51 +128,49 @@ infrastructure</p>
   <p class="date">Dec 12, 2025</p>
 </section>
 
-<section id="my-journey" class="slide level1">
-<h1>My Journey</h1>
-<p>Started with a Google Doc. Daily logs - work, exercise, sleep.</p>
-<p>Then conversations with Claude. Copy/paste summaries every day.</p>
-<p>Then Projects. Documents persist! But wasting tokens…</p>
-<p>Then Skills. Instructions loaded only when needed.</p>
-<p>Each step: less friction, more insight.</p>
-</section>
 <section id="the-goal" class="slide level1">
 <h1>The Goal</h1>
+<p>Bootstrapped garage startup life was wearing down my health.</p>
 <p>I wanted to build better habits.</p>
 <p>Exercise more. Sleep better. Ship more code.</p>
 <p>Tried apps. Tried spreadsheets. Tried journaling.</p>
-<p>What I really wanted: someone to talk to about my day who remembered
-yesterday.</p>
+<p>What I really wanted: a conversational interface that could adapt</p>
 </section>
-<section id="what-if-you-could-just-talk-to-it" class="slide level1">
-<h1>What if you could just… talk to it?</h1>
+<section id="hammer-in-search-of-a-nail" class="slide level1">
+<h1>Hammer in search of a nail</h1>
+<h2 id="lets-make-an-agent">let’s make an agent?</h2>
 <p>A flexible system that remembers yesterday.</p>
 <p>And last week. And your goals.</p>
-<p>No agents to build. No RAG to configure.</p>
-<p>Just conversations that accumulate context.</p>
+<p>So we have an agent to build?</p>
+<p>…and we have RAG to configure.</p>
+<p>…and …and …and …</p>
+<p>This is gonna take me a lot of building before I can easily use
+it…</p>
 </section>
 <section id="evolution" class="slide level1">
 <h1>Evolution</h1>
 <h2 id="how-the-system-developed">How the system developed</h2>
 </section>
-<section id="evolution-v1-giant-google-doc" class="slide level1">
-<h1>Evolution v1: Giant Google Doc</h1>
+<section id="evolution-v0-giant-google-doc" class="slide level1">
+<h1>Evolution v0: Giant Google Doc</h1>
 <ul>
 <li>Daily logging: work, exercise, sleep, diet</li>
 <li>Gaining insights = manual effort or build systems</li>
 <li>Too much cognitive load sifting through it all</li>
 </ul>
 </section>
-<section id="evolution-v2-journaling-agents" class="slide level1">
-<h1>Evolution v2: Journaling Agents</h1>
+<section id="evolution-v1-journaling-agents" class="slide level1">
+<h1>Evolution v1: Journaling Agents</h1>
 <ul>
-<li>Various attempts at building agents</li>
-<li>Create summary → copy/paste into new chat</li>
+<li>Various attempts at building agents from scratch got stuck on all
+the little implementation details</li>
+<li>Using a basic conversation in claude.ai - ask it to summarize →
+copy/paste into new chat</li>
 <li>Repeat daily. Forever.</li>
 </ul>
 </section>
-<section id="evolution-v3-projects-the-aha-moment" class="slide level1">
-<h1>Evolution v3: Projects (The Aha Moment)</h1>
+<section id="evolution-v2-projects-the-aha-moment" class="slide level1">
+<h1>Evolution v2: Projects (The Aha Moment)</h1>
 <ul>
 <li>Projects + saving to documents</li>
 <li>Documents persist across conversations!</li>
@@ -185,16 +183,16 @@ yesterday.</p>
 │ └─────────────────────────────────┘ │
 └─────────────────────────────────────┘</code></pre>
 </section>
-<section id="evolution-v4-skills" class="slide level1">
-<h1>Evolution v4: Skills</h1>
+<section id="evolution-v3-skills" class="slide level1">
+<h1>Evolution v3: Skills</h1>
 <ul>
 <li>On-demand instructions (only loaded when needed)</li>
 <li>Retro instructions only loaded during retro</li>
 <li>Not burning tokens every conversation</li>
 </ul>
 </section>
-<section id="evolution-v5-skill-inheritance" class="slide level1">
-<h1>Evolution v5: Skill Inheritance</h1>
+<section id="evolution-v4-skill-inheritance" class="slide level1">
+<h1>Evolution v4: Skill Inheritance</h1>
 <ul>
 <li>What’s structural? (shareable)</li>
 <li>What’s personal? (private)</li>
@@ -356,9 +354,12 @@ class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb7-1"><a href="
     ├── init_skill.py
     ├── package_skill.py
     └── quick_validate.py</code></pre>
-<p><strong>The blend:</strong> - Instructions tell Claude <em>what</em>
-to do and <em>when</em> - Scripts give Claude <em>deterministic
-tools</em> to call - LLM handles ambiguity, scripts handle precision</p>
+<p><strong>The blend:</strong></p>
+<ul>
+<li>Instructions tell Claude <em>what</em> to do and <em>when</em></li>
+<li>Scripts give Claude <em>deterministic tools</em> to call</li>
+<li>LLM handles ambiguity, scripts handle precision</li>
+</ul>
 </section>
 <section id="code-is-data-is-code" class="slide level1">
 <h1>Code is Data is Code</h1>
@@ -707,21 +708,22 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href=
 <h1>Platform Limitations (Real Talk)</h1>
 <ul>
 <li>Skills are <strong>global</strong> (not project-scoped)</li>
-<li>Can’t programmatically manage skills</li>
-<li>Mobile upload is clunky</li>
+<li>Skill upload/download is clunky, hard to version them</li>
+<li>Mobile summary-&gt;gm flow is clunky - missing “add to project”</li>
 <li>Context limits exist (Pro vs Max)</li>
-<li><strong>Pruning is manual:</strong> save artifact locally → add to
-project → remove rolled-up docs</li>
+<li><strong>Pruning is manual:</strong> generate artifact -&gt; save
+artifact locally to back up → add to project → remove rolled-up docs
+after retro</li>
 </ul>
 <p>Works despite these. Not because of them.</p>
 </section>
 <section id="onboarding-experiments" class="slide level1">
 <h1>Onboarding Experiments</h1>
-<p>Tested 3 approaches, one winner:</p>
-<pre><code>QUICKSTART.md           # Promoted (auto-fetch)
-QUICKSTART-MANUAL.md    # Fallback (download links)</code></pre>
+<p>Tested a few approaches to setting up the claude.ai project, one
+winner, and a runner up:</p>
+<pre><code>QUICKSTART.md           # Promoted (agent driven setup)
+QUICKSTART-MANUAL.md    # Fallback (manually set up skills)</code></pre>
 <p>Skill-creator approach won: fetch SKILL.md + package.</p>
-<p>Git tracks the experiments. Claude Code helps iterate.</p>
 </section>
 <section id="safety-boundaries" class="slide level1">
 <h1>Safety Boundaries</h1>
@@ -744,8 +746,9 @@ for:</p>
 <li>Conversation (ephemeral)</li>
 <li>Artifact (generated)</li>
 <li>Project document (persistent)</li>
-<li>Memory (skipped - adds complexity)</li>
-<li>Instructions (skipped - harder to git track)</li>
+<li>Memory (tried - adds complexity, not required)</li>
+<li>Instructions (tried - harder to git track, frankly not needed if
+there’s a project file instead)</li>
 </ul>
 <p><strong>Insight:</strong> Project docs &gt; base instructions for git
 tracking</p>
@@ -813,7 +816,8 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href=
 </table>
 <p>Context stays in documents. Claude reads them all.</p>
 <p>Like memory that decays naturally over time.</p>
-<p>“Summaries are all you need”</p>
+<p>“Summary of Summaries is all you need”*</p>
+<p>*for this use case at least</p>
 </section>
 <section id="whats-next" class="slide level1">
 <h1>What’s Next</h1>
@@ -821,7 +825,8 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href=
 </section>
 <section id="where-this-is-going" class="slide level1">
 <h1>Where This Is Going</h1>
-<p><strong>Open Source (now)</strong></p>
+<p><strong>Claude-as-coach tech demo prototype is MIT’d
+(now)</strong></p>
 <ul>
 <li>MIT license</li>
 <li>Base skills shareable</li>
@@ -829,9 +834,10 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href=
 </ul>
 <p><strong>Microagent (future)</strong></p>
 <ul>
+<li>Smallest possible agent to replicate the functionality</li>
 <li>Same pattern, any model</li>
 <li>Tool-calling models (gpt-oss, kimi-k2, glm-4.6)</li>
-<li>Not locked to Claude</li>
+<li>Not locked to Claude (but also no token subsidies)</li>
 </ul>
 </section>
 <section id="under-engineering" class="slide level1">
@@ -844,7 +850,7 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href=
 <li>Vector databases</li>
 </ul>
 <p>Or we could just… use Claude Projects with some markdown files.</p>
-<p><strong>Sometimes the best agent is no agent.</strong></p>
+<p><strong>Sometimes the best prototype is zero-build.</strong></p>
 </section>
 <section id="try-it-yourself" class="slide level1">
 <h1>Try It Yourself</h1>
@@ -862,8 +868,8 @@ for download links</p>
 <p>See <code>docs/experiments/</code> for alternative onboarding
 approaches.</p>
 </section>
-<section id="summary-questions" class="slide level1">
-<h1>Summary + Questions</h1>
+<section id="summary" class="slide level1">
+<h1>Summary</h1>
 <table>
 <thead>
 <tr>

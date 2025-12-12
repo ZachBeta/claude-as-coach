@@ -25,21 +25,9 @@ header-includes: |
   </style>
 ---
 
-# My Journey
-
-Started with a Google Doc. Daily logs - work, exercise, sleep.
-
-Then conversations with Claude. Copy/paste summaries every day.
-
-Then Projects. Documents persist! But wasting tokens...
-
-Then Skills. Instructions loaded only when needed.
-
-Each step: less friction, more insight.
-
----
-
 # The Goal
+
+Bootstrapped garage startup life was wearing down my health.
 
 I wanted to build better habits.
 
@@ -47,20 +35,24 @@ Exercise more. Sleep better. Ship more code.
 
 Tried apps. Tried spreadsheets. Tried journaling.
 
-What I really wanted: someone to talk to about my day
-who remembered yesterday.
+What I really wanted: a conversational interface that could adapt
 
 ---
 
-# What if you could just... talk to it?
+# Hammer in search of a nail 
+## let's make an agent?
 
 A flexible system that remembers yesterday.
 
 And last week. And your goals.
 
-No agents to build. No RAG to configure.
+So we have an agent to build?
 
-Just conversations that accumulate context.
+...and we have RAG to configure.
+
+...and ...and ...and ...
+
+This is gonna take me a lot of building before I can easily use it...
 
 ---
 
@@ -70,7 +62,7 @@ Just conversations that accumulate context.
 
 ---
 
-# Evolution v1: Giant Google Doc
+# Evolution v0: Giant Google Doc
 
 - Daily logging: work, exercise, sleep, diet
 - Gaining insights = manual effort or build systems
@@ -78,15 +70,15 @@ Just conversations that accumulate context.
 
 ---
 
-# Evolution v2: Journaling Agents
+# Evolution v1: Journaling Agents
 
-- Various attempts at building agents
-- Create summary → copy/paste into new chat
+- Various attempts at building agents from scratch got stuck on all the little implementation details
+- Using a basic conversation in claude.ai - ask it to summarize → copy/paste into new chat
 - Repeat daily. Forever.
 
 ---
 
-# Evolution v3: Projects (The Aha Moment)
+# Evolution v2: Projects (The Aha Moment)
 
 - Projects + saving to documents
 - Documents persist across conversations!
@@ -103,7 +95,7 @@ Just conversations that accumulate context.
 
 ---
 
-# Evolution v4: Skills
+# Evolution v3: Skills
 
 - On-demand instructions (only loaded when needed)
 - Retro instructions only loaded during retro
@@ -111,7 +103,7 @@ Just conversations that accumulate context.
 
 ---
 
-# Evolution v5: Skill Inheritance
+# Evolution v4: Skill Inheritance
 
 - What's structural? (shareable)
 - What's personal? (private)
@@ -270,6 +262,7 @@ skill-creator/
 ```
 
 **The blend:**
+
 - Instructions tell Claude *what* to do and *when*
 - Scripts give Claude *deterministic tools* to call
 - LLM handles ambiguity, scripts handle precision
@@ -656,10 +649,10 @@ Platform limitation: Skills not project-scoped
 # Platform Limitations (Real Talk)
 
 - Skills are **global** (not project-scoped)
-- Can't programmatically manage skills
-- Mobile upload is clunky
+- Skill upload/download is clunky, hard to version them
+- Mobile summary->gm flow is clunky - missing "add to project"
 - Context limits exist (Pro vs Max)
-- **Pruning is manual:** save artifact locally → add to project → remove rolled-up docs
+- **Pruning is manual:** generate artifact -> save artifact locally to back up → add to project → remove rolled-up docs after retro
 
 Works despite these. Not because of them.
 
@@ -667,16 +660,14 @@ Works despite these. Not because of them.
 
 # Onboarding Experiments
 
-Tested 3 approaches, one winner:
+Tested a few approaches to setting up the claude.ai project, one winner, and a runner up:
 
 ```
-QUICKSTART.md           # Promoted (auto-fetch)
-QUICKSTART-MANUAL.md    # Fallback (download links)
+QUICKSTART.md           # Promoted (agent driven setup)
+QUICKSTART-MANUAL.md    # Fallback (manually set up skills)
 ```
 
 Skill-creator approach won: fetch SKILL.md + package.
-
-Git tracks the experiments. Claude Code helps iterate.
 
 ---
 
@@ -704,8 +695,8 @@ Claude has limitations. Critical decisions need professionals.
 - Conversation (ephemeral)
 - Artifact (generated)
 - Project document (persistent)
-- Memory (skipped - adds complexity)
-- Instructions (skipped - harder to git track)
+- Memory (tried - adds complexity, not required)
+- Instructions (tried - harder to git track, frankly not needed if there's a project file instead)
 
 **Insight:** Project docs > base instructions for git tracking
 
@@ -770,7 +761,9 @@ Context stays in documents. Claude reads them all.
 
 Like memory that decays naturally over time.
 
-"Summaries are all you need"
+"Summary of Summaries is all you need"*
+
+*for this use case at least
 
 ---
 
@@ -782,7 +775,7 @@ Like memory that decays naturally over time.
 
 # Where This Is Going
 
-**Open Source (now)**
+**Claude-as-coach tech demo prototype is MIT'd (now)**
 
 - MIT license
 - Base skills shareable
@@ -790,9 +783,10 @@ Like memory that decays naturally over time.
 
 **Microagent (future)**
 
+- Smallest possible agent to replicate the functionality
 - Same pattern, any model
 - Tool-calling models (gpt-oss, kimi-k2, glm-4.6)
-- Not locked to Claude
+- Not locked to Claude (but also no token subsidies)
 
 ---
 
@@ -807,7 +801,7 @@ We're AI engineers. We could build this with:
 
 Or we could just... use Claude Projects with some markdown files.
 
-**Sometimes the best agent is no agent.**
+**Sometimes the best prototype is zero-build.**
 
 ---
 
@@ -832,7 +826,7 @@ See `docs/experiments/` for alternative onboarding approaches.
 
 ---
 
-# Summary + Questions
+# Summary
 
 | Concept | Key Point |
 |---------|-----------|
