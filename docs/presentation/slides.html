@@ -184,8 +184,20 @@ class="slide level1">
 <li>Documents persist across conversations!</li>
 <li>Tokens count against my claude subscription so there’s no API cost
 concerns while prototyping</li>
-<li>But… wasting tokens on instructions</li>
-<li>And daily summaries are starting to accumulate</li>
+<li>Eventually I wrote the instructions into an artifact in
+conversation, then saved it to the project files</li>
+</ul>
+</section>
+<section id="evolution-v2.1-improving-project-context-usage"
+class="slide level1">
+<h1>Evolution v2.1: Improving project context usage</h1>
+<ul>
+<li>I also had to learn that project files are in context by default if
+they’re small enough (rag only for big docs)</li>
+<li>So I was wasting lots of tokens pulling files in multiple times
+reading them from file system</li>
+<li>After that I was no longer hitting conversation limits</li>
+<li>But… I was still wasting tokens on instructions</li>
 </ul>
 <pre><code>┌─────────────────────────────────────┐
 │ Project Context (always loaded)     │
@@ -200,6 +212,8 @@ concerns while prototyping</li>
 <li>On-demand instructions (only loaded when needed)</li>
 <li>Retro instructions only loaded during retro</li>
 <li>Not burning tokens every conversation on instructions</li>
+<li>And daily summaries are starting to accumulate and eat up
+context</li>
 <li>Retro skill can do the summary of summaries work to clear older docs
 out of context</li>
 </ul>
@@ -212,7 +226,8 @@ out of context</li>
 <li><code>claude-as-coach</code> +
 <code>claude-as-coach-personal</code></li>
 </ul>
-<p>No grand plan. Just iterated on friction.</p>
+<p>No grand plan. Just iterated on where there was friction or
+issues.</p>
 </section>
 <section id="the-platform" class="slide level1">
 <h1>The Platform</h1>

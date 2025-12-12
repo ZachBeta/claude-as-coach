@@ -88,8 +88,16 @@ This is gonna take me a lot of building before I can easily use it...
 - Projects + saving to documents
 - Documents persist across conversations!
 - Tokens count against my claude subscription so there's no API cost concerns while prototyping
-- But... wasting tokens on instructions
-- And daily summaries are starting to accumulate
+- Eventually I wrote the instructions into an artifact in conversation, then saved it to the project files
+
+---
+
+# Evolution v2.1: Improving project context usage
+
+- I also had to learn that project files are in context by default if they're small enough (rag only for big docs)
+- So I was wasting lots of tokens pulling files in multiple times reading them from file system
+- After that I was no longer hitting conversation limits
+- But... I was still wasting tokens on instructions
 
 ```
 ┌─────────────────────────────────────┐
@@ -107,6 +115,7 @@ This is gonna take me a lot of building before I can easily use it...
 - On-demand instructions (only loaded when needed)
 - Retro instructions only loaded during retro
 - Not burning tokens every conversation on instructions
+- And daily summaries are starting to accumulate and eat up context
 - Retro skill can do the summary of summaries work to clear older docs out of context
 
 ---
@@ -117,7 +126,7 @@ This is gonna take me a lot of building before I can easily use it...
 - What's personal? (private)
 - `claude-as-coach` + `claude-as-coach-personal`
 
-No grand plan. Just iterated on friction.
+No grand plan. Just iterated on where there was friction or issues.
 
 ---
 
