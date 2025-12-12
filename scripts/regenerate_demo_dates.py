@@ -136,9 +136,10 @@ def calculate_dates(demo_day: datetime, scenario: int) -> dict:
         # W9 specific days
         w9_d1 = w9_start  # Monday
         w9_d2 = w9_start + timedelta(days=2)  # Wednesday
+        w9_d4 = w9_start + timedelta(days=3)  # Thursday
         w9_d5 = w9_start + timedelta(days=4)  # Friday
 
-        for label, date in [('W9_D1', w9_d1), ('W9_D2', w9_d2), ('W9_D5', w9_d5)]:
+        for label, date in [('W9_D1', w9_d1), ('W9_D2', w9_d2), ('W9_D4', w9_d4), ('W9_D5', w9_d5)]:
             placeholders[f'{label}_DATE'] = date.strftime('%Y-%m-%d')
             placeholders[f'{label}_DAY'] = date.strftime('%A')
             placeholders[f'{label}_FULL'] = date.strftime('%A, %B %-d, %Y')
@@ -180,6 +181,7 @@ def calculate_dates(demo_day: datetime, scenario: int) -> dict:
         placeholders['W4_START'] = w4_start.strftime('%Y-%m-%d')
         placeholders['W4_END_DD'] = (w4_start + timedelta(days=6)).strftime('%-d')
         placeholders['W1_START'] = w1_start.strftime('%Y-%m-%d')
+        placeholders['W1_START_FULL'] = w1_start.strftime('%A, %B %-d, %Y')
         placeholders['W1_END'] = w1_end.strftime('%Y-%m-%d')
 
         # M1 = month containing W1-W4 (the first month of the program)

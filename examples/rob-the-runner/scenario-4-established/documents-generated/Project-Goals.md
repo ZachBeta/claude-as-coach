@@ -1,0 +1,55 @@
+# Project Goals
+
+## Primary Focus
+Couch-to-5K running program - getting back in shape to keep up with my kids
+
+## The Real Why
+Playing tag with my kids (6 and 8) and having to sit down after 10 minutes while they wanted to keep going. I don't want to be the winded dad on the sidelines.
+
+## Target Outcome
+Complete 8-week C25K program, then maintain ability to run/play actively with kids
+
+## Program Structure
+- **Duration:** 8 weeks (2025-10-13 - 2025-12-07)
+- **Schedule:** Monday / Wednesday / Friday
+- **Week 1 Start:** Monday, October 13, 2025
+- **Status:** ✅ COMPLETED (Week 8 finished 2025-12-07)
+
+## Key Metrics
+- Completed runs (M/W/F adherence)
+- How the run felt (1-5 or qualitative)
+- Any physical notes (soreness, energy, sleep impact)
+
+## Timezone
+America/New_York
+
+---
+
+## Daily/Weekly Workflow
+
+**Morning:** "good morning" or "gm" -> loads yesterday's summary, generates brief
+
+**End of Day:** "daily summary" -> structured reflection (timeline, key numbers, insights)
+- Saves as: `Summary-YYYY-MM-DD-DayName-WX-DY.md`
+
+**End of Week:** "weekly retro" -> reflect on what worked/didn't, identify adjustments
+
+**Start of Week:** "weekly planning" -> set week's focus, anticipate obstacles
+
+**Tips:**
+- Log your runs with timestamps ("7am - Week 1 Day 1 run, felt hard but finished")
+- Note how you felt before/during/after
+- Rest days matter too - note sleep, soreness, energy
+
+---
+
+## Post-Program Phase (Current)
+
+**Week 9+:** Exploring what comes next
+- Maintaining 3x/week running
+- Trying yoga with wife
+- Finding sustainable long-term practice
+
+---
+
+_Edit this document anytime to update your goals._

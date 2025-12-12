@@ -17,9 +17,14 @@ TZ='America/New_York' date '+%A, %B %d, %Y - %I:%M %p %Z'
 
 State clearly: "Today is [Day], [Full Date]."
 
-### 2. Find Yesterday's Summary
+### 2. Find Yesterday's Summary (or Most Recent)
 
 Calculate yesterday from verified date. Look for pattern: `Summary-YYYY-MM-DD-DayName-*.md` in project files.
+
+**Primary:** Match yesterday's date exactly.
+**Fallback:** If no exact match, find the most recent Summary file by date.
+
+If using fallback, note the date difference for transparency.
 
 ### 3. Confirm with User
 
@@ -101,13 +106,32 @@ User reads detail OR jumps to TL;DR depending on morning state.
 
 ## Edge Cases
 
-**If Summary Not Found:**
+**If Yesterday's Summary Not Found:**
+
+Search for the most recent Summary file:
+- Look for pattern `Summary-YYYY-MM-DD-*.md` in project files
+- Sort by date (newest first)
+- Use the most recent one available
+
+Inform user:
 ```
-No summary found for yesterday.
+Yesterday's summary ([expected_date]) not found.
+
+Found most recent: Summary-[actual_date]-[day]-[context].md
+(This is from [N] days ago)
+
+Shall I use this for today's morning brief?
+```
+
+Wait for confirmation, then proceed.
+
+**If NO Summaries Found At All:**
+```
+No summary files found in project.
 
 Would you like me to:
-1. Search recent conversations for context?
-2. Just start fresh today?
+1. Just start fresh today?
+2. Help you create your first daily summary tonight?
 ```
 
 **If Multiple Summaries:**
