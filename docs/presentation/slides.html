@@ -101,13 +101,19 @@
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/theme/white.css" id="theme">
   <style>
     .reveal { font-size: 28px; }
-    .reveal h1 { font-size: 1.8em; }
-    .reveal h2 { font-size: 1.4em; }
+    .reveal h1 { font-size: 1.8em; text-align: center; }
+    .reveal h2 { font-size: 1.4em; text-align: center; }
     .reveal pre { font-size: 0.7em; }
     .reveal table { font-size: 0.8em; }
     .smaller { font-size: 0.8em; }
-    .reveal ul, .reveal ol { text-align: left; }
-    .reveal li { text-align: left; }
+    .reveal .slides section { text-align: left; }
+    .reveal .slides #title-slide { text-align: center; }
+    .reveal .slides section ul,
+    .reveal .slides section ol {
+      display: block;
+      margin-left: 1em;
+    }
+    .centered { text-align: center; }
   </style>
 </head>
 <body>
@@ -145,10 +151,9 @@ yesterday.</p>
 <p>No agents to build. No RAG to configure.</p>
 <p>Just conversations that accumulate context.</p>
 </section>
-<section id="section" class="slide level1 center">
-<h1 class="center"></h1>
-<h2 id="evolution">Evolution</h2>
-<p>How the system developed</p>
+<section id="evolution" class="slide level1">
+<h1>Evolution</h1>
+<h2 id="how-the-system-developed">How the system developed</h2>
 </section>
 <section id="evolution-v1-giant-google-doc" class="slide level1">
 <h1>Evolution v1: Giant Google Doc</h1>
@@ -198,10 +203,9 @@ yesterday.</p>
 </ul>
 <p>No grand plan. Just iterated on friction.</p>
 </section>
-<section id="section-1" class="slide level1 center">
-<h1 class="center"></h1>
-<h2 id="the-platform">The Platform</h2>
-<p>Claude.ai Projects + Skills</p>
+<section id="the-platform" class="slide level1">
+<h1>The Platform</h1>
+<h2 id="claude.ai-projects-skills">Claude.ai Projects + Skills</h2>
 </section>
 <section id="projects-the-mental-model" class="slide level1">
 <h1>Projects: The Mental Model</h1>
@@ -316,10 +320,10 @@ Week 4 ─┘</code></pre>
 <p><strong>Manual workflow:</strong> Download retro → add to project →
 remove rolled-up docs</p>
 </section>
-<section id="section-2" class="slide level1 center">
-<h1 class="center"></h1>
-<h2 id="skills">Skills</h2>
-<p>On-demand instructions for Claude</p>
+<section id="skills" class="slide level1">
+<h1>Skills</h1>
+<h2 id="on-demand-instructions-for-claude">On-demand instructions for
+Claude</h2>
 </section>
 <section id="whats-a-skill-basic" class="slide level1">
 <h1>What’s a Skill? (Basic)</h1>
@@ -426,12 +430,13 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href=
 </tr>
 </tbody>
 </table>
+<div class="centered">
 <p><strong>Different tools, different jobs.</strong></p>
+</div>
 </section>
-<section id="section-3" class="slide level1 center">
-<h1 class="center"></h1>
-<h2 id="architecture">Architecture</h2>
-<p>How the pieces fit together</p>
+<section id="architecture" class="slide level1">
+<h1>Architecture</h1>
+<h2 id="how-the-pieces-fit-together">How the pieces fit together</h2>
 </section>
 <section id="repo-structure" class="slide level1">
 <h1>Repo Structure</h1>
@@ -464,10 +469,9 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href=
 └────────────────────────────────────┘</code></pre>
 <p>Import both. Claude loads both at runtime.</p>
 </section>
-<section id="section-4" class="slide level1 center">
-<h1 class="center"></h1>
-<h2 id="synthetic-data">Synthetic Data</h2>
-<p>Why Rob isn’t real</p>
+<section id="synthetic-data" class="slide level1">
+<h1>Synthetic Data</h1>
+<h2 id="why-rob-isnt-real">Why Rob isn’t real</h2>
 </section>
 <section id="the-demo-data-problem" class="slide level1">
 <h1>The Demo Data Problem</h1>
@@ -553,10 +557,9 @@ Week 9: Post-program (ongoing practice)
 <p><strong>Demonstrates fractal compression with believable
 timeline.</strong></p>
 </section>
-<section id="section-5" class="slide level1 center">
-<h1 class="center"></h1>
-<h2 id="demo">Demo</h2>
-<p>Two scenarios</p>
+<section id="demo" class="slide level1">
+<h1>Demo</h1>
+<h2 id="two-scenarios">Two scenarios</h2>
 </section>
 <section id="demo-overview" class="slide level1">
 <h1>Demo Overview</h1>
@@ -662,10 +665,9 @@ Experiments for Next Week:
 management.</p>
 <p>Manual but rare (weekly at most).</p>
 </section>
-<section id="section-6" class="slide level1 center">
-<h1 class="center"></h1>
-<h2 id="lessons">Lessons</h2>
-<p>What actually matters</p>
+<section id="lessons" class="slide level1">
+<h1>Lessons</h1>
+<h2 id="what-actually-matters">What actually matters</h2>
 </section>
 <section id="what-i-learned" class="slide level1">
 <h1>What I Learned</h1>
@@ -813,10 +815,9 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href=
 <p>Like memory that decays naturally over time.</p>
 <p>“Summaries are all you need”</p>
 </section>
-<section id="section-7" class="slide level1 center">
-<h1 class="center"></h1>
-<h2 id="whats-next">What’s Next</h2>
-<p>Open source and beyond</p>
+<section id="whats-next" class="slide level1">
+<h1>What’s Next</h1>
+<h2 id="open-source-and-beyond">Open source and beyond</h2>
 </section>
 <section id="where-this-is-going" class="slide level1">
 <h1>Where This Is Going</h1>

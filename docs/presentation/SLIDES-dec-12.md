@@ -9,13 +9,19 @@ slideNumber: true
 header-includes: |
   <style>
     .reveal { font-size: 28px; }
-    .reveal h1 { font-size: 1.8em; }
-    .reveal h2 { font-size: 1.4em; }
+    .reveal h1 { font-size: 1.8em; text-align: center; }
+    .reveal h2 { font-size: 1.4em; text-align: center; }
     .reveal pre { font-size: 0.7em; }
     .reveal table { font-size: 0.8em; }
     .smaller { font-size: 0.8em; }
-    .reveal ul, .reveal ol { text-align: left; }
-    .reveal li { text-align: left; }
+    .reveal .slides section { text-align: left; }
+    .reveal .slides #title-slide { text-align: center; }
+    .reveal .slides section ul,
+    .reveal .slides section ol {
+      display: block;
+      margin-left: 1em;
+    }
+    .centered { text-align: center; }
   </style>
 ---
 
@@ -58,11 +64,9 @@ Just conversations that accumulate context.
 
 ---
 
-# {.center}
+# Evolution
 
-## Evolution
-
-How the system developed
+## How the system developed
 
 ---
 
@@ -117,11 +121,9 @@ No grand plan. Just iterated on friction.
 
 ---
 
-# {.center}
+# The Platform
 
-## The Platform
-
-Claude.ai Projects + Skills
+## Claude.ai Projects + Skills
 
 ---
 
@@ -218,11 +220,9 @@ Week 4 ─┘
 
 ---
 
-# {.center}
+# Skills
 
-## Skills
-
-On-demand instructions for Claude
+## On-demand instructions for Claude
 
 ---
 
@@ -334,15 +334,15 @@ PR pending to fix their tooling.
 | Context = your documents | Context = your codebase |
 | Skills in Settings | Skills in repo |
 
+::: centered
 **Different tools, different jobs.**
+:::
 
 ---
 
-# {.center}
+# Architecture
 
-## Architecture
-
-How the pieces fit together
+## How the pieces fit together
 
 ---
 
@@ -387,11 +387,9 @@ Import both. Claude loads both at runtime.
 
 ---
 
-# {.center}
+# Synthetic Data
 
-## Synthetic Data
-
-Why Rob isn't real
+## Why Rob isn't real
 
 ---
 
@@ -472,11 +470,9 @@ Week 9: Post-program (ongoing practice)
 
 ---
 
-# {.center}
+# Demo
 
-## Demo
-
-Two scenarios
+## Two scenarios
 
 ---
 
@@ -611,11 +607,9 @@ Manual but rare (weekly at most).
 
 ---
 
-# {.center}
+# Lessons
 
-## Lessons
-
-What actually matters
+## What actually matters
 
 ---
 
@@ -780,11 +774,9 @@ Like memory that decays naturally over time.
 
 ---
 
-# {.center}
+# What's Next
 
-## What's Next
-
-Open source and beyond
+## Open source and beyond
 
 ---
 
