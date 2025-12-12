@@ -12,6 +12,7 @@ header-includes: |
     .reveal h1 { font-size: 1.8em; text-align: center; }
     .reveal h2 { font-size: 1.4em; text-align: center; }
     .reveal pre { font-size: 0.7em; }
+    .reveal code { font-size: 0.85em; background: rgba(0,0,0,0.08); padding: 0.1em 0.3em; border-radius: 3px; }
     .reveal table { font-size: 0.8em; }
     .smaller { font-size: 0.8em; }
     .reveal .slides section { text-align: left; }
@@ -73,16 +74,22 @@ This is gonna take me a lot of building before I can easily use it...
 # Evolution v1: Journaling Agents
 
 - Various attempts at building agents from scratch got stuck on all the little implementation details
+
+# Evolution v1.1 Just use Claude.ai
+
 - Using a basic conversation in claude.ai - ask it to summarize → copy/paste into new chat
 - Repeat daily. Forever.
+- Loses long term view.
 
 ---
 
-# Evolution v2: Projects (The Aha Moment)
+# Evolution v2: Claude.ai Projects (The Aha Moment)
 
 - Projects + saving to documents
 - Documents persist across conversations!
+- Tokens count against my claude subscription so there's no API cost concerns while prototyping
 - But... wasting tokens on instructions
+- And daily summaries are starting to accumulate
 
 ```
 ┌─────────────────────────────────────┐
@@ -99,7 +106,8 @@ This is gonna take me a lot of building before I can easily use it...
 
 - On-demand instructions (only loaded when needed)
 - Retro instructions only loaded during retro
-- Not burning tokens every conversation
+- Not burning tokens every conversation on instructions
+- Retro skill can do the summary of summaries work to clear older docs out of context
 
 ---
 
@@ -212,6 +220,9 @@ Week 4 ─┘
 
 **Manual workflow:** Download retro → add to project → remove rolled-up docs
 
+I tend to kick off a new conversation in project every sunday and use the retro skill, then the planning skill.
+The skills are written to be adaptable though and usable at whatever timeframe you prefer, daily, weekly, fortnitely, monthly, quarterly, 90 days, whatever you want 
+
 ---
 
 # Skills
@@ -252,7 +263,7 @@ description: Use when user says "daily summary"
 
 # What's a Skill? (With Tools)
 
-Skills can bundle Python scripts.
+Skills can bundle Python scripts (I believe TypeScript is also supported).
 
 ```
 skill-creator/
@@ -285,15 +296,19 @@ Compute: LLM executes skill instructions
 Output: Summary-2025-12-11-Wednesday.md
 ```
 
-The instructions *are* the program.
+The skills *are* functions.
+
+The files *are* data.
+
 The context *is* the state.
+
 The LLM *is* the runtime.
 
 ---
 
 # Skill Triggers
 
-Triggers are function calls in human language.
+Triggers are effectively function calls in human language.
 
 | Skill | Triggers |
 |-------|----------|
@@ -308,6 +323,7 @@ Triggers are function calls in human language.
 - Claude pattern-matches against skill descriptions
 - Skill instructions load into context
 - Claude executes the process
+- Artifacts and files become the data it processes within context.
 
 ---
 
@@ -315,6 +331,7 @@ Triggers are function calls in human language.
 
 ::: notes
 Links showing the inconsistency:
+
 - https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
 - https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
 - https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
@@ -756,9 +773,9 @@ Manual but rare (weekly at most).
 # What I Learned
 
 1. **Skills are prompts** - just better organized
-2. **Context management is the game** - not agent architecture
+2. **Context management is the game** - simple agent architecture is enough
 3. **Low-build wins** - I'm still using this daily
-4. **Personal data stays personal** - base/personal split works
+4. **Personal data stays personal** - base/personal split works (microagent should help with digital sovereignty of actual conversations)
 
 ---
 
@@ -791,11 +808,19 @@ Just finished the 3pm meeting. Went long.
 Starting focused work block now.
 ```
 
-The more temporal context, the better the summary.
+At one point I tried using iso8601 time stamps manually. Now I usually just put HH:MM into chat, and most of the skills will ground themselves with a call to `date`.
+
+```
+16:00
+wrapped meetings for the day
+gonna grab a snack
+```
+
+A little temporal context, goes a long way.
 
 ---
 
-# Skills Are Global (Pain Point)
+# Skills Are Global to all Claude.ai conversations (Pain Point)
 
 Platform limitation: Skills not project-scoped
 
@@ -815,7 +840,9 @@ Platform limitation: Skills not project-scoped
 # Platform Limitations (Real Talk)
 
 - Skills are **global** (not project-scoped)
-- Skill upload/download is clunky, hard to version them
+- They do seem to be separated between claude.ai conversations and claude code though
+- Skill upload/download in the settings page and project pages is clunky, hard to version them
+- Project page doesn't offer an artifacts view of all artifacts from the project
 - Mobile summary → gm flow is clunky - missing "add to project"
 - Context limits exist (Pro vs Max)
 - **Pruning is manual:** generate artifact → save artifact locally to back up → add to project → remove rolled-up docs after retro
@@ -839,7 +866,7 @@ Skill-creator approach won: fetch SKILL.md + package.
 
 # Safety Boundaries
 
-This is a **reflection tool**, not a replacement for:
+This is a **reflection tool** with a minimal context management workflow, not a replacement for:
 
 - Medical advice
 - Mental health support
@@ -858,13 +885,15 @@ Claude has limitations. Critical decisions need professionals.
 
 **Primitives explored:**
 
+- Claude.ai vm capabilities
 - Conversation (ephemeral)
 - Artifact (generated)
 - Project document (persistent)
 - Memory (tried - adds complexity, not required)
 - Instructions (tried - harder to git track, frankly not needed if there's a project file instead)
+- Skills (with a lot of iteration and tuning to get high quality useful output)
 
-**Insight:** Project docs > base instructions for git tracking
+**Insight:** project files + skills is incredibly capable
 
 ---
 
@@ -929,7 +958,7 @@ Like memory that decays naturally over time.
 
 "Summary of Summaries is all you need"*
 
-*for this use case at least
+*for this workflow at least
 
 ---
 
@@ -946,6 +975,9 @@ Like memory that decays naturally over time.
 - MIT license
 - Base skills shareable
 - Rob example included
+- Minimum requirements: claude pro
+- Recommended: claude max x5
+- Create a project, copy quickstart into a conversation, iterate
 
 **Microagent (future)**
 
@@ -970,6 +1002,8 @@ Like memory that decays naturally over time.
 - **Personal extensions** - your metrics, thresholds, protocols (private repo)
 
 Edit → pack → upload → test → repeat.
+
+They can be edited in project conversations, or you can use claude code in the `claude-as-coach` repo. They each have tradeoffs.
 
 ---
 

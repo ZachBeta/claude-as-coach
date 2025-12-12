@@ -104,6 +104,7 @@
     .reveal h1 { font-size: 1.8em; text-align: center; }
     .reveal h2 { font-size: 1.4em; text-align: center; }
     .reveal pre { font-size: 0.7em; }
+    .reveal code { font-size: 0.85em; background: rgba(0,0,0,0.08); padding: 0.1em 0.3em; border-radius: 3px; }
     .reveal table { font-size: 0.8em; }
     .smaller { font-size: 0.8em; }
     .reveal .slides section { text-align: left; }
@@ -164,17 +165,27 @@ it…</p>
 <ul>
 <li>Various attempts at building agents from scratch got stuck on all
 the little implementation details</li>
+</ul>
+</section>
+<section id="evolution-v1.1-just-use-claude.ai" class="slide level1">
+<h1>Evolution v1.1 Just use Claude.ai</h1>
+<ul>
 <li>Using a basic conversation in claude.ai - ask it to summarize →
 copy/paste into new chat</li>
 <li>Repeat daily. Forever.</li>
+<li>Loses long term view.</li>
 </ul>
 </section>
-<section id="evolution-v2-projects-the-aha-moment" class="slide level1">
-<h1>Evolution v2: Projects (The Aha Moment)</h1>
+<section id="evolution-v2-claude.ai-projects-the-aha-moment"
+class="slide level1">
+<h1>Evolution v2: Claude.ai Projects (The Aha Moment)</h1>
 <ul>
 <li>Projects + saving to documents</li>
 <li>Documents persist across conversations!</li>
+<li>Tokens count against my claude subscription so there’s no API cost
+concerns while prototyping</li>
 <li>But… wasting tokens on instructions</li>
+<li>And daily summaries are starting to accumulate</li>
 </ul>
 <pre><code>┌─────────────────────────────────────┐
 │ Project Context (always loaded)     │
@@ -188,7 +199,9 @@ copy/paste into new chat</li>
 <ul>
 <li>On-demand instructions (only loaded when needed)</li>
 <li>Retro instructions only loaded during retro</li>
-<li>Not burning tokens every conversation</li>
+<li>Not burning tokens every conversation on instructions</li>
+<li>Retro skill can do the summary of summaries work to clear older docs
+out of context</li>
 </ul>
 </section>
 <section id="evolution-v4-skill-inheritance" class="slide level1">
@@ -320,6 +333,10 @@ Week 3 ─┤
 Week 4 ─┘</code></pre>
 <p><strong>Manual workflow:</strong> Download retro → add to project →
 remove rolled-up docs</p>
+<p>I tend to kick off a new conversation in project every sunday and use
+the retro skill, then the planning skill. The skills are written to be
+adaptable though and usable at whatever timeframe you prefer, daily,
+weekly, fortnitely, monthly, quarterly, 90 days, whatever you want</p>
 </section>
 <section id="skills" class="slide level1">
 <h1>Skills</h1>
@@ -350,7 +367,8 @@ class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb7-1"><a href="
 </section>
 <section id="whats-a-skill-with-tools" class="slide level1">
 <h1>What’s a Skill? (With Tools)</h1>
-<p>Skills can bundle Python scripts.</p>
+<p>Skills can bundle Python scripts (I believe TypeScript is also
+supported).</p>
 <pre><code>skill-creator/
 ├── SKILL.md              # LLM instructions
 └── scripts/
@@ -374,12 +392,14 @@ Compute: LLM executes skill instructions
          Calls tools as needed
 
 Output: Summary-2025-12-11-Wednesday.md</code></pre>
-<p>The instructions <em>are</em> the program. The context <em>is</em>
-the state. The LLM <em>is</em> the runtime.</p>
+<p>The skills <em>are</em> functions.</p>
+<p>The files <em>are</em> data.</p>
+<p>The context <em>is</em> the state.</p>
+<p>The LLM <em>is</em> the runtime.</p>
 </section>
 <section id="skill-triggers" class="slide level1">
 <h1>Skill Triggers</h1>
-<p>Triggers are function calls in human language.</p>
+<p>Triggers are effectively function calls in human language.</p>
 <table>
 <thead>
 <tr>
@@ -412,21 +432,21 @@ the state. The LLM <em>is</em> the runtime.</p>
 <li>Claude pattern-matches against skill descriptions</li>
 <li>Skill instructions load into context</li>
 <li>Claude executes the process</li>
+<li>Artifacts and files become the data it processes within
+context.</li>
 </ul>
 </section>
 <section id="the-.zip.skill-confusion" class="slide level1">
 <h1>The .zip/.skill Confusion</h1>
 <aside class="notes">
-<p>Links showing the inconsistency: -
-https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
--
-https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
--
-https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
--
-https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md
--
-https://github.com/anthropics/skills/blob/main/skills/skill-creator/scripts/package_skill.py#L64</p>
+<p>Links showing the inconsistency:</p>
+<ul>
+<li>https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills</li>
+<li>https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview</li>
+<li>https://support.claude.com/en/articles/12512198-how-to-create-custom-skills</li>
+<li>https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md</li>
+<li>https://github.com/anthropics/skills/blob/main/skills/skill-creator/scripts/package_skill.py#L64</li>
+</ul>
 </aside>
 <p>Most Anthropic docs say <code>.zip</code></p>
 <p>But <code>skill-creator</code> tool outputs <code>.skill</code></p>
@@ -874,11 +894,12 @@ height="500" alt="Select and delete" />
 <h1>What I Learned</h1>
 <ol type="1">
 <li><strong>Skills are prompts</strong> - just better organized</li>
-<li><strong>Context management is the game</strong> - not agent
-architecture</li>
+<li><strong>Context management is the game</strong> - simple agent
+architecture is enough</li>
 <li><strong>Low-build wins</strong> - I’m still using this daily</li>
 <li><strong>Personal data stays personal</strong> - base/personal split
-works</li>
+works (microagent should help with digital sovereignty of actual
+conversations)</li>
 </ol>
 </section>
 <section id="llms-are-bad-at-dates" class="slide level1">
@@ -901,10 +922,18 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href=
 
 Just finished the 3pm meeting. Went long.
 Starting focused work block now.</code></pre>
-<p>The more temporal context, the better the summary.</p>
+<p>At one point I tried using iso8601 time stamps manually. Now I
+usually just put HH:MM into chat, and most of the skills will ground
+themselves with a call to <code>date</code>.</p>
+<pre><code>16:00
+wrapped meetings for the day
+gonna grab a snack</code></pre>
+<p>A little temporal context, goes a long way.</p>
 </section>
-<section id="skills-are-global-pain-point" class="slide level1">
-<h1>Skills Are Global (Pain Point)</h1>
+<section
+id="skills-are-global-to-all-claude.ai-conversations-pain-point"
+class="slide level1">
+<h1>Skills Are Global to all Claude.ai conversations (Pain Point)</h1>
 <p>Platform limitation: Skills not project-scoped</p>
 <p><strong>The problem:</strong></p>
 <ul>
@@ -922,7 +951,12 @@ Starting focused work block now.</code></pre>
 <h1>Platform Limitations (Real Talk)</h1>
 <ul>
 <li>Skills are <strong>global</strong> (not project-scoped)</li>
-<li>Skill upload/download is clunky, hard to version them</li>
+<li>They do seem to be separated between claude.ai conversations and
+claude code though</li>
+<li>Skill upload/download in the settings page and project pages is
+clunky, hard to version them</li>
+<li>Project page doesn’t offer an artifacts view of all artifacts from
+the project</li>
 <li>Mobile summary → gm flow is clunky - missing “add to project”</li>
 <li>Context limits exist (Pro vs Max)</li>
 <li><strong>Pruning is manual:</strong> generate artifact → save
@@ -941,8 +975,8 @@ QUICKSTART-MANUAL.md    # Fallback (manually set up skills)</code></pre>
 </section>
 <section id="safety-boundaries" class="slide level1">
 <h1>Safety Boundaries</h1>
-<p>This is a <strong>reflection tool</strong>, not a replacement
-for:</p>
+<p>This is a <strong>reflection tool</strong> with a minimal context
+management workflow, not a replacement for:</p>
 <ul>
 <li>Medical advice</li>
 <li>Mental health support</li>
@@ -957,15 +991,18 @@ for:</p>
 <p>“Zero build” doesn’t mean zero iteration.</p>
 <p><strong>Primitives explored:</strong></p>
 <ul>
+<li>Claude.ai vm capabilities</li>
 <li>Conversation (ephemeral)</li>
 <li>Artifact (generated)</li>
 <li>Project document (persistent)</li>
 <li>Memory (tried - adds complexity, not required)</li>
 <li>Instructions (tried - harder to git track, frankly not needed if
 there’s a project file instead)</li>
+<li>Skills (with a lot of iteration and tuning to get high quality
+useful output)</li>
 </ul>
-<p><strong>Insight:</strong> Project docs &gt; base instructions for git
-tracking</p>
+<p><strong>Insight:</strong> project files + skills is incredibly
+capable</p>
 </section>
 <section id="features.md-dev-with-claude-code" class="slide level1">
 <h1>FEATURES.md: Dev with Claude Code</h1>
@@ -986,15 +1023,15 @@ sessions.</p>
 <section id="slides-as-code" class="slide level1">
 <h1>Slides as Code</h1>
 <p>This presentation is markdown + pandoc + reveal.js.</p>
-<div class="sourceCode" id="cb19"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Edit content</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ex">vim</span> SLIDES-dec-12.md</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Render</span></span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> <span class="at">-t</span> revealjs <span class="at">-s</span> SLIDES-dec-12.md <span class="at">-o</span> slides.html</span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="co"># View</span></span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="ex">open</span> slides.html</span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Edit content</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="ex">vim</span> SLIDES-dec-12.md</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Render</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> <span class="at">-t</span> revealjs <span class="at">-s</span> SLIDES-dec-12.md <span class="at">-o</span> slides.html</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="co"># View</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="ex">open</span> slides.html</span></code></pre></div>
 <p><strong>Trade-off:</strong></p>
 <ul>
 <li>Less customizable than Keynote/Slides</li>
@@ -1031,7 +1068,7 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href=
 <p>Context stays in documents. Claude reads them all.</p>
 <p>Like memory that decays naturally over time.</p>
 <p>“Summary of Summaries is all you need”*</p>
-<p>*for this use case at least</p>
+<p>*for this workflow at least</p>
 </section>
 <section id="whats-next" class="slide level1">
 <h1>What’s Next</h1>
@@ -1045,6 +1082,9 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href=
 <li>MIT license</li>
 <li>Base skills shareable</li>
 <li>Rob example included</li>
+<li>Minimum requirements: claude pro</li>
+<li>Recommended: claude max x5</li>
+<li>Create a project, copy quickstart into a conversation, iterate</li>
 </ul>
 <p><strong>Microagent (future)</strong></p>
 <ul>
@@ -1070,6 +1110,9 @@ repo)</li>
 protocols (private repo)</li>
 </ul>
 <p>Edit → pack → upload → test → repeat.</p>
+<p>They can be edited in project conversations, or you can use claude
+code in the <code>claude-as-coach</code> repo. They each have
+tradeoffs.</p>
 </section>
 <section id="how-to-contribute" class="slide level1">
 <h1>How to Contribute</h1>
