@@ -4,117 +4,34 @@
 
 ## Active
 
-### 🔴 High Priority: Dec 12th Demo Content
+### 🔴 High Priority: Core Workflow Reliability
 
-#### F35: Demo Script & Date Regeneration
-**Status:** Active - Demo infrastructure
-**Effort:** Path A (30-45 min for regeneration script)
-**Priority:** High (Dec 12th presentation)
-**Detail:** TBD (simple enough for inline tracking)
+*Re-prioritized post-Dec 12 presentation. Focus shifted from demo polish to ongoing personal use quality.*
 
-**Goal:** Make demo script runnable on any date without manual edits
+#### F39: Summary Skill Date Drift Fix
+**Status:** Active - Implementation ready
+**Effort:** Quick win (20-30 min)
+**Priority:** High (affects daily workflow reliability)
+**Detail:** [docs/features/FEATURE-summary-date-drift.md](features/FEATURE-summary-date-drift.md)
+**Source:** Week 8 retro (P1)
 
-**Problem:**
-- Demo script (`DEMO-SCRIPT.md`) has hardcoded dates (Saturday, December 7, 2025)
-- Rob's example documents have fixed dates (`Summary-2025-12-01-Monday-W9-D1.md`, etc.)
-- Skills verify actual current date → mismatch breaks demo flow
-- Running demo on different day requires manual date updates across 10+ files
+**Problem:** Daily summary skill gets confused when run the next morning - drifts back to "today" instead of the date being summarized.
 
-**Solution options:**
-| Option | Effort | Trade-off |
-|--------|--------|-----------|
-| **A: Regeneration script** | 30-45 min | Script rewrites dates in demo script + Rob's docs based on "demo day" |
-| **B: "Pretend date" mode** | 1-2 hrs | Skills accept override date parameter for demos |
-| **C: Relative-only demo** | 15-20 min | Rewrite demo to use only relative language, accept date mismatches |
-
-**Recommended:** Option A - Python script that takes target demo date, regenerates all files with correct dates/day-names
-
-**Tasks:**
-1. Move `DEMO-SCRIPT.md` → `docs/DEMO-SCRIPT.md`
-2. Create `scripts/regenerate_demo_dates.py`
-3. Script updates: demo script, Rob's 10 example documents
-4. Test: run script, verify demo flow works end-to-end
-5. Document usage in demo script header
-
-**Deliverables:**
-- `docs/DEMO-SCRIPT.md` (relocated)
-- `scripts/regenerate_demo_dates.py` (new)
-- Updated Rob documents with regenerated dates
-
-**Next:** Move demo script, design regeneration approach
+**Fix:** Add explicit SUMMARY_DATE vs TODAY distinction throughout skill.
 
 ---
 
-#### F37: Skill ZIP Format Discrepancy - PR to anthropics/skills
-**Status:** Ready for PR (confirmed 2025-12-06)
-**Effort:** Quick win (15-20 min)
-**Priority:** Medium (affects all skill uploads, but workaround known)
+#### F46: Skill Improvement - Retro & Planning Learnings
+**Status:** Active - Implementation ready
+**Effort:** Path B (1-2 hours)
+**Priority:** High (skill quality improvements)
+**Detail:** [docs/features/FEATURE-skill-improvements-retro-planning.md](features/FEATURE-skill-improvements-retro-planning.md)
+**Source:** Dec 7 monthly session + Week 8 retro (P2, P3)
 
-**Problem:** Vendor tooling produces `.skill` files that Claude.ai uploader rejects
-
-**Confirmed behavior (2025-12-06):**
-- ✅ `.zip` extension uploads work
-- ❌ `.skill` extension uploads fail
-- Vendor `package_skill.py` outputs `.skill` (broken)
-- Vendor `SKILL.md` documents `.skill` extension (incorrect)
-
-**Files to fix in anthropics/skills:**
-
-| File | Line | Current | Fix |
-|------|------|---------|-----|
-| `skills/skill-creator/scripts/package_skill.py` | 64 | `f"{skill_name}.skill"` | `f"{skill_name}.zip"` |
-| `skills/skill-creator/SKILL.md` | 343 | "a zip file with a .skill extension" | "a .zip file" |
-
-**PR checklist:**
-1. Clean up fork first (remove stray pycache commit from ZachBeta/anthropics-skills)
-2. Create branch for fix
-3. Apply both edits
-4. Test: run package_skill.py, verify .zip output, upload to Claude.ai
-5. Submit PR with reproduction steps
-
-**Workaround (current):** Use local `pack_skill.py` which outputs `.zip`, or manually rename `.skill` → `.zip`
-
----
-
-#### F38: Alternative Onboarding Paths
-**Status:** Test for Dec 12
-**Effort:** 30-45 min testing
-**Priority:** High (may simplify demo significantly)
-
-**Problem:** Current onboarding (Settings > Capabilities > upload zips) is clunky
-
-**Alternative paths to test:**
-- **Path A:** Paste QUICKSTART.md raw URL into fresh project chat, let agent bootstrap
-- **Path B:** Upload skill zips via chat + use skill-creator skill to customize
-
-**Hypothesis:** Both may be simpler than Settings > Capabilities flow
-
-**Action:** Test both paths with fresh project, document which works best for new users
-
----
-
-### 🟡 Medium Priority: Demo Infrastructure
-
-#### F49: Synthetic Demo Data System
-**Status:** Planning
-**Effort:** Medium (4-6 hours)
-**Priority:** Medium (supports demo reliability)
-**Detail:** [docs/features/FEATURE-synthetic-demo-data.md](features/FEATURE-synthetic-demo-data.md)
-**Source:** Dec 11 presentation prep - discovered date alignment issues
-
-**Problem:** Synthetic demo data only covers "run days" (Mon/Wed/Fri), causing gaps when demo day doesn't align. Skills assume "yesterday" exists, but rest days have no summaries.
-
-**Two tracks:**
-1. **Skill resilience:** Update skills to gracefully handle missing data ("No summary for yesterday. Last was Wed.")
-2. **Data completeness:** Generate rest-day summaries, ensure "yesterday" always exists for any demo day
-
-**Tasks:**
-- [ ] Phase 1: Update morning routine + retro skills for missing data handling
-- [ ] Phase 2: Create rest-day summary templates for Rob
-- [ ] Phase 3: Add `--ensure-yesterday` flag to regenerate script
-- [ ] Phase 4: Document demo day requirements per scenario
-
-**Why now:** Real personal workflow doesn't hit these gaps (daily logging). Synthetic data for demos needs more coverage OR skills need more resilience (ideally both).
+**Key improvements:**
+- P2: Sunday gap in weekly retros (week = Sun-Sat, load prior Sunday first)
+- P3: Scientific method framing (observation -> finding -> hypothesis -> conclusion)
+- Trigger pattern fixes for monthly skills
 
 ---
 
@@ -203,28 +120,49 @@ Workflow: Morning → Summary → Save → New chat
 
 ---
 
-### 🟡 Medium Priority: Pre-Presentation Polish
+### 🟡 Medium Priority: Quality Polish
+
+#### F51: Skill Platform Portability (Remove Claude.ai-Specific Paths)
+**Status:** Proposed
+**Effort:** Path A (1-2 hours)
+**Priority:** Medium (portability for microagent)
+**Source:** Week 9 planning
+
+**Problem:** Skills contain Claude.ai VM-specific directory references (e.g., `/mnt/user/`, hardcoded paths) that:
+- Won't work on other platforms (microagent, other LLM runtimes)
+- Confuse users who expect different file handling
+- Couple skills to specific platform implementation details
+
+**Goal:** Make skills platform-agnostic by removing/abstracting hardcoded paths.
+
+**Audit needed:**
+- [ ] daily-summary-base - check for path references
+- [ ] daily-morning-routine-base - check for path references
+- [ ] planning-base - check for path references
+- [ ] retrospective-base - check for path references
+- [ ] project-coach-setup-base - check for path references
+
+**Proposed changes:**
+- Replace hardcoded paths with relative references or platform-agnostic language
+- Use "save to project" / "project documents" instead of specific paths
+- Document platform-specific behavior in a separate section if needed
+
+**Benefits:**
+- Skills work across Claude.ai, Claude Code, microagent
+- Cleaner separation of skill logic from platform details
+- Easier adoption on alternative runtimes
+
+**Related:** F41 (Microagent Deployment), F44 (Repository Rename)
+
+---
 
 #### F27: Skill Vendor Compliance Review
 **Status:** Active - Quality improvement
 **Effort:** Path B (30-45 min per phase)
-**Priority:** Medium-High (improves presentation quality)
+**Priority:** Medium (improves skill quality)
 **Detail:** [docs/features/FEATURE-skill-vendor-compliance.md](features/FEATURE-skill-vendor-compliance.md)
 
 **Goal:** Systematically review all skills against vendor/skills/skill-creator/SKILL.md conventions
-
-**Scope:**
-- Phase 1: Base skills (5 skills) - Priority for demo testing
-- Phase 2: Personal skills (4 skills) - Production quality
-- Phase 3: Alice example skills - Deferred to F17 Task 3
-
-**Checklist per skill:**
-- Description includes trigger phrases and "when to use"
-- No unnecessary verbosity (Claude is already smart)
-- Line count under 500 lines
-- Imperative form throughout
-- No "agent flexibility" notes
-- Passes vendor quick_validate.py
 
 **Already completed:**
 - ✅ project-coach-setup-base (condensed 360→120 lines)
@@ -235,63 +173,35 @@ Workflow: Morning → Summary → Save → New chat
 
 ---
 
-#### F39: Demo Datetime Issues
-**Status:** Proposed - Investigation needed
-**Effort:** 20-30 min investigation
-**Priority:** Medium (came up in demo)
+#### F19: Project Memories Evaluation
+**Status:** Active - Evaluation in progress
+**Effort:** Path A (1-2 hours)
+**Priority:** Medium (clarity improves system understanding)
+**Detail:** [docs/features/FEATURE-memory-evaluation.md](features/FEATURE-memory-evaluation.md)
+**Source:** Original backlog + Week 8 retro (P4)
 
-**Problem:** Date verification issues occurred during 1-on-1 demo sessions
+**Goal:** Evaluate whether Claude Projects' auto-generated memories provide value or add confusion.
 
-**Action:** Investigate what went wrong, improve date handling guidance in skills
-
-**Questions to answer:**
-- Did timezone detection fail?
-- Was there a mismatch between expected and actual dates?
-- Do skills need clearer date confirmation flows?
+**Tasks:** Export memories, categorize by value, test with/without, make decision (keep/prune/disable).
 
 ---
 
-#### F46: Skill Improvement - Retro & Planning Learnings
-**Status:** Proposed - Learnings captured from November 2025 monthly session
-**Effort:** Path B (1-2 hours to implement all improvements)
-**Priority:** Medium (skill quality improvements)
-**Source:** Session notes from Dec 7, 2025 monthly retro + planning
+#### F52: Identity Change Framing for Behavior Change
+**Status:** Proposed
+**Touches:** 1 (latest: 2025-12-19)
+**Effort:** Path A (1-2 hours)
+**Priority:** Medium (documentation enhancement)
+**Source:** Dec 12 presentation feedback (Robb Winkle)
 
-**Problem:** During November monthly retro and December monthly planning, several skill gaps and improvement patterns were identified.
+**Concept:** Behavior change research suggests identity change is key to lasting habits. The coaching system could incorporate this by helping users explore and roleplay their desired identity.
 
-**Trigger Pattern Issues (Both Skills):**
-- "monthly retro" and "december planning" didn't auto-trigger skills
-- Need to add: `monthly retro/planning`, `[month name] retro/planning`, `retro then planning`
+**Reference:** https://www.psychologytoday.com/us/blog/automatic-you/202206/the-key-behavior-change-is-identity-change
 
-**Retrospective-base Improvements:**
-| Pattern | Description |
-|---------|-------------|
-| Fractal time-scale review | Walk through smaller unit (week-by-week) before synthesis |
-| Plan vs Actual section | Standard for monthly, optional for weekly |
-| Per-section correction invitations | Pause after each major section for user correction |
-| n=1 science language discipline | Findings (observable) vs Hypotheses (under experiment) vs Conclusions (require more data) |
-| Meta-insights prompt | "What patterns emerged that weren't in the weekly retros?" |
-| Balance check | Explicitly check for "What Didn't Work" asymmetry |
-
-**Planning-base Improvements:**
-| Pattern | Description |
-|---------|-------------|
-| Retro → Planning flow | Suggest completing retro first if not done |
-| User-driven theme identification | Reflect back priorities, let user name the theme |
-| List → Reflect → Refine | User lists raw → Claude organizes → User confirms/adjusts |
-| Natural phase breaks | For monthly, find natural halves based on deadlines/focus shifts |
-| Check existing docs | Before generating, check if plan already exists for that period |
-| Plans are scaffolding | Plans are removed after use; retros hold durable knowledge |
-| Decision filter pattern | Every monthly plan produces 2-question filter to test activities |
-
-**Open Questions (Deferred):**
-- Should monthly-retrospective/planning be separate skills or modes of base skills?
-- Gratitude section: include or skip for monthly retros?
-- How detailed should weekly outline be in monthly plan?
-
-**Specific Text Additions:** See original iteration notes in git history (removed after documenting here)
-
-**Next:** When time permits, implement trigger pattern fixes first (quick win), then methodology improvements
+**Potential additions:**
+- Identity exploration in project-coach-setup (who do you want to become?)
+- Persona/identity framing in daily summaries
+- "Acting as if" prompts in morning routine
+- Identity reinforcement in weekly retros
 
 ---
 
@@ -316,6 +226,50 @@ Workflow: Morning → Summary → Save → New chat
 ---
 
 ## Backlog
+
+### Demo Infrastructure (Deprioritized post-Dec 12)
+
+#### F35: Demo Script & Date Regeneration
+**Status:** Backlog (was Active)
+**Effort:** Path A (30-45 min)
+**Priority:** Low (demo infrastructure)
+
+**Goal:** Make demo script runnable on any date without manual edits. Python script to regenerate dates in demo script + Rob's docs.
+
+---
+
+#### F37: Skill ZIP Format PR to anthropics/skills
+**Status:** Backlog (was Ready for PR)
+**Touches:** 3 (latest: 2025-12-19)
+**Effort:** Quick win (15-20 min)
+**Priority:** Low (workaround exists)
+
+**Problem:** Vendor tooling produces `.skill` files that Claude.ai rejects.
+
+**Workaround:** Use local `pack_skill.py` which outputs `.zip`, or manually rename `.skill` -> `.zip`
+
+**Prerequisite:** Clean up fork first (has stale pycache commit)
+
+---
+
+#### F38: Alternative Onboarding Paths
+**Status:** Backlog (was Test for Dec 12)
+**Effort:** 30-45 min testing
+**Priority:** Low (nice-to-have)
+
+**Goal:** Test alternative onboarding paths (URL paste, chat upload) vs Settings > Capabilities flow.
+
+---
+
+#### F49: Synthetic Demo Data System
+**Status:** Backlog (was Planning)
+**Effort:** Medium (4-6 hours)
+**Priority:** Low (demo support)
+**Detail:** [docs/features/FEATURE-synthetic-demo-data.md](features/FEATURE-synthetic-demo-data.md)
+
+**Problem:** Synthetic demo data only covers "run days" (Mon/Wed/Fri), causing gaps when demo day doesn't align.
+
+---
 
 ### F44: Repository Rename Consideration
 **Status:** Deferred - Decision needed before wide publication
@@ -661,26 +615,6 @@ python scripts/skill_workflow.py promote daily-summary-personal
 
 ---
 
-### F19: Project Memories Cleanup
-**Effort:** TBD
-**Priority:** Medium
-
-**Goal:** Simplify project by addressing Claude Projects memory feature usage
-
-**Options:**
-- A: Remove project memories entirely to reduce complexity
-- B: Establish clear conventions for using memory via skills
-- C: Document current memory usage and keep as-is
-
-**Decision needed:** Evaluate current memory usage, determine if it provides value or adds confusion
-
-**Tasks:**
-- [ ] Audit current project memories in Claude.ai
-- [ ] Assess if memories duplicate skill functionality
-- [ ] Choose path: remove, conventionalize, or document
-
----
-
 ### F20: Simplify Skill Naming Convention
 **Effort:** TBD
 **Priority:** Medium
@@ -818,6 +752,7 @@ Automated generation of presentation slides/materials for Dec 12th presentation
 
 ### December 2025
 
+- ✅ **F50: Slides URL Restructure** (Dec 15) - Created permanent URL pattern: `slides.html` redirects to latest presentation (`slides-2025-12-12.html`). Future presentations will be dated archives.
 - ✅ **F26: Monthly Retrospective Rollup** (Dec 11) - Solved by unified `retrospective-base` skill supporting any time scale (daily/weekly/monthly/quarterly/yearly). No separate monthly skill needed.
 - ✅ **F31: Git History Squash** (Dec 3) - Squashed 78 commits → 1 clean commit, removed personal data, repo safe to share
 - ✅ **F33: Sister Directories Pattern** (Dec 3) - Validated CLAUDE.md auto-loads from parent workspace, pattern confirmed working
