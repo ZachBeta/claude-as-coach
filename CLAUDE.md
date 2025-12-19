@@ -6,8 +6,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This repository implements a **Claude-as-Coach** methodology using custom Claude skills for daily reflections, weekly retrospectives, and planning. The key innovation is separating skills into **base frameworks** (shareable) and **personal extensions** (private sibling repo).
 
-**Presentation target:** December 5th, 2025
-
 ## Claude Code Operational Guidance
 
 ### Working Directory Options
@@ -116,118 +114,37 @@ python claude-as-coach/scripts/skill_workflow.py pack claude-as-coach-personal/s
 # Results in: claude-as-coach-personal/skills/daily-summary-personal.zip
 ```
 
-### Demo Example Skills
+### Demo Examples
 
-**Rob (Base Skills Only) - Primary demo:**
-```bash
-# Rob uses base skills only (no custom personal skills)
-# His documents in examples/rob-the-runner/documents/ demonstrate:
-# - Daily summaries (Week 8 + Week 9)
-# - Weekly retros (Weeks 5-7)
-# - Monthly rollup (October, Weeks 1-4)
-# - Weekly plan (Week 9 - post-program exploration)
-# Shows fractal compression pattern + ongoing practice without needing custom skills
-```
-
-**Alice (Custom Skills) - Advanced demo:**
-```bash
-# Edit Alice demo skill
-vim examples/alice-the-athlete/skills/daily-summary-alice-personal/SKILL.md
-
-# Pack Alice skill (provide directory path)
-python scripts/skill_workflow.py pack examples/alice-the-athlete/skills/daily-summary-alice-personal/
-
-# Results in: examples/alice-the-athlete/skills/daily-summary-alice-personal.zip
-```
-
-**Gina (Skeleton) - Future demo:**
-```bash
-# Skeleton only - content TBD post-Dec 12 presentation
-# Location: examples/gina-the-grad-student/
-```
-
-### Unified Skills (Any Time Scale)
-
-```bash
-# Edit unified planning skill (works for daily/weekly/monthly/quarterly/yearly)
-vim skills/planning-base/SKILL.md
-
-# Pack (provide directory path)
-python scripts/skill_workflow.py pack skills/planning-base/
-
-# Commit using standard git commands
-git add skills/planning-base/ skills/planning-base.zip
-git commit -m "Update planning-base skill"
-```
+Demo personas in `examples/`:
+- **rob-the-runner/** - Base skills only (primary demo)
+- **alice-the-athlete/** - Custom skills demo
+- **gina-the-grad-student/** - Career domain (skeleton)
 
 ## Directory Structure
 
 ```
-claude-as-coach-combined/           # Parent workspace (Claude Code runs here)
-├── claude-as-coach/                # Public repo
-│   ├── /skills/                    # Base skills
-│   │   ├── /daily-summary-base/    # Daily capture (tracked)
-│   │   ├── /daily-morning-routine-base/ # Morning context (tracked)
-│   │   ├── /planning-base/         # Unified planning - any time scale (tracked)
-│   │   ├── /retrospective-base/    # Unified retro - any time scale (tracked)
-│   │   ├── /project-coach-setup-base/ # Project setup (tracked)
-│   │   └── /*.zip                  # Packed skill ZIP files
-│   ├── /examples/                  # Demo personas (all synthetic/fictional)
-│   │   ├── README.md               # Persona overview
-│   │   ├── /rob-the-runner/        # Base skills only demo
-│   │   │   ├── README.md           # Rob's background
-│   │   │   └── /documents/         # Daily/weekly/monthly samples
-│   │   ├── /alice-the-athlete/     # Custom skills demo
-│   │   │   ├── README.md           # Alice's background
-│   │   │   ├── /documents/         # Sample documents
-│   │   │   └── /skills/            # Custom personal skills
-│   │   └── /gina-the-grad-student/ # Career domain demo (skeleton)
-│   │       ├── README.md           # Gina's background
-│   │       └── /documents/         # Empty (TBD)
-│   ├── /vendor/skills/             # Submodule: anthropics/skills fork
-│   │   └── /skill-creator/scripts/ # Official packaging tools
-│   ├── /scripts/
-│   │   └── skill_workflow.py       # Primary workflow tool
-│   └── /docs/
-│       ├── WORKFLOW-GUIDE.md       # Complete workflow documentation
-│       ├── features/
-│       │   ├── FEATURE-presentation-prep.md    # F17: Dec 5th presentation
-│       │   └── FEATURE-mcp-skill-manager.md    # F9: MCP integration
-│       └── FEATURES.md             # Feature backlog
-└── claude-as-coach-personal/       # Private sibling repo - AUTHOR'S DATA
-    ├── /documents/                 # All project documents (flat structure)
-    │                               # Contains: Summary-*.md, Retro-*.md, protocols, etc.
-    └── /skills/                    # Personal skill extension sources
-        ├── /daily-summary-personal/        # Personal skill source
-        ├── daily-summary-personal.zip      # Packed personal skill
-        └── /daily-morning-routine-personal/ # Personal skill source
+claude-as-coach/                # This repo (public)
+├── skills/                     # Base skill sources + .zip files
+├── examples/                   # Demo personas (rob, alice, gina)
+├── vendor/skills/              # Submodule: anthropics/skills fork
+├── scripts/skill_workflow.py   # Pack/unpack tool
+└── docs/                       # WORKFLOW-GUIDE.md, FEATURES.md
+
+claude-as-coach-personal/       # Sibling repo (private)
+├── documents/                  # Summary-*.md, Retro-*.md, etc.
+└── skills/                     # Personal skill extensions
 ```
 
-**Note:** `claude-as-coach-personal/` is a separate git repository (sibling, not submodule). `examples/` contains three demo personas: Rob (base skills only), Alice (custom skills), and Gina (skeleton for career domain). All demo personas are synthetic/fictional.
+**Note:** `claude-as-coach-personal/` is a separate git repo (sibling, not submodule).
 
-## Git Repository Management
+## Git Management
 
-### Vendor Skills Submodule (anthropics/skills fork)
 ```bash
-# Initialize if missing
-git -C claude-as-coach submodule update --init --recursive
+# Initialize vendor submodule
+git submodule update --init --recursive
 
-# Update to latest
-git -C claude-as-coach/vendor/skills pull origin main
-git -C claude-as-coach add vendor/skills
-git -C claude-as-coach commit -m "Update vendor/skills"
-```
-
-**Integration:** `skill_workflow.py` automatically uses vendor tools when available, falls back to manual ZIP if not.
-
-### Personal Repo (Sibling Directory)
-```bash
-# Commit new project documents
-git -C claude-as-coach-personal add documents/Summary-2025-11-26-Tuesday.md
-git -C claude-as-coach-personal commit -m "Add Tuesday summary"
-git -C claude-as-coach-personal push origin main
-
-# No cross-repo reference update needed - sibling repos are independent
+# Sibling repos are independent - no cross-repo reference updates needed
 ```
 
 ## Skill File Format
@@ -261,45 +178,6 @@ description: Personal extensions with specific metrics
 ---
 ```
 
-## Skill Naming Convention (Production/Development)
-
-**Context:** Claude.ai skills are global (not project-scoped), requiring careful naming to separate production use from development/testing.
-
-**Naming pattern (decided 2025-11-29):**
-- `production-*-personal.zip` - User's stable production skills
-- `development-*-base.zip` - Shareable base frameworks
-- `development-*-alice-personal.zip` - Alice demo (custom skills example)
-- `development-*-rob-personal.zip` - Rob demo (base skills only, not applicable - Rob has no custom skills)
-
-**Rationale:**
-- **Primary user need (n=1 → n=100):** Safe skill iteration without breaking production workflow
-- **Demo examples:** Alice (custom skills), Rob (base skills only, no custom skills needed)
-- **Manual workflow acceptable:** Tooling deferred to F23 (post-Dec 12th presentation)
-
-**Workflow for skill developers:**
-1. Edit skill source in tracked directory (e.g., `skills/daily-summary-base/`)
-2. Pack with appropriate prefix: `python scripts/skill_workflow.py pack daily-summary-base`
-3. Manually rename: `mv skills/daily-summary-base.zip skills/development-daily-summary-base.zip`
-4. Upload to Claude.ai
-5. Toggle between production/development variants in Claude.ai settings
-
-**Open questions (to be resolved in F17 Task 1):**
-- Does frontmatter `name:` need to match .zip filename?
-- Do duplicate YAML names cause conflicts in Claude.ai?
-- Should environment prefix be in frontmatter or just filename?
-
-**Future automation (F23):**
-```bash
-# Proposed future workflow
-python scripts/skill_workflow.py pack daily-summary-base --env development
-# Output: development-daily-summary-base.zip with appropriate frontmatter
-
-python scripts/skill_workflow.py pack daily-summary-personal --env production
-# Output: production-daily-summary-personal.zip
-```
-
-**See:** `docs/features/FEATURE-presentation-prep.md` (Task 1) for testing procedures and results.
-
 ## Critical Principles
 
 ### Skill Separation Guidelines
@@ -332,17 +210,6 @@ python scripts/skill_workflow.py pack daily-summary-personal --env production
 
 Main README.md must NOT contain personal health information. Uses couch-to-5k running training as example use case instead. Personal context stays in private sibling repo.
 
-## Testing Skills in Claude.ai
-
-See `docs/features/FEATURE-presentation-prep.md` Task 1 for comprehensive testing procedures.
-
-**Quick validation:**
-1. Import both base + personal .zip files to Claude.ai Project
-2. Test skill trigger (e.g., "daily summary")
-3. Verify base framework structure appears
-4. Verify personal metrics/thresholds appear
-5. Check if `extends:` directive affects behavior
-
 ## Skill Workflow Script API
 
 ```bash
@@ -362,102 +229,12 @@ python scripts/skill_workflow.py unpack <path/to/skill.zip> [--output-dir DIR] [
 - No name parsing or searching - explicit paths only
 - ZIP contains nested structure: `skill-name/SKILL.md`
 
-**Note:** For git operations, use standard git commands (`git add`, `git commit`). See [FEATURE-skill-workflow-git-ops.md](docs/features/FEATURE-skill-workflow-git-ops.md) for details on removed git automation features.
+**Note:** For git operations, use standard git commands. See `docs/WORKFLOW-GUIDE.md` for detailed workflows (creating skills, importing from Claude.ai, etc.).
 
-## Common Development Tasks
+## Reference
 
-### Creating New Separated Skill
+- **docs/WORKFLOW-GUIDE.md** - Complete workflows, troubleshooting, vendor tools
+- **docs/FEATURES.md** - Feature backlog
+- **vendor/skills/** - Anthropic skill-creator tools (submodule)
 
-1. Create base source: `claude-as-coach/skills/new-skill-base/SKILL.md`
-2. Create personal source: `claude-as-coach-personal/skills/new-skill-personal/SKILL.md`
-3. Pack both (from workspace root):
-   ```bash
-   python claude-as-coach/scripts/skill_workflow.py pack claude-as-coach/skills/new-skill-base/
-   python claude-as-coach/scripts/skill_workflow.py pack claude-as-coach-personal/skills/new-skill-personal/
-   ```
-4. Test import to Claude.ai with both files
-
-### Editing Existing Separated Skill
-
-1. Edit source directly (no unpack needed)
-2. Repack: `python scripts/skill_workflow.py pack <name>-base` or `pack <name>-personal`
-3. Test in Claude.ai
-
-### Converting Standalone to Separated
-
-1. Unpack existing: `python scripts/skill_workflow.py unpack skills/existing.zip`
-2. Create `skills/existing-base/SKILL.md` with framework only
-3. Create `personal/skills/existing-personal/SKILL.md` with personal content
-4. Pack both versions
-5. Test, then remove old monolithic .zip file
-
-### Bringing Skills from Claude.ai
-
-**Use case:** Developed/edited skill in Claude.ai Projects → want to add to repository
-
-**Workflow:**
-1. Download .zip file from Claude.ai
-2. Unpack to tracked location: `python scripts/skill_workflow.py unpack ~/Downloads/my-skill.zip`
-3. Review: `code skills/my-skill/SKILL.md`
-4. Pack: `python scripts/skill_workflow.py pack skills/my-skill/`
-5. Track: `git add skills/my-skill/ skills/my-skill.zip && git commit -m "Add my-skill from Claude.ai"`
-
-**Destination options (from workspace root):**
-```bash
-# Default: claude-as-coach/skills/NAME/
-python claude-as-coach/scripts/skill_workflow.py unpack ~/Downloads/my-skill.zip
-
-# Base framework:
-python claude-as-coach/scripts/skill_workflow.py unpack ~/Downloads/my-skill.zip --output-dir claude-as-coach/skills/my-skill-base/
-
-# Personal extension:
-python claude-as-coach/scripts/skill_workflow.py unpack ~/Downloads/my-skill.zip --output-dir claude-as-coach-personal/skills/my-skill-personal/
-```
-
-## Vendor Tools
-
-**Available in vendor/skills/skill-creator/scripts/:**
-- `init_skill.py` - Initialize new skill structure
-- `package_skill.py` - Package skill into .zip file
-- `quick_validate.py` - Validate skill structure
-
-**Note:** Our `pack_skill.py` creates nested structure per official docs. Vendor tools may differ.
-
-## Documentation Files
-
-**Reference documentation:**
-- **WORKFLOW-GUIDE.md** - Complete workflow, submodule management, troubleshooting
-- **FEATURES.md** - Feature backlog and tracking (3-level hierarchy)
-
-**Feature planning (in docs/features/):**
-- **FEATURE-presentation-prep.md** - F17: Dec 5th presentation prep (HIGH PRIORITY - has deadline)
-- **FEATURE-workflow-cleanup.md** - F15: Fix skill_workflow.py vendor integration
-- **FEATURE-directory-refactoring.md** - F16: Flatten personal/ directory structure
-- **FEATURE-vendor-submodule.md** - F11: Vendor submodule update strategy
-
-**Session handoff:**
-- **docs/NEXT-SESSION.md** - Current status and next steps
-
-## Python Dependencies
-
-```bash
-pip install -r scripts/requirements.txt  # Optional, for vendor validation scripts
-```
-
-Python 3.x required. No other dependencies for basic workflow.
-
-## Development Setup (Optional)
-
-### VSCode/IDE Configuration
-
-If using VSCode, a `.vscode/settings.json` file enables Python path resolution for vendor submodule imports:
-
-```json
-{
-  "python.analysis.extraPaths": [
-    "${workspaceFolder}/vendor/skills/skill-creator/scripts"
-  ]
-}
-```
-
-**Note:** `.vscode/` is gitignored to keep IDE settings personal and maintain IDE-agnostic project structure.
+Python 3.x required. Optional: `pip install -r scripts/requirements.txt` for vendor validation.
