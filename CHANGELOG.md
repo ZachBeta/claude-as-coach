@@ -10,6 +10,8 @@ All notable user-facing changes to the Claude-as-Coach system.
 - **Fixed** - Bug fixes affecting daily use
 - **Improved** - Quality improvements, better explanations
 
+**Note:** This is the single source of truth for completed work. All workflows drain their "completed" sections here. See [docs/DOC-WORKFLOWS.md](docs/DOC-WORKFLOWS.md).
+
 ---
 
 ## 2025-12-11
@@ -137,19 +139,18 @@ All notable user-facing changes to the Claude-as-Coach system.
 
 ---
 
-## Coming Soon
+## Roadmap
 
-**For Dec 12th Presentation:**
-- Rob the Runner demo with sample data (daily summaries, weekly retros)
-- Sally the Software Engineer demo (interview prep tracking)
-- PROJECT-SETUP.md updates with new personas and quickstart reference
-- Monthly retrospective rollup (daily→weekly→monthly fractal compression)
+**In Progress:**
+- Core workflow reliability fixes (F39, F46)
+- Onboarding UX improvements (F47, F48)
+- Safety disclaimers and scope boundaries (F45)
 
-**Post-Presentation:**
+**Future:**
 - Maya the Mandarin Learner demo (microagent model evaluation)
 - Production/development skill workflow tooling
-- Deployment workflow documentation
 - MCP Skill Manager integration
+- Skill platform portability (remove Claude.ai-specific paths)
 
 ---
 

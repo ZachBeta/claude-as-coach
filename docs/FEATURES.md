@@ -6,7 +6,7 @@
 
 ### 🔴 High Priority: Core Workflow Reliability
 
-*Re-prioritized post-Dec 12 presentation. Focus shifted from demo polish to ongoing personal use quality.*
+*Focus: Ongoing personal use quality and core reliability.*
 
 #### F39: Summary Skill Date Drift Fix
 **Status:** Active - Implementation ready
@@ -227,7 +227,7 @@ Workflow: Morning → Summary → Save → New chat
 
 ## Backlog
 
-### Demo Infrastructure (Deprioritized post-Dec 12)
+### Demo Infrastructure (Low Priority)
 
 #### F35: Demo Script & Date Regeneration
 **Status:** Backlog (was Active)
@@ -272,9 +272,9 @@ Workflow: Morning → Summary → Save → New chat
 ---
 
 ### F44: Repository Rename Consideration
-**Status:** Deferred - Decision needed before wide publication
+**Status:** Decision needed before wide publication
 **Effort:** Path B (1-2 hours for find/replace + GitHub rename)
-**Priority:** Medium (before public launch, after Dec 12th demo)
+**Priority:** Medium (before public launch)
 
 **Goal:** Rename repository to better reflect its purpose and avoid relationship-implying terminology
 
@@ -308,9 +308,9 @@ Workflow: Morning → Summary → Save → New chat
 ---
 
 ### F34: Parent Workspace as Public Repository
-**Status:** Proposed - Architecture decision deferred
+**Status:** Proposed - Architecture decision needed
 **Effort:** TBD (depends on chosen option)
-**Priority:** Medium (post-F33, post-F31)
+**Priority:** Medium (F31, F33 complete - blockers cleared)
 **Detail:** [docs/features/FEATURE-parent-workspace-public-repo.md](features/FEATURE-parent-workspace-public-repo.md)
 
 **Goal:** Decide whether to publish `claude-as-coach-combined/` as a public parent workspace repository with submodule references to framework and example repos.
@@ -327,31 +327,11 @@ Workflow: Morning → Summary → Save → New chat
 - **Option B:** Publish parent with current naming (less disruption)
 - **Option C:** Status quo (manual workspace setup, no parent repo)
 
-**Blocked by:** F33 (sister directories validation), F31 (git history squash)
+**Blockers cleared:** F33 (sister directories) and F31 (git history squash) both complete.
 
-**Decision trigger:** User feedback after Dec 12th presentation. If 3+ people struggle with workspace setup, prioritize restructuring.
+**Decision trigger:** User feedback. If 3+ people struggle with workspace setup, prioritize restructuring.
 
-**Next:** Defer until after F33 + F31, evaluate with real user onboarding feedback
-
----
-
-### F17: Dec 12th Presentation Prep (Tracking)
-**Status:** ✅ Core tasks complete, optional items remaining
-**Priority:** Low (post-presentation cleanup)
-**Detail:** [docs/features/FEATURE-presentation-prep.md](features/FEATURE-presentation-prep.md)
-
-**Completed tasks:**
-- ✅ Task 1: Test skill composability - **Confirmed working 2025-12-01**
-- ✅ Task 2: Create base skill versions (all 4 core skills separated)
-- ✅ Task 3: Rob demo content complete (F28), Sally deprioritized
-- ✅ Task 4: PROJECT-SETUP.md exists
-- ✅ Task 6: Git history squash complete (F31)
-
-**Remaining (optional):**
-- Task 1: Additional test cases (C, D, E) for deeper understanding of extends: directive
-- Task 5: Demo project setup refinements
-
-**Target audience:** New year's resolutioners wanting sustainable goal infrastructure
+**Next:** Evaluate with real user onboarding feedback
 
 ---
 
@@ -371,8 +351,8 @@ Workflow: Morning → Summary → Save → New chat
 
 ### F23: Production/Development Skill Workflow
 **Effort:** Path C (1-2 hours implementation + testing)
-**Priority:** Medium (post-Dec 12th)
-**Status:** Manual workaround documented, automated tooling deferred until after presentation
+**Priority:** Medium
+**Status:** Manual workaround documented, ready for automation
 **Detail:** [docs/features/FEATURE-production-development-workflow.md](features/FEATURE-production-development-workflow.md)
 
 **Goal:** Enable safe skill iteration without breaking production usage
@@ -408,27 +388,27 @@ python scripts/skill_workflow.py promote daily-summary-personal
 - Design informed by friend feedback at n~10 scale
 - May integrate with F9 (MCP) for direct Claude.ai deployment
 
-**Why post-Dec 12th:**
-- Alice demo can use manual workflow (acceptable for examples)
-- Real user friction will emerge when friends adopt (n~10)
+**Ready when:**
+- Real user friction emerges at n~10 scale
+- Manual workflow becomes burdensome
 - Better to build based on actual pain points, not assumptions
 
 ---
 
 ### F29: Sally the Software Engineer Demo (Deprioritized)
 **Status:** Deprioritized - Rob serves as primary demo
-**Priority:** Low (post-Dec 12th, if needed)
+**Priority:** Low
 
-**Goal:** Interview prep demo persona (4 weeks) showing daily→weekly fractal compression in knowledge work domain
+**Goal:** Interview prep demo persona (4 weeks) showing daily->weekly fractal compression in knowledge work domain
 
-**Why deprioritized:** Rob demo complete and demonstrates all key patterns. Sally adds domain diversity but not essential for Dec 12th presentation. Consider post-launch if users request non-fitness examples.
+**Why deprioritized:** Rob demo complete and demonstrates all key patterns. Sally adds domain diversity but not essential. Consider if users request non-fitness examples.
 
 ---
 
 ### F30: Maya Mandarin Learner (Microagent Eval Persona)
 **Effort:** 7-11 hours (persona + model evaluation)
-**Priority:** Medium (post-Dec 12th)
-**Status:** Persona design complete, deferred to microagent eval phase
+**Priority:** Medium
+**Status:** Persona design complete, ready for microagent eval phase
 **Detail:** [docs/features/FEATURE-maya-mandarin-learner.md](features/FEATURE-maya-mandarin-learner.md)
 
 **Goal:** Language learning demo persona for evaluating coaching system across different models (Claude vs Chinese frontier models)
@@ -454,7 +434,7 @@ python scripts/skill_workflow.py promote daily-summary-personal
 
 **Key metrics:** Characters known (HSK levels), vocabulary retention, tone accuracy, conversation time, study hours, comprehension level
 
-**Why post-presentation:**
+**Value:**
 - Validates microagent portability to non-Claude models
 - Tests system with language-specific coaching (domain advantage for Chinese models)
 - Informs model-agnostic skill design patterns
@@ -464,7 +444,7 @@ python scripts/skill_workflow.py promote daily-summary-personal
 ### F41: Microagent Deployment
 **Status:** Future exploration
 **Effort:** TBD (significant)
-**Priority:** Low (post-Dec 12)
+**Priority:** Medium
 
 **Goal:** Nanochat-inspired minimal agent harness for executing skill workflows with open weight models
 
@@ -483,7 +463,7 @@ python scripts/skill_workflow.py promote daily-summary-personal
 ### F42: Claude Code Plugin Exploration
 **Status:** Future exploration
 **Effort:** TBD
-**Priority:** Low (post-Dec 12)
+**Priority:** Low
 
 **Goal:** Investigate Claude Code plugins as alternative runtime for coaching system
 
@@ -496,14 +476,14 @@ python scripts/skill_workflow.py promote daily-summary-personal
 - https://code.claude.com/docs/en/plugin-marketplaces
 - https://github.com/anthropics/claude/tree/main/plugins
 
-**Decision:** Explore post-launch, cross-device use case may not fit plugin model
+**Decision:** Cross-device use case (mobile logging) may not fit plugin model
 
 ---
 
 ### F43: Couch-to-5K Packaged Experience
 **Status:** Future idea
 **Effort:** TBD
-**Priority:** Low (post-Dec 12)
+**Priority:** Low
 
 **Goal:** Single skill upload for complete couch-to-5K coaching experience
 
@@ -752,6 +732,7 @@ Automated generation of presentation slides/materials for Dec 12th presentation
 
 ### December 2025
 
+- ✅ **F17: Dec 12th Presentation Prep** (Dec 12) - Skill composability confirmed (Dec 1), base skills created, Rob demo complete, PROJECT-SETUP.md written, git history squashed. Target audience: new year's resolutioners wanting sustainable goal infrastructure.
 - ✅ **F50: Slides URL Restructure** (Dec 15) - Created permanent URL pattern: `slides.html` redirects to latest presentation (`slides-2025-12-12.html`). Future presentations will be dated archives.
 - ✅ **F26: Monthly Retrospective Rollup** (Dec 11) - Solved by unified `retrospective-base` skill supporting any time scale (daily/weekly/monthly/quarterly/yearly). No separate monthly skill needed.
 - ✅ **F31: Git History Squash** (Dec 3) - Squashed 78 commits → 1 clean commit, removed personal data, repo safe to share

@@ -2,6 +2,10 @@
 
 Instructions for maintaining feature documentation. Designed to evolve into a skill for backlog management.
 
+**State:** [FEATURES.md](../FEATURES.md) (the feature backlog)
+
+**Convention:** This follows the instructions/state pattern. See [DOC-WORKFLOWS.md](../DOC-WORKFLOWS.md).
+
 ---
 
 ## Touch Counter System
@@ -78,6 +82,7 @@ Run when:
 - [ ] Move completed features to Completed section
 - [ ] Add completion date and summary
 - [ ] Delete detailed FEATURE-*.md docs (git preserves history)
+- [ ] Drain Completed section to CHANGELOG.md periodically
 
 ### 4. Priority Review
 
