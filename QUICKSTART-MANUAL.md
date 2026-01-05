@@ -78,6 +78,11 @@ set up my project
 - End of day: Type `daily summary` to create your first structured reflection
 - Next morning: Type `run the daily morning routine skill` to start your day with context
 
+**Pro tip:** Set a few calendar reminders to build the logging habit:
+- Midday: "Log morning activities" (capture before you forget)
+- Evening: "Daily summary"
+- Friday: "Weekly retro"
+
 ---
 
 ## Step 5: Your First Morning Routine (Next Day)

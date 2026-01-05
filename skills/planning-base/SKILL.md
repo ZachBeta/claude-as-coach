@@ -1,6 +1,6 @@
 ---
 name: planning-base
-description: Framework for planning at any time scale (daily, weekly, monthly, quarterly, yearly). Trigger with "plan my day", "weekly planning", "monthly planning", etc. Identifies constraints FIRST, then suggests priorities. Uses Level 0-3 success framework. Inputs vary by scale - daily uses yesterday summary, weekly uses weekly retro, monthly uses monthly retro, etc.
+description: Framework for planning at any time scale (daily, weekly, monthly, quarterly, yearly). Trigger with "plan my day", "weekly planning", "monthly planning", "[month] planning" (e.g., "january planning", "december planning"), "plan for [period]", or "let's plan [period]". Identifies constraints FIRST, then suggests priorities. Uses Level 0-3 success framework. Inputs vary by scale - daily uses yesterday summary, weekly uses weekly retro, monthly uses monthly retro, etc.
 ---
 
 # Planning (Base Framework)
@@ -200,6 +200,32 @@ From retro "What Didn't Work":
 - Amazing but not required
 
 **Calibration:** Levels adapt to current capacity. Level 2 during recovery ≠ Level 2 at full capacity.
+
+## Decision Filter (Monthly+)
+
+**For monthly and longer plans, create a 2-question filter to test proposed activities.**
+
+Every activity should pass both questions to proceed. This prevents scope creep and keeps focus on what matters.
+
+**Template:**
+1. Does this [action aligned with theme]?
+2. Does this [build toward next milestone]?
+
+**Examples:**
+
+*November (Job Search Focus):*
+1. Does this produce job-ready evidence?
+2. Can I sustain this effort?
+
+*December (Demonstrate Capacity):*
+1. Does this demonstrate interview-ready capacity?
+2. Does this build toward January mobility?
+
+*January (Convert to Interviews):*
+1. Does this convert demonstrated capacity into interview opportunities?
+2. Does this maintain the platform (foundation work)?
+
+**Usage:** When new opportunities or tasks arise mid-period, run them through the filter. Both YES = proceed. One NO = defer or delegate. Both NO = decline.
 
 ## Core Principles
 

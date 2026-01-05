@@ -122,9 +122,10 @@ Note to user if high: "Context at [X]% - generating summary now to capture full 
 
 ## TL;DR - Day Summary
 
-[2-3 sentence summary of trajectory]
-[Key decision or insight]
-[How capacity showed up]
+**Format: Bulleted list for easy scanning**
+- [Day trajectory - what moved]
+- [Key decision or insight]
+- [Capacity/state summary]
 
 ---
 

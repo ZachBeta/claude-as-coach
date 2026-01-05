@@ -1,6 +1,6 @@
 ---
 name: retrospective-base
-description: Framework for retrospectives at any time scale (daily, weekly, monthly, quarterly, yearly). Trigger with "daily retro", "weekly retro", "monthly retro", etc. Answers three questions - what worked, what didn't, how to improve. Inputs vary by scale - daily uses raw logs, weekly uses daily summaries, monthly uses weekly retros, etc. Fractal compression pattern.
+description: Framework for retrospectives at any time scale (daily, weekly, monthly, quarterly, yearly). Trigger with "daily retro", "weekly retro", "monthly retro", "[month] retro" (e.g., "december retro", "january retro"), "retro for [month]", or "end of month review". Answers three questions - what worked, what didn't, how to improve. Inputs vary by scale - daily uses raw logs, weekly uses daily summaries, monthly uses weekly retros, etc. Fractal compression pattern.
 ---
 
 # Retrospective (Base Framework)
@@ -61,7 +61,30 @@ TZ='America/New_York' date '+%A, %B %d, %Y - %I:%M %p %Z'
 
 **If inputs missing:** Note gaps, proceed with available data.
 
-### 3. Show Empty Framework First
+### 3. Optional: Day-by-Day Review
+
+**When to offer:** Weekly or longer retrospectives with daily summaries available.
+
+**Purpose:** Before synthesizing patterns, walk through each day briefly. This surfaces details that might otherwise get lost and helps the user reconnect with the full week.
+
+**Process:**
+1. Ask: "Want to do a quick day-by-day walkthrough before we synthesize, or jump straight to patterns?"
+2. If yes:
+   - Present each day's summary briefly (2-3 key points per day)
+   - Ask: "Anything to add or correct for [Day]?"
+   - Let user react, add context, or say "looks right"
+   - Move to next day
+3. If no: Skip directly to empty framework
+
+**Why this helps:**
+- Surfaces forgotten details ("Oh right, Tuesday was rough")
+- Catches summary gaps or errors
+- Warms up memory before synthesis
+- Low effort (reactions, not generation)
+
+**Keep it light:** This is orientation, not analysis. Save synthesis for the main sections.
+
+### 4. Show Empty Framework First
 
 **CRITICAL:** Create structure-only artifact and explain it to user before filling anything.
 
@@ -88,7 +111,7 @@ TZ='America/New_York' date '+%A, %B %d, %Y - %I:%M %p %Z'
 - `Quarterly-Retro-2025-Q4.md`
 - `Yearly-Retro-2025.md`
 
-### 4. Framework Structure
+### 5. Framework Structure
 
 ```markdown
 # [Scale] Retro: [Theme/Title]
@@ -106,6 +129,35 @@ TZ='America/New_York' date '+%A, %B %d, %Y - %I:%M %p %Z'
 - Key discovery
 - Primary challenge
 - Overall trajectory
+
+---
+
+## Plan vs Actual (Monthly+ Only)
+
+**Include for monthly, quarterly, yearly retros when a plan document exists.**
+
+### Theme Assessment
+**Planned theme:** [From plan]
+**Did it hold?** [Yes/Partially/No + evidence]
+
+### Success Metrics
+
+| Area | Target | Actual | Assessment |
+|------|--------|--------|------------|
+| [Priority 1] | [Goal] | [Result] | ✓ Met / ◐ Partial / ✗ Below |
+| [Priority 2] | [Goal] | [Result] | ✓ Met / ◐ Partial / ✗ Below |
+
+### Venn Diagram
+
+```
+    PLANNED ONLY          BOTH           ACTUAL ONLY
+   ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
+   │ [Things planned │  │ [Things that    │  │ [Things that    │
+   │  but didn't     │  │  happened as    │  │  happened but   │
+   │  happen]        │  │  planned]       │  │  weren't in     │
+   │                 │  │                 │  │  the plan]      │
+   └─────────────────┘  └─────────────────┘  └─────────────────┘
+```
 
 ---
 
@@ -160,7 +212,7 @@ TZ='America/New_York' date '+%A, %B %d, %Y - %I:%M %p %Z'
 What are you grateful for from this [period]?
 ```
 
-### 5. Fill ONE QUESTION AT A TIME
+### 6. Fill ONE QUESTION AT A TIME
 
 **⚠️ CRITICAL: Ask one question, wait for response, update artifact, then move to next.**
 
@@ -183,7 +235,7 @@ What are you grateful for from this [period]?
 - "Retro-Retro" → one question about process
 - "Gratitude" → save for last (positive anchor)
 
-### 6. Save and Archive
+### 7. Save and Archive
 
 **Save to:** `/mnt/user-data/outputs/[filename]`
 

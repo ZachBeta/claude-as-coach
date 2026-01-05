@@ -127,6 +127,13 @@ Create artifact using this template (adapt to their responses):
 - Archive old summaries after weekly retro (lean context)
 - Start simple: morning + daily summary first week
 
+**Calendar Reminders (optional but helpful):**
+Set recurring reminders to build the habit:
+- **Morning (e.g., 8am):** "Check in with coach" -> morning routine
+- **Midday (e.g., 12pm):** "Log morning activities" -> capture before you forget
+- **Evening (e.g., 6pm):** "Daily summary" -> end-of-day reflection
+- **Weekly (e.g., Friday 5pm):** "Weekly retro" -> review the week
+
 ---
 
 _Edit this document anytime to update your goals._
@@ -155,6 +162,11 @@ Project-Goals.md is ready!
 1. Log activities in this chat today (include timestamps like "2pm - went for a walk")
 2. End of day: say "daily summary"
 3. Tomorrow morning: say "good morning" or "gm"
+
+**Pro tip:** Set a few calendar reminders to build the logging habit:
+- Midday: "Log morning activities"
+- Evening: "Daily summary"
+- Friday: "Weekly retro"
 
 **Don't forget:** Install the other skills (links at top of this document) for full functionality!
 ```
