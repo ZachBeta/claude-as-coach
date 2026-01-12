@@ -61,26 +61,25 @@ TZ='America/New_York' date '+%A, %B %d, %Y - %I:%M %p %Z'
 
 **If inputs missing:** Note gaps, proceed with available data.
 
-### 3. Optional: Day-by-Day Review
+### 3. Day-by-Day Review (Default for Weekly+)
 
-**When to offer:** Weekly or longer retrospectives with daily summaries available.
+**When to use:** Weekly or longer retrospectives with daily summaries available. This is the **default** approach for weekly retros - it's valuable enough to do every time.
 
 **Purpose:** Before synthesizing patterns, walk through each day briefly. This surfaces details that might otherwise get lost and helps the user reconnect with the full week.
 
 **Process:**
-1. Ask: "Want to do a quick day-by-day walkthrough before we synthesize, or jump straight to patterns?"
-2. If yes:
-   - Present each day's summary briefly (2-3 key points per day)
-   - Ask: "Anything to add or correct for [Day]?"
-   - Let user react, add context, or say "looks right"
-   - Move to next day
-3. If no: Skip directly to empty framework
+1. Present each day's summary briefly (2-3 key points per day)
+2. Ask: "Anything to add or correct for [Day]?"
+3. Let user react, add context, or say "looks right"
+4. Move to next day
+5. After walkthrough, create empty framework doc
 
 **Why this helps:**
 - Surfaces forgotten details ("Oh right, Tuesday was rough")
 - Catches summary gaps or errors
 - Warms up memory before synthesis
 - Low effort (reactions, not generation)
+- Produces condensed timeline for final doc
 
 **Keep it light:** This is orientation, not analysis. Save synthesis for the main sections.
 
@@ -132,9 +131,23 @@ TZ='America/New_York' date '+%A, %B %d, %Y - %I:%M %p %Z'
 
 ---
 
-## Plan vs Actual (Monthly+ Only)
+## Day-by-Day Timeline (Weekly+)
 
-**Include for monthly, quarterly, yearly retros when a plan document exists.**
+**Include for weekly or longer retros. Condensed reference from day-by-day review.**
+
+| Day | Date | Context Tag | Key Events |
+|-----|------|-------------|------------|
+| Mon | [Date] | [tag] | [1-2 key events] |
+| Tue | [Date] | [tag] | [1-2 key events] |
+| ... | ... | ... | ... |
+
+**Context Tag:** Optional column for domain-specific state tracking (defined in personal extension).
+
+---
+
+## Plan vs Actual (Weekly+ When Plan Exists)
+
+**Include for weekly, monthly, quarterly, yearly retros when a plan document exists.**
 
 ### Theme Assessment
 **Planned theme:** [From plan]

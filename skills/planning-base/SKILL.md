@@ -109,6 +109,20 @@ Ask about:
 
 ---
 
+## Constraints
+
+**Fixed:**
+- [Non-negotiable deadlines, appointments]
+- [Known drains or high-effort days]
+
+**Important Dates (Weekly+):**
+
+| Date | Event | Notes |
+|------|-------|-------|
+| [Date] | [Event] | [Context] |
+
+---
+
 ## This [Period]'s Priorities
 
 Based on constraints and patterns:
@@ -123,9 +137,28 @@ Does this ordering work given [specific constraint]?
 
 ## Experiments to Try
 
-From retro "What Didn't Work":
-- [Experiment 1]
-- [Experiment 2]
+**Aligned to success levels:**
+
+**Level 0-1 (Foundation/Base):**
+- [Experiment supporting minimum viable progress]
+
+**Level 2 (Target):**
+- [Experiment for good week given capacity]
+
+**Level 3 (Reach):**
+- [Stretch experiment if everything aligns]
+
+---
+
+## Week Structure (Weekly Plans)
+
+**Include for weekly plans. Day-by-day focus mapping.**
+
+| Day | Date | Focus | Key Activities |
+|-----|------|-------|----------------|
+| Mon | [Date] | [Primary focus] | [1-2 activities] |
+| Tue | [Date] | [Primary focus] | [1-2 activities] |
+| ... | ... | ... | ... |
 
 ---
 
@@ -213,17 +246,17 @@ Every activity should pass both questions to proceed. This prevents scope creep 
 
 **Examples:**
 
-*November (Job Search Focus):*
-1. Does this produce job-ready evidence?
-2. Can I sustain this effort?
+*Month 1 (Build Foundation):*
+1. Does this build toward the target distance/skill?
+2. Can I sustain this without injury/burnout?
 
-*December (Demonstrate Capacity):*
-1. Does this demonstrate interview-ready capacity?
-2. Does this build toward January mobility?
+*Month 2 (Increase Volume):*
+1. Does this increase capacity appropriately?
+2. Does this maintain recovery balance?
 
-*January (Convert to Interviews):*
-1. Does this convert demonstrated capacity into interview opportunities?
-2. Does this maintain the platform (foundation work)?
+*Month 3 (Race Prep):*
+1. Does this prepare me for the target event?
+2. Does this avoid overtraining before the goal?
 
 **Usage:** When new opportunities or tasks arise mid-period, run them through the filter. Both YES = proceed. One NO = defer or delegate. Both NO = decline.
 

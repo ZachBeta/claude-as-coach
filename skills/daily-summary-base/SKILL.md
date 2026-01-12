@@ -104,7 +104,6 @@ Note to user if high: "Context at [X]% - generating summary now to capture full 
 1. View summary in Projects web UI (clean UTF-8)
 2. Copy-paste into local text editor (preserves emojis)
 3. OR: Accept export breakage, manually clean up `ð` characters on local save
-4. **Future:** Nanoagent will have proper UTF-8 file handling + custom UI
 
 **When in doubt:** Use plain text. Emojis are decorative, not essential. Prefer clarity over style.
 
