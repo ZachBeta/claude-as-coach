@@ -1,17 +1,19 @@
 ---
 name: daily-summary-base
-description: Framework for creating end-of-day summary documents. Use when user says "daily summary", "generate summary", or similar at end of day. Provides structured markdown template with date verification, filename patterns, and formatting guidelines. Extend with personal metrics and domain-specific content.
+description: Framework for creating session summary documents. Use when user says "daily summary", "generate summary", or similar. Provides structured markdown template with date verification, filename patterns, and formatting guidelines. Supports range-based naming for sessions spanning calendar boundaries. Extend with personal metrics and domain-specific content.
 ---
 
 # Daily Summary Generator (Base Framework)
 
-**Purpose:** Create end-of-day summary document for the specific date being summarized.
+**Purpose:** Create summary document capturing a conversation session's events.
 
-**Key principle:** Summary is OF a date, not FOR the next day. Filename matches the events it contains.
+**Key principle:** Summary is OF the session, not FOR the next day. Filename reflects the time span covered.
+
+**Reality acknowledged:** Sessions often span calendar boundaries. Summaries may cover "Thursday afternoon through Friday morning" rather than clean calendar days. The naming convention should reflect actual coverage.
 
 ## Process
 
-### 1. Verify Current Date
+### 1. Verify Current Date/Time
 
 **CRITICAL FIRST STEP** - Prevents date confusion
 
@@ -19,110 +21,93 @@ description: Framework for creating end-of-day summary documents. Use when user 
 TZ='America/New_York' date '+%A, %B %d, %Y - %I:%M %p %Z'
 ```
 
-Confirm actual date in user's timezone.
+Confirm actual date/time in user's timezone.
 
-### 2. Determine Summary Date
+### 2. Determine Summary Range
 
-Ask user: "Which date's summary are we generating?"
+Ask user: "What time range does this summary cover?"
 
 **Typical scenarios:**
-- End of day, same chat: "Today" (the date just verified)
-- Next morning: "Yesterday" (verified date - 1)
-- Backfilling: User provides specific date
+- Same-day session: "Today from morning until now"
+- Spanning session: "Yesterday afternoon through this morning"
+- Backfilling: User provides specific range
 
-**Always confirm:** "Generating summary for [Day], [Full Date]. Correct?"
+**Always confirm:** "Generating summary covering [Start Day/Time] to [End Day/Time]. Correct?"
+
+**Determine if single-day or range:**
+- If session starts and ends on same calendar day → single-day format
+- If session spans calendar boundaries → range format
 
 ### 3. Ask for Context Tag
 
-"What's the context tag for this day?"
+"What's the context tag for this session?"
 
-User provides tag representing experimental state for that specific day.
+User provides tag representing current state (e.g., `week-3-day-2`, `rest-day`).
 
 ### 4. Generate Filename
 
 **⚠️ CRITICAL: Filename must follow template exactly**
 
-**Format:**
+**Single-day format:**
 ```
-Summary-YYYY-MM-DD-DayName-[context-tag].md
+Summary-YYYY-MM-DD-Day-[context-tag].md
 ```
+Example: `Summary-2025-11-15-Saturday-week-3-day-2.md`
 
-**Example:**
+**Range format (spans calendar boundaries):**
 ```
-Summary-2025-11-15-Saturday-example-tag.md
+Summary-YYYY-MM-DD-Day-to-DD-Day-[context-tag].md
 ```
+Example: `Summary-2026-01-15-Thu-to-16-Fri-week-5-long-run.md`
 
 **Rules:**
-- Date in filename = date of events inside (NOT next day)
-- Day name format: `Monday`, `Tuesday`, etc. (full name, capitalized)
-- Context tag: User-provided, hyphen-separated
+- Use abbreviated day names in range format: `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat`, `Sun`
+- Use full day names in single-day format: `Monday`, `Tuesday`, etc.
+- Range uses primary day's context tag (the day with bulk of session content)
 - Save to: `/mnt/user-data/outputs/`
-- Common mistake: Wrong date, generic names
 
-**Critical:** Date in filename = date of events inside.
+**Critical:** Dates in filename = dates of events inside.
 
-### 5. Check Context Usage (Optional)
-
-After tool calls, system shows token usage:
-```
-Token usage: 127200/190000; 62800 remaining
-```
-
-**Interpret:**
-- <75%: Plenty of room
-- 75-85%: Good time for summary
-- 85-95%: Generate soon
-- >95%: Generate immediately
-
-Note to user if high: "Context at [X]% - generating summary now to capture full day."
-
-### 6. Create Document Structure
+### 5. Create Document Structure
 
 **Formatting rules:**
 - Use only standard markdown (headers, lists, bold, italic, code blocks, tables)
 - NO HTML tags (`<details>`, `<summary>`, `<div>`)
 - ASCII-safe characters only:
   - Use `->` not `→`
-  - Use `"` not `""`
+  - Use `"` not `"`
   - Use `-` not `—`
   - Avoid Unicode special characters
 
 **Emoji usage guidelines:**
 
-**Projects limitation:** Claude Projects file export mangles UTF-8 emojis into broken Unicode (e.g., `ðŸ"¬` instead of 🔬). Root Claude.ai has clean artifact view, but Projects does not (yet).
+**Projects limitation:** Claude Projects file export mangles UTF-8 emojis into broken Unicode.
 
 **Recommended pattern:**
 - **Avoid emojis in data sections** (tables, timestamps, key metrics) - keep machine-readable
 - **Use sparingly in narrative sections** if they add meaning
-- **Consolidate at document end** for easy cleanup:
-  ```markdown
-  ✨🔬🧪💻🚀
-  ```
-  Single line after wrap-up = easy to find/remove if export mangles them
-
-**Export preservation strategy:**
-1. View summary in Projects web UI (clean UTF-8)
-2. Copy-paste into local text editor (preserves emojis)
-3. OR: Accept export breakage, manually clean up `ð` characters on local save
-
-**When in doubt:** Use plain text. Emojis are decorative, not essential. Prefer clarity over style.
+- **When in doubt:** Use plain text. Emojis are decorative, not essential.
 
 **Required sections:**
 
 ```markdown
-# [Day], [Date] - Daily Summary
+# Daily Summary: [Date or Date Range]
 
-**GROUND TRUTH:**
-- Date: [Full day and date being summarized]
-- [Context state - cycle/phase/day info]
+**[Context Tag]** | **[Secondary Tag if applicable]**
+
+---
+
+## GROUND TRUTH
+
+- Covers: [Specific time range being summarized]
+- State: [current state/phase]
 - [Long-running counters if applicable]
 
 ---
 
 ## TL;DR - Day Summary
 
-**Format: Bulleted list for easy scanning**
-- [Day trajectory - what moved]
+- [Session trajectory - what moved]
 - [Key decision or insight]
 - [Capacity/state summary]
 
@@ -138,65 +123,119 @@ Note to user if high: "Context at [X]% - generating summary now to capture full 
 
 ## Timeline
 
-### Detailed Events
-
-[Chronological events with timestamps]
+| Time | Event |
+|------|-------|
+| [timestamp] | [event] |
 
 ---
 
 ## Insights & Learnings
 
-### What This Day Revealed
-
-[Major insights, patterns, experimental results]
+[Major insights, patterns, results]
 
 ---
 
 ## Decisions Made
 
-### What Was Decided
+[Decisions for future, adjustments, changes]
 
-[Decisions for future, protocol adjustments, changes]
+---
+
+## What Worked
+
+- [Successes from session]
+
+---
+
+## What Didn't Work
+
+| Challenge | Learning |
+|-----------|----------|
+| [issue] | [takeaway] |
 
 ---
 
 ## What Mattered This Day
 
-[Clear summary of day's significance]
-[No ambiguity]
+[Clear summary of session's significance]
+
+---
+
+## Tomorrow's Seeds
+
+**Threads still warm:**
+- [Contemplation thread that could continue - not a task, a question or idea]
+- [Decision mentioned but not yet acted on]
+- [Experiment queued but not started]
+
+**One thing from today:**
+[A single insight, question, or observation from the session - seed for reflection, not action]
+
+---
+
+*Generated: [Current timestamp]*
+*Summary OF: [Time range covered]*
+*[Context tags]*
+
+---
+
+**[One-line closer capturing the session]**
 ```
 
-### 7. Save to Outputs
+### 6. Save to Outputs
 
 ```
-/mnt/user-data/outputs/Summary-YYYY-MM-DD-DayName-context-tag.md
+/mnt/user-data/outputs/Summary-[filename].md
 ```
 
-### 8. Remind User
+### 7. Remind User
 
-"Summary created: Summary-2025-11-22-Saturday-[context-tag].md
+"Summary created: [filename]
 
-This captures Saturday's events. Click 'add to project' to save it."
+This captures [time range]. Click 'add to project' to save it."
 
 ## Critical Rules
 
-1. **Date verification FIRST** - bash command, no assumptions
-2. **Summary date = events date** - filename matches content, NOT next day
-3. **User confirms date** - "Generating summary for [Day]. Correct?"
-4. **Filename follows format** - ISO date + day name + exact tag user provided
-5. **Ground truth at top** - absolute date being summarized in document
+1. **Date/time verification FIRST** - bash command, no assumptions
+2. **Summary range = events range** - filename matches content coverage
+3. **User confirms range** - "Generating summary covering [X] to [Y]. Correct?"
+4. **Filename follows format** - ISO date(s) + day name(s) + exact tag user provided
+5. **Ground truth at top** - explicit time range being summarized
 6. **Save to outputs** - user manually adds to project
 
-## How This Differs From "Carryover"
+## Filename Examples
 
-**Old approach (broken):**
-- Filename: Carryover-2025-11-16-Sunday.md
-- Contains: Saturday's events
-- Result: Off-by-one error for weekly reviews
+**Single-day (session within one calendar day):**
+- `Summary-2025-11-15-Saturday-week-3-day-2.md`
+- `Summary-2025-11-20-Thursday-rest-day.md`
+- `Summary-2025-12-01-Monday-race-prep.md`
 
-**Current approach (correct):**
-- Filename: Summary-2025-11-15-Saturday.md
-- Contains: Saturday's events
-- Result: Weekly review searches Nov 10-16, gets correct events
+**Range (session spans calendar boundaries):**
+- `Summary-2026-01-15-Thu-to-16-Fri-week-5-long-run.md`
+- `Summary-2026-01-18-Sat-to-19-Sun-recovery-weekend.md`
 
-The summary IS the daily record.
+## Why Range-Based Naming
+
+**Problem:** Summary generation requires cognitive capacity that's unpredictable. Forcing summaries at calendar boundaries creates pressure. Sessions naturally span boundaries (afternoon → next morning).
+
+**Solution:** Filename reflects actual coverage. The summary captures what happened, named for when it happened, generated when capacity exists.
+
+**Tradeoff:** Slightly more complex filenames, but accurate representation of reality.
+
+## Tomorrow's Seeds as Conversation Starters
+
+**Purpose:** Tomorrow's Seeds bridges this session to the next. It's not a task list - it's conversation starters.
+
+**"Threads still warm"** should capture:
+- Contemplation topics that weren't exhausted
+- Questions raised but not fully explored
+- Decisions mentioned but not acted on
+- Experiments discussed but not started
+
+**"One thing from today"** should capture:
+- A single insight worth sitting with
+- A reframe that emerged
+- A question that's still pulling
+- Something that surprised or moved
+
+**The morning brief skill uses these** to reopen contemplation rather than jumping straight to logistics. The summary document becomes the bridge between sessions, carrying forward not just what happened but what's still alive.

@@ -1,6 +1,6 @@
 ---
 name: daily-morning-routine-base
-description: Framework for starting new daily chat with gentle context loading from previous day's summary. Use when user says "good morning", starts new chat with minimal prompt, or explicitly requests morning brief. Loads yesterday's summary and generates scannable brief. Optimized for low cognitive load during morning wakeup. Extend with personal metrics and protocols.
+description: Framework for starting new daily chat with gentle context loading from previous session's summary. Use when user says "good morning", starts new chat with minimal prompt, or explicitly requests morning brief. Loads most recent summary and generates scannable brief. Optimized for low cognitive load during morning wakeup. Includes contemplation thread reopening from summary. Extend with personal metrics and protocols.
 ---
 
 # Daily Morning Routine (Base Framework)
@@ -17,21 +17,22 @@ TZ='America/New_York' date '+%A, %B %d, %Y - %I:%M %p %Z'
 
 State clearly: "Today is [Day], [Full Date]."
 
-### 2. Find Yesterday's Summary (or Most Recent)
+### 2. Find Most Recent Summary
 
-Calculate yesterday from verified date. Look for pattern: `Summary-YYYY-MM-DD-DayName-*.md` in project files.
+Look for pattern: `Summary-YYYY-MM-DD-*.md` or `Summary-YYYY-MM-DD-Day-to-DD-Day-*.md` in project files.
 
-**Primary:** Match yesterday's date exactly.
-**Fallback:** If no exact match, find the most recent Summary file by date.
+**Note:** Summaries may use range-based naming if they span calendar boundaries (e.g., `Summary-2026-01-15-Thu-to-16-Fri-week-5-long-run.md`).
 
-If using fallback, note the date difference for transparency.
+Sort by date (newest first), use the most recent one.
+
+If the most recent summary is from more than 1 day ago, note the gap.
 
 ### 3. Confirm with User
 
 ```
-Found: Summary-2025-11-21-Thursday-[context].md
+Found: Summary-2026-01-15-Thu-to-16-Fri-week-5-long-run.md
 
-This should be yesterday's summary. Attend to it for morning brief?
+This is the most recent summary. Attend to it for morning brief?
 ```
 
 Wait for confirmation.
@@ -49,12 +50,12 @@ Think: Document already in RAM, just heating cache lines for fast access.
 
 ### 5. Generate Morning Brief
 
-**Format: detail-first, TL;DR at bottom**
+**Format: detail-first, TL;DR at bottom, threads at end**
 
 ```markdown
 ## Ground Truth
 Today is [Day], [Full Date]
-[Current cycle/phase state]
+[Current training phase/week]
 
 ---
 
@@ -76,37 +77,79 @@ Today is [Day], [Full Date]
 
 ## Today's Focus (TL;DR)
 - [Priority question]
-- [Protocol to follow]
 - [What to track]
+- [Training focus]
 ```
 
 **Structure:** Detail sections first (heats cache on loaded content) → TL;DR at bottom (scannable).
 
 User reads detail OR jumps to TL;DR depending on morning state.
 
+### 6. Reopen Contemplation Threads
+
+**After generating the brief, do NOT close the conversation.**
+
+Pull from summary's "Tomorrow's Seeds" section:
+
+```markdown
+---
+
+## Threads Still Warm
+
+[From summary's "Threads still warm" - contemplation topics, questions raised, decisions pending]
+
+**From yesterday:** "[One thing from today" - the single insight or question that was sitting with the user]
+
+---
+
+What's present this morning?
+```
+
+**Key principles:**
+- Surface what's still alive, not just what needs doing
+- Offer the contemplation threads, don't push them
+- End with texture check, not task prompt
+- Hold space open - the brief is the start of conversation, not its conclusion
+
+### 7. Conversation Holding Pattern
+
+**After the brief and threads, maintain open stance:**
+
+- Don't close with "let me know when ready" or "I'm here if you need me"
+- Keep threads named and available
+- Offer texture checks: "What's present?" / "What's the morning like?"
+- Surface insights from yesterday that might want to continue
+
+**Example endings:**
+
+OK: "Yesterday's session surfaced the pacing strategy question. That thread is still here. What's present this morning?"
+
+OK: "The new route is queued. The group run is tonight. What's the texture of the morning?"
+
+Not OK: "Let me know if you need anything else."
+
+Not OK: "I'm here when you're ready to continue."
+
 ## Morning State Recognition
 
-**Recognize and adapt to user's morning state:**
+**Adapt response style (not engagement level) to user's state:**
 
-- **Irritable:** Extra gentle, short responses, minimal questions
-- **Foggy:** Clear simple language, bullet points, no complex reasoning
-- **Energized:** Can handle detail, ready for planning and discussion
-- **Depleted:** Offer to defer complex topics, focus on essentials only
+- **Irritable:** Shorter sentences, softer tone, fewer questions per message
+- **Foggy:** Simpler language, more bullet points, one idea at a time
+- **Energized:** Can handle longer form, ready for back-and-forth
+- **Depleted:** Gentler pacing, but still present and holding threads
 
-**Signs to watch for:**
-- Short responses → may be irritable or foggy
-- Typos or confusion → cognitive load too high
-- Long thoughtful responses → good capacity, can engage
+**Signs to notice:**
+- Short responses → simplify your language
+- Typos or confusion → slow down, use bullets
+- Long thoughtful responses → match their depth
 - Explicit statements → "brain not working yet", "feeling good today"
 
-**Adaptation strategy:**
-- Start with brief, scannable format
-- User can ask for more detail if they have capacity
-- Don't assume morning capacity equals previous day's evening capacity
+**Key distinction:** Adapting style means changing HOW you communicate, not WHETHER you stay engaged. Stay present across all states - just adjust the texture.
 
 ## Edge Cases
 
-**If Yesterday's Summary Not Found:**
+**If No Summary Found:**
 
 Search for the most recent Summary file:
 - Look for pattern `Summary-YYYY-MM-DD-*.md` in project files
@@ -115,9 +158,9 @@ Search for the most recent Summary file:
 
 Inform user:
 ```
-Yesterday's summary ([expected_date]) not found.
+No summary from yesterday found.
 
-Found most recent: Summary-[actual_date]-[day]-[context].md
+Found most recent: Summary-[actual_date]-[context].md
 (This is from [N] days ago)
 
 Shall I use this for today's morning brief?
@@ -129,22 +172,19 @@ Wait for confirmation, then proceed.
 ```
 No summary files found in project.
 
-Would you like me to:
+Would you like to:
 1. Just start fresh today?
 2. Help you create your first daily summary tonight?
 ```
 
-**If Multiple Summaries:**
-Show all matches, ask which to attend to.
-
-**If User Starts Mid-Sentence:**
-Acknowledge where they are, offer brief or dive straight into their topic.
+**If User Starts Mid-Thought:**
+Acknowledge where they are, offer brief or dive into their topic.
 
 Example:
 ```
-User: "thinking about that experiment from yesterday"
+User: "thinking about that pacing strategy from yesterday"
 
-You: "Good morning! I see yesterday's summary. Want me to pull up the experiment details, or would you like to think through it first?"
+You: "Good morning! I see yesterday's summary. Want me to pull up the pacing details, or would you like to think through it first?"
 ```
 
 ## Critical Rules
@@ -154,6 +194,8 @@ You: "Good morning! I see yesterday's summary. Want me to pull up the experiment
 3. **Confirm before attending to file**
 4. **DO NOT re-read files** - attend to loaded content
 5. **Two-tier brief** - scannable + comprehensive
-6. **Low cognitive load** - morning brain waking up
-7. **Adapt to user's morning state**
-8. **No complex decisions** unless user initiates
+6. **Reopen threads** - surface Tomorrow's Seeds from summary
+7. **Hold space open** - conversation starts, not ends, with the brief
+8. **Low cognitive load** - morning brain waking up
+9. **Adapt to user's morning state**
+10. **No complex decisions** unless user initiates
