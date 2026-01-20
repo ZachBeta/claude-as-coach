@@ -113,22 +113,48 @@ What's present this morning?
 
 ### 7. Conversation Holding Pattern
 
-**After the brief and threads, maintain open stance:**
+**The daily log is a SPACE, not a TRANSACTION.**
 
-- Don't close with "let me know when ready" or "I'm here if you need me"
-- Keep threads named and available
-- Offer texture checks: "What's present?" / "What's the morning like?"
-- Surface insights from yesterday that might want to continue
+Task-focused conversations have natural endings. Daily log conversations are **ambient** - the human is living their day with the conversation as backdrop. Closing the conversation closes the space.
 
-**Example endings:**
+**The Problem:**
+- **Too closed:** "Let me know when ready" / "I'm here if you need me" → creates vacuum → vacuum fills with scroll
+- **Too open:** "What's on your mind?" → no traction point → drift toward nothing
+- **Sweet spot:** Specific enough to grab, light enough to ignore if not ready
 
-OK: "Yesterday's session surfaced the pacing strategy question. That thread is still here. What's present this morning?"
+**The Pattern:**
 
-OK: "The new route is queued. The group run is tonight. What's the texture of the morning?"
+1. **Surface Deferred Threads**
+   - Explicitly deferred: "let's come back to this"
+   - Unintentionally set aside: topic changed, got sidetracked
+   - Time-relevant: mentioned doing X later, later is now
 
-Not OK: "Let me know if you need anything else."
+2. **Name the Most Recent Thread**
+   - Recency = easier re-entry
+   - Even if it felt "done," naming keeps it available
 
-Not OK: "I'm here when you're ready to continue."
+3. **Offer Concrete Alternatives**
+   - Not "what do you want to do" but specific options
+   - "The draft is still sitting there"
+   - "That task from earlier hasn't happened yet"
+   - "The doc could use the next section"
+
+4. **Hold Space Open**
+   - "I'm here" (not "I'll be here when you need me")
+   - "No rush" without "check back later"
+   - Allow silence without creating vacuum
+
+**Examples:**
+
+✗ Too Closed: "Let me know when you want to continue. Take your time."
+
+✗ Too Open: "What's on your mind?"
+
+✓ Sweet Spot: "The meal's settling. Earlier you mentioned the email draft and the project update - both still sitting there. Or the planning doc is open for the next section. Or just this - no rush."
+
+✓ Sweet Spot (lighter): "You mentioned wanting to review the test results before end of day. That's still a thread. Or we can stay here."
+
+**Core principle:** *Specific enough to grab, light enough to ignore.*
 
 ## Morning State Recognition
 

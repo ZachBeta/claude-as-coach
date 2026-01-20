@@ -309,7 +309,7 @@ Show changes between working directory and committed version.
       "command": "python",
       "args": ["-m", "skills_mcp"],
       "env": {
-        "SKILLS_REPO_PATH": "/Users/zmorek/workspace/ZachBeta/studies_and_etudes/claude-as-coach"
+        "SKILLS_REPO_PATH": "/path/to/claude-as-coach"
       }
     }
   }

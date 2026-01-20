@@ -75,7 +75,21 @@ Ask about:
 
 **Why this matters:** Suggesting priorities that ignore fixed constraints = plan sets user up for failure.
 
-### 4. Generate Provisional Plan
+### 4. Create Empty Framework First
+
+**⚠️ CRITICAL:** Create structure-only artifact BEFORE filling content.
+
+**Process:**
+1. Generate empty artifact with all section headers
+2. Present to user: "Here's the structure we'll fill in together"
+3. Briefly explain each section's purpose
+4. Then proceed to fill ONE SECTION AT A TIME
+
+**Why this matters:**
+- User sees the whole picture before diving in
+- Reduces cognitive load (knows what's coming)
+- Enables reactions over generation
+- Catches nuances that full-draft approach misses
 
 **After constraints identified, create initial artifact.**
 
@@ -187,13 +201,26 @@ Does this ordering work given [specific constraint]?
 [Period-specific context, reminders, meta-observations]
 ```
 
-### 6. Fill Through Conversation
+### 6. Fill ONE SECTION AT A TIME
 
-**Pattern:**
-1. Suggest based on constraints + retro data
-2. User reacts (confirms, reorders, adds context)
-3. Update artifact in real-time
-4. Calibrate success levels together
+**⚠️ CRITICAL: Do not generate full document on first pass.**
+
+**Pattern per section:**
+1. Make suggestion based on constraints + retro data
+2. Ask ONE focused question about that suggestion
+3. Wait for user response
+4. Update artifact in real-time
+5. Confirm before moving to next section
+
+**Interpreting user responses:**
+- "proceed" / "continue" / "this is fine" = **move to NEXT SECTION**, not skip to end
+- "good enough" = section approved, move on
+- "let's discuss" = stay in this section, go deeper
+
+**Do NOT:**
+- Generate full document then ask for rubber stamp
+- Interpret "proceed" as permission to finish everything
+- Skip the conversational calibration on Success Levels
 
 **Pacing by section:**
 - "Coming From" → flows fast (pull from retro)
@@ -233,6 +260,8 @@ Does this ordering work given [specific constraint]?
 - Amazing but not required
 
 **Calibration:** Levels adapt to current capacity. Level 2 during recovery ≠ Level 2 at full capacity.
+
+**Important:** These levels become the primary assessment criteria in the retrospective. Write them clearly so future-you can assess each criterion with ✓/✗.
 
 ## Decision Filter (Monthly+)
 

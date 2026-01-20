@@ -8,6 +8,8 @@ Experiment in using Claude as a personal coach for behavior change, using Claude
 
 **🔥 Wanna try out a new project?** See [QUICKSTART.md](QUICKSTART.md) - paste into Claude.ai to auto-fetch and package skills.
 
+**🔄 Already using this?** See [UPGRADE_SKILLS.md](UPGRADE_SKILLS.md) to update your skills to the latest versions.
+
 **📋 Prefer manual setup?** See [QUICKSTART-MANUAL.md](QUICKSTART-MANUAL.md) to download skill files directly.
 
 **📖 New to this system?** See [PROJECT-SETUP.md](PROJECT-SETUP.md) for a comprehensive guide on using Claude-as-Coach for your own goals.
@@ -174,6 +176,9 @@ python claude-as-coach/scripts/skill_workflow.py pack claude-as-coach/skills/pla
 
 **Setup:**
 - `project-coach-setup-base.zip` - Initial project setup and goal definition
+
+**Experimental:**
+- `context-curation-base.zip` - Project file context management (WIP)
 
 ## Skill Architecture: Base + Personal Pattern
 

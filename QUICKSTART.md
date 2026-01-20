@@ -2,6 +2,8 @@
 
 **Prerequisites:** Claude Pro or Claude Max subscription with the `skill-creator` skill installed.
 
+**Already using this system?** See [UPGRADE_SKILLS.md](UPGRADE_SKILLS.md) to update your skills to the latest versions.
+
 **Fallback:** If you don't have skill-creator or run into issues, see [QUICKSTART-MANUAL.md](QUICKSTART-MANUAL.md) for manual download instructions.
 
 ---

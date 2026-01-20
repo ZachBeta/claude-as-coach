@@ -61,6 +61,14 @@ TZ='America/New_York' date '+%A, %B %d, %Y - %I:%M %p %Z'
 
 **If inputs missing:** Note gaps, proceed with available data.
 
+### Load Level Criteria from Plan
+
+When a plan document exists for the period being reviewed:
+1. Pull Level 0/1/2/3 criteria verbatim from the plan
+2. Assess each criterion individually (✓/✗)
+3. Roll up to overall level assessment
+4. This is the primary success measure - Success Metrics table is secondary detail
+
 ### 3. Day-by-Day Review (Default for Weekly+)
 
 **When to use:** Weekly or longer retrospectives with daily summaries available. This is the **default** approach for weekly retros - it's valuable enough to do every time.
@@ -160,17 +168,32 @@ TZ='America/New_York' date '+%A, %B %d, %Y - %I:%M %p %Z'
 | [Priority 1] | [Goal] | [Result] | ✓ Met / ◐ Partial / ✗ Below |
 | [Priority 2] | [Goal] | [Result] | ✓ Met / ◐ Partial / ✗ Below |
 
+### Level Assessment (from [Period] Plan)
+
+**Level 0 (Foundation):** [✓ Met / ◐ Partial / ✗ Not met]
+- [Criterion 1 from plan] [✓/✗]
+- [Criterion 2 from plan] [✓/✗]
+
+**Level 1 (Base):** [✓ Met / ◐ Partial / ✗ Not met]
+- [Criterion 1 from plan] [✓/✗]
+- [Criterion 2 from plan] [✓/✗]
+
+**Level 2 (Target):** [✓ Met / ◐ Partial / ✗ Not met]
+- [Criterion 1 from plan] [✓/✗]
+
+**Level 3 (Reach):** [✓ Met / ◐ Partial / ✗ Not met] (if applicable)
+- [Criterion 1 from plan] [✓/✗]
+
 ### Venn Diagram
 
-```
-    PLANNED ONLY          BOTH           ACTUAL ONLY
-   ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
-   │ [Things planned │  │ [Things that    │  │ [Things that    │
-   │  but didn't     │  │  happened as    │  │  happened but   │
-   │  happen]        │  │  planned]       │  │  weren't in     │
-   │                 │  │                 │  │  the plan]      │
-   └─────────────────┘  └─────────────────┘  └─────────────────┘
-```
+**Planned Only:**
+- [Things planned but didn't happen]
+
+**Both:**
+- [Things that happened as planned]
+
+**Actual Only:**
+- [Things that happened but weren't in the plan]
 
 ---
 
